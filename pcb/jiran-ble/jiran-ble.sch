@@ -1,0 +1,1837 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L candy-rescue:MBR0520-nrfmicro-rescue D29
+U 1 1 5E81DF67
+P 1300 6750
+F 0 "D29" H 1300 6534 50  0000 C CNN
+F 1 "1N5819" H 1300 6625 50  0000 C CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" H 1300 6575 50  0001 C CNN
+F 3 "" H 1300 6750 50  0001 C CNN
+	1    1300 6750
+	-1   0    0    1   
+$EndComp
+$Comp
+L candy-rescue:BSS83P-nrfmicro-rescue Q1
+U 1 1 5E81DF6D
+P 1800 6400
+F 0 "Q1" H 2000 6475 50  0000 L CNN
+F 1 "AO3407" H 2000 6400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2000 6325 50  0001 L CIN
+F 3 "" H 1800 6400 50  0001 L CNN
+	1    1800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L candy-rescue:C-nrfmicro-rescue C3
+U 1 1 5E81DF73
+P 1600 7100
+F 0 "C3" H 1700 7150 50  0000 L CNN
+F 1 "10uF" H 1700 7050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1638 6950 50  0001 C CNN
+F 3 "" H 1600 7100 50  0001 C CNN
+	1    1600 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6750 1600 6750
+Wire Wire Line
+	1900 6600 1900 6750
+Connection ~ 1900 6750
+Wire Wire Line
+	1600 6950 1600 6750
+Connection ~ 1600 6750
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR07
+U 1 1 5E81DF7E
+P 2750 7300
+F 0 "#PWR07" H 2750 7050 50  0001 C CNN
+F 1 "GND" H 2750 7150 50  0000 C CNN
+F 2 "" H 2750 7300 50  0001 C CNN
+F 3 "" H 2750 7300 50  0001 C CNN
+	1    2750 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 7150 2750 7300
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR05
+U 1 1 5E81DF85
+P 1600 7300
+F 0 "#PWR05" H 1600 7050 50  0001 C CNN
+F 1 "GND" H 1600 7150 50  0000 C CNN
+F 2 "" H 1600 7300 50  0001 C CNN
+F 3 "" H 1600 7300 50  0001 C CNN
+	1    1600 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 7300 1600 7250
+Wire Wire Line
+	1600 6400 950  6400
+Wire Wire Line
+	3050 6750 3750 6750
+$Comp
+L candy-rescue:VCC-nrfmicro-rescue #PWR011
+U 1 1 5E81DF8E
+P 3750 6600
+F 0 "#PWR011" H 3750 6450 50  0001 C CNN
+F 1 "VCC" H 3750 6750 50  0000 C CNN
+F 2 "" H 3750 6600 50  0001 C CNN
+F 3 "" H 3750 6600 50  0001 C CNN
+	1    3750 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6750 3750 6600
+$Comp
+L candy-rescue:R-nrfmicro-rescue R3
+U 1 1 5E81DF95
+P 950 7100
+F 0 "R3" H 1000 7100 50  0000 L CNN
+F 1 "100K" V 950 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 880 7100 50  0001 C CNN
+F 3 "" H 950 7100 50  0001 C CNN
+	1    950  7100
+	1    0    0    -1  
+$EndComp
+Connection ~ 950  6750
+Text Notes 550  5500 0    60   ~ 0
+Power and filtering
+Text Notes 550  3600 0    60   ~ 0
+LiPo charging\n
+Wire Wire Line
+	1600 6750 1900 6750
+Wire Wire Line
+	950  6400 950  6750
+Wire Wire Line
+	950  6750 1150 6750
+Wire Wire Line
+	950  6750 950  6950
+$Comp
+L Device:C C2
+U 1 1 5E81DFB3
+P 3400 4450
+F 0 "C2" H 3515 4496 50  0000 L CNN
+F 1 "10uF" H 3515 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3438 4300 50  0001 C CNN
+F 3 "~" H 3400 4450 50  0001 C CNN
+	1    3400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E81DFB9
+P 2950 4450
+F 0 "R2" V 3050 4450 50  0000 C CNN
+F 1 "4.7K" V 2950 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2880 4450 50  0001 C CNN
+F 3 "~" H 2950 4450 50  0001 C CNN
+	1    2950 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Battery_Management:MCP73831-2-OT U2
+U 1 1 5E81DFBF
+P 2350 4550
+F 0 "U2" H 2350 4936 50  0000 C CNN
+F 1 "MCP73831" H 2350 5027 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2400 4300 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2200 4500 50  0001 C CNN
+	1    2350 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5E81DFC5
+P 3400 4800
+F 0 "#PWR010" H 3400 4550 50  0001 C CNN
+F 1 "GND" H 3405 4627 50  0000 C CNN
+F 2 "" H 3400 4800 50  0001 C CNN
+F 3 "" H 3400 4800 50  0001 C CNN
+	1    3400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5E81DFCB
+P 3200 4800
+F 0 "#PWR09" H 3200 4550 50  0001 C CNN
+F 1 "GND" H 3205 4627 50  0000 C CNN
+F 2 "" H 3200 4800 50  0001 C CNN
+F 3 "" H 3200 4800 50  0001 C CNN
+	1    3200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4150 2350 4250
+Wire Wire Line
+	900  4450 1050 4450
+Wire Wire Line
+	2800 4450 2750 4450
+Wire Wire Line
+	2350 4150 3200 4150
+Wire Wire Line
+	3400 4800 3400 4600
+$Comp
+L candy-rescue:AP2112K-3.3-Regulator_Linear U3
+U 1 1 5E81DFD6
+P 2750 6850
+F 0 "U3" H 2750 7192 50  0000 C CNN
+F 1 "AP2112K-3.3" H 2750 7101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2750 7175 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 2750 6950 50  0001 C CNN
+	1    2750 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6750 2200 6750
+Wire Wire Line
+	950  7250 950  7300
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR01
+U 1 1 5E81DFDE
+P 950 7300
+F 0 "#PWR01" H 950 7050 50  0001 C CNN
+F 1 "GND" H 950 7150 50  0000 C CNN
+F 2 "" H 950 7300 50  0001 C CNN
+F 3 "" H 950 7300 50  0001 C CNN
+	1    950  7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6850 2350 6850
+Wire Wire Line
+	2350 6850 2350 7250
+Wire Wire Line
+	2350 7250 2200 7250
+Wire Wire Line
+	2200 7250 2200 7150
+Wire Wire Line
+	2200 6850 2200 6750
+$Comp
+L candy-rescue:C-nrfmicro-rescue C1
+U 1 1 5E81DFEB
+P 3750 7100
+F 0 "C1" H 3850 7150 50  0000 L CNN
+F 1 "10uF" H 3850 7050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 6950 50  0001 C CNN
+F 3 "" H 3750 7100 50  0001 C CNN
+	1    3750 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6950 3750 6750
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR012
+U 1 1 5E81DFF2
+P 3750 7300
+F 0 "#PWR012" H 3750 7050 50  0001 C CNN
+F 1 "GND" H 3750 7150 50  0000 C CNN
+F 2 "" H 3750 7300 50  0001 C CNN
+F 3 "" H 3750 7300 50  0001 C CNN
+	1    3750 7300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 6750
+Wire Wire Line
+	3200 4150 3200 4450
+Wire Wire Line
+	3100 4450 3200 4450
+Connection ~ 3200 4450
+Wire Wire Line
+	3200 4450 3200 4800
+Text GLabel 900  4450 0    60   Input ~ 0
+VBUS
+Text GLabel 3550 3950 2    60   Input ~ 0
+VBAT
+Text GLabel 850  6400 0    60   Input ~ 0
+VBUS
+Text Label 1650 2550 2    60   ~ 0
+P0.08
+Text Label 1650 2350 2    60   ~ 0
+P0.06
+Text GLabel 3300 1750 2    60   Input ~ 0
+SWD
+Text GLabel 3300 2750 2    60   Input ~ 0
+VBUS
+Wire Wire Line
+	1250 1450 1650 1450
+Wire Wire Line
+	3000 3050 3100 3050
+$Comp
+L power:GND #PWR08
+U 1 1 5E81E00F
+P 3100 3050
+F 0 "#PWR08" H 3100 2800 50  0001 C CNN
+F 1 "GND" H 3105 2877 50  0000 C CNN
+F 2 "" H 3100 3050 50  0001 C CNN
+F 3 "" H 3100 3050 50  0001 C CNN
+	1    3100 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E81E015
+P 1350 3050
+F 0 "#PWR04" H 1350 2800 50  0001 C CNN
+F 1 "GND" H 1355 2877 50  0000 C CNN
+F 2 "" H 1350 3050 50  0001 C CNN
+F 3 "" H 1350 3050 50  0001 C CNN
+	1    1350 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E81E01B
+P 1250 1450
+F 0 "#PWR02" H 1250 1200 50  0001 C CNN
+F 1 "GND" H 1255 1277 50  0000 C CNN
+F 2 "" H 1250 1450 50  0001 C CNN
+F 3 "" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L candy-rescue:VCC-nrfmicro-rescue #PWR03
+U 1 1 5E81E021
+P 1350 2850
+F 0 "#PWR03" H 1350 2700 50  0001 C CNN
+F 1 "VCC" H 1350 3031 50  0000 C CNN
+F 2 "" H 1350 2850 50  0001 C CNN
+F 3 "" H 1350 2850 50  0001 C CNN
+	1    1350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L candy-rescue:E73-2G4M08S1C-52840-nrfmicro U1
+U 1 1 5E81E027
+P 2350 2150
+F 0 "U1" H 2325 3515 50  0000 C CNN
+F 1 "E73-2G4M08S1C" H 2325 3424 50  0000 C CNN
+F 2 "nrfmicro:E73-2G4M08S1C-52840" H 2350 2150 50  0001 C CNN
+F 3 "" H 2350 2150 50  0001 C CNN
+	1    2350 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 2850 2    60   Input ~ 0
+RESET
+Text Label 1650 1350 2    60   ~ 0
+P0.28
+Text Label 1650 2950 2    60   ~ 0
+P0.12
+Text Label 1650 1750 2    60   ~ 0
+P0.29
+Text Label 1650 1650 2    60   ~ 0
+P0.02
+Text Label 1650 1550 2    60   ~ 0
+P1.13
+Text Label 1650 1050 2    60   ~ 0
+P1.11
+Text Label 3000 1350 0    60   ~ 0
+P0.09
+Wire Wire Line
+	3300 1550 3000 1550
+Wire Wire Line
+	3300 1750 3000 1750
+Wire Wire Line
+	3300 2750 3000 2750
+Wire Wire Line
+	3300 2850 3000 2850
+Text GLabel 3300 2350 2    60   Input ~ 0
+DATA+
+Text GLabel 3300 2550 2    60   Input ~ 0
+DATA-
+Wire Wire Line
+	3300 2350 3000 2350
+Wire Wire Line
+	3300 2550 3000 2550
+Wire Wire Line
+	1850 4650 1950 4650
+Text GLabel 3300 1850 2    60   Input ~ 0
+SWO
+Wire Wire Line
+	1650 3050 1350 3050
+Wire Wire Line
+	3000 1850 3300 1850
+Text GLabel 1300 1150 0    60   Input ~ 0
+BLUE_LED
+Wire Wire Line
+	1650 1150 1300 1150
+Wire Wire Line
+	3750 7250 3750 7300
+Wire Wire Line
+	3000 1650 3300 1650
+Wire Wire Line
+	1650 2850 1350 2850
+NoConn ~ 3000 2950
+NoConn ~ 3000 3150
+Text GLabel 1050 3150 0    60   Input ~ 0
+BOOT
+Wire Wire Line
+	1050 3150 1650 3150
+Wire Wire Line
+	1950 4450 1700 4450
+Text GLabel 2800 6100 2    60   Input ~ 0
+VBAT
+$Comp
+L Device:R R6
+U 1 1 5E81E11B
+P 9150 1900
+F 0 "R6" V 9250 1900 50  0000 C CNN
+F 1 "1K" V 9150 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9080 1900 50  0001 C CNN
+F 3 "~" H 9150 1900 50  0001 C CNN
+	1    9150 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E81E121
+P 9300 1900
+F 0 "#PWR06" H 9300 1650 50  0001 C CNN
+F 1 "GND" H 9305 1727 50  0000 C CNN
+F 2 "" H 9300 1900 50  0001 C CNN
+F 3 "" H 9300 1900 50  0001 C CNN
+	1    9300 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED LED1
+U 1 1 5E81E127
+P 8850 1900
+F 0 "LED1" H 8850 1650 50  0000 C CNN
+F 1 "BT" H 8850 1750 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8850 1900 50  0001 C CNN
+F 3 "~" H 8850 1900 50  0001 C CNN
+	1    8850 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E81E12D
+P 1550 4450
+F 0 "R7" V 1650 4450 50  0000 C CNN
+F 1 "1K" V 1550 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 4450 50  0001 C CNN
+F 3 "~" H 1550 4450 50  0001 C CNN
+	1    1550 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED LED2
+U 1 1 5E81E133
+P 1250 4450
+F 0 "LED2" H 1250 4200 50  0000 C CNN
+F 1 "CHG" H 1250 4300 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1250 4450 50  0001 C CNN
+F 3 "~" H 1250 4450 50  0001 C CNN
+	1    1250 4450
+	-1   0    0    1   
+$EndComp
+Text GLabel 8700 1900 0    60   Input ~ 0
+BLUE_LED
+Text GLabel 1300 5950 0    60   Input ~ 0
+P0.04
+$Comp
+L candy-rescue:R-nrfmicro-rescue R8
+U 1 1 5E81E13B
+P 1600 5950
+F 0 "R8" V 1500 5950 50  0000 C CNN
+F 1 "10K" V 1600 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1530 5950 50  0001 C CNN
+F 3 "" H 1600 5950 50  0001 C CNN
+	1    1600 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 6200 2250 6200
+Wire Wire Line
+	1300 5950 1375 5950
+Wire Wire Line
+	1750 5950 1900 5950
+Wire Wire Line
+	1900 5950 1900 6200
+Connection ~ 1900 6200
+Wire Wire Line
+	2650 6100 2800 6100
+Wire Wire Line
+	950  6400 850  6400
+Connection ~ 950  6400
+Wire Wire Line
+	1850 3950 1850 4650
+Wire Wire Line
+	1850 3950 3400 3950
+Wire Wire Line
+	3400 3950 3400 4300
+Connection ~ 3400 3950
+Wire Wire Line
+	3400 3950 3550 3950
+Wire Wire Line
+	2350 4850 1050 4850
+Wire Wire Line
+	1050 4850 1050 4450
+Connection ~ 1050 4450
+Wire Wire Line
+	1050 4450 1100 4450
+$Comp
+L candy-rescue:R-nrfmicro-rescue R1
+U 1 1 5E81E18E
+P 2200 7000
+F 0 "R1" H 2150 7000 50  0000 R CNN
+F 1 "100K" V 2200 7100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2130 7000 50  0001 C CNN
+F 3 "" H 2200 7000 50  0001 C CNN
+	1    2200 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 1650 2    60   Input ~ 0
+DFU
+Text GLabel 3300 1550 2    60   Input ~ 0
+SWC
+Text GLabel 10350 1650 0    60   Input ~ 0
+SWC
+Text GLabel 10350 1750 0    60   Input ~ 0
+SWD
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR015
+U 1 1 5E81E19A
+P 10250 1000
+F 0 "#PWR015" H 10250 750 50  0001 C CNN
+F 1 "GND" H 10250 850 50  0000 C CNN
+F 2 "" H 10250 1000 50  0001 C CNN
+F 3 "" H 10250 1000 50  0001 C CNN
+	1    10250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5E81E1A6
+P 10450 900
+F 0 "J1" H 10530 892 50  0000 L CNN
+F 1 "Conn_01x02" H 10530 801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 10450 900 50  0001 C CNN
+F 3 "~" H 10450 900 50  0001 C CNN
+	1    10450 900 
+	1    0    0    -1  
+$EndComp
+Text GLabel 10250 900  0    60   Input ~ 0
+VBAT
+Text GLabel 1300 6125 0    60   Input ~ 0
+P0.26
+Wire Wire Line
+	1300 6125 1375 6125
+Wire Wire Line
+	1375 6125 1375 5950
+Connection ~ 1375 5950
+Wire Wire Line
+	1375 5950 1450 5950
+$Comp
+L Device:Crystal Y1
+U 1 1 5E8DEEC0
+P 600 2150
+F 0 "Y1" V 554 2281 50  0000 L CNN
+F 1 "Crystal" V 645 2281 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 600 2150 50  0001 C CNN
+F 3 "~" H 600 2150 50  0001 C CNN
+	1    600  2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 2050 850  2050
+Wire Wire Line
+	850  2050 850  2000
+Wire Wire Line
+	850  2000 600  2000
+Wire Wire Line
+	1650 2250 850  2250
+Wire Wire Line
+	850  2250 850  2300
+Wire Wire Line
+	850  2300 600  2300
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E8FC792
+P 10550 1750
+F 0 "J2" H 10630 1742 50  0000 L CNN
+F 1 "Conn_01x04" H 10630 1651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10550 1750 50  0001 C CNN
+F 3 "~" H 10550 1750 50  0001 C CNN
+	1    10550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L candy-rescue:VCC-nrfmicro-rescue #PWR0101
+U 1 1 5E9085DD
+P 10150 1950
+F 0 "#PWR0101" H 10150 1800 50  0001 C CNN
+F 1 "VCC" H 10150 2126 50  0000 C CNN
+F 2 "" H 10150 1950 50  0001 C CNN
+F 3 "" H 10150 1950 50  0001 C CNN
+	1    10150 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E908C24
+P 10350 1950
+F 0 "#PWR0102" H 10350 1700 50  0001 C CNN
+F 1 "GND" H 10355 1777 50  0000 C CNN
+F 2 "" H 10350 1950 50  0001 C CNN
+F 3 "" H 10350 1950 50  0001 C CNN
+	1    10350 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 2650 2    50   Input ~ 0
+SDA
+Text GLabel 3700 2450 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	3700 2450 3000 2450
+Wire Wire Line
+	3000 2650 3700 2650
+Text Label 1650 1850 2    60   ~ 0
+P0.31
+Text Label 1650 1950 2    60   ~ 0
+P0.30
+Wire Wire Line
+	2450 6750 2200 6750
+Connection ~ 2200 6750
+$Comp
+L candy-rescue:USB_C_Receptacle_USB2.0-Connector USB1
+U 1 1 5E8142B8
+P 4700 1600
+F 0 "USB1" H 4807 2467 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4807 2376 50  0000 C CNN
+F 2 "nrfmicro:USB-C_C168688" H 4850 1600 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4850 1600 50  0001 C CNN
+	1    4700 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 850  2    60   Input ~ 0
+VBUS
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR0103
+U 1 1 5E81D1E1
+P 4700 2500
+F 0 "#PWR0103" H 4700 2250 50  0001 C CNN
+F 1 "GND" H 4700 2350 50  0000 C CNN
+F 2 "" H 4700 2500 50  0001 C CNN
+F 3 "" H 4700 2500 50  0001 C CNN
+	1    4700 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 2100
+NoConn ~ 5300 2200
+$Comp
+L Device:R R4
+U 1 1 5E82692E
+P 5850 1200
+F 0 "R4" V 5750 1200 50  0000 C CNN
+F 1 "5.1K" V 5850 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 1200 50  0001 C CNN
+F 3 "~" H 5850 1200 50  0001 C CNN
+	1    5850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E8270C0
+P 5850 1300
+F 0 "R5" V 5950 1300 50  0000 C CNN
+F 1 "5.1K" V 5850 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 1300 50  0001 C CNN
+F 3 "~" H 5850 1300 50  0001 C CNN
+	1    5850 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 1300 5700 1300
+Wire Wire Line
+	5300 1200 5700 1200
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR0104
+U 1 1 5E842B4B
+P 6050 1300
+F 0 "#PWR0104" H 6050 1050 50  0001 C CNN
+F 1 "GND" H 6050 1150 50  0000 C CNN
+F 2 "" H 6050 1300 50  0001 C CNN
+F 3 "" H 6050 1300 50  0001 C CNN
+	1    6050 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 1200 6000 1200
+Wire Wire Line
+	6000 1300 6050 1300
+Connection ~ 6050 1300
+Wire Wire Line
+	6050 1300 6050 1200
+Wire Wire Line
+	5300 1500 5400 1500
+Wire Wire Line
+	5300 1600 5400 1600
+Wire Wire Line
+	5300 1700 5400 1700
+Wire Wire Line
+	5300 1800 5400 1800
+$Comp
+L candy-rescue:SW_PUSH-keyboard_parts SW30
+U 1 1 5E9908FE
+P 8900 1000
+F 0 "SW30" H 8900 1255 50  0000 C CNN
+F 1 "SW_PUSH" H 8900 1164 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8900 1000 60  0001 C CNN
+F 3 "" H 8900 1000 60  0000 C CNN
+	1    8900 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 1000 0    60   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR0105
+U 1 1 5E991365
+P 9200 1000
+F 0 "#PWR0105" H 9200 750 50  0001 C CNN
+F 1 "GND" H 9205 827 50  0000 C CNN
+F 2 "" H 9200 1000 50  0001 C CNN
+F 3 "" H 9200 1000 50  0001 C CNN
+	1    9200 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR0106
+U 1 1 5E9A6799
+P 4400 2500
+F 0 "#PWR0106" H 4400 2250 50  0001 C CNN
+F 1 "GND" H 4400 2350 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F1
+U 1 1 5E90D7EC
+P 5850 850
+F 0 "F1" V 5600 850 50  0000 C CNN
+F 1 "500mA" V 5700 850 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 5900 650 50  0001 L CNN
+F 3 "~" H 5850 850 50  0001 C CNN
+	1    5850 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 1000 5700 850 
+$Comp
+L candy-rescue:GND-nrfmicro-rescue #PWR013
+U 1 1 5E93CAA0
+P 6800 2150
+F 0 "#PWR013" H 6800 1900 50  0001 C CNN
+F 1 "GND" H 6800 2000 50  0000 C CNN
+F 2 "" H 6800 2150 50  0001 C CNN
+F 3 "" H 6800 2150 50  0001 C CNN
+	1    6800 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1000 6800 1000
+Wire Wire Line
+	6800 1000 6800 1150
+Connection ~ 5700 1000
+Wire Wire Line
+	5300 1000 5700 1000
+Wire Wire Line
+	5400 1500 5400 1550
+Wire Wire Line
+	5400 1700 5400 1750
+$Comp
+L candy-rescue:USBLC6-2SC6-Power_Protection U4
+U 1 1 5E93AE0B
+P 6800 1650
+F 0 "U4" H 6950 1200 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 7150 1300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6050 2050 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 7000 2000 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 1550 0    60   Input ~ 0
+DATA+
+Text GLabel 7300 1550 2    60   Input ~ 0
+DATA-
+Wire Wire Line
+	6300 1750 5400 1750
+Connection ~ 5400 1750
+Wire Wire Line
+	5400 1750 5400 1800
+Wire Wire Line
+	5400 1550 5750 1550
+Wire Wire Line
+	5750 1550 5750 2450
+Wire Wire Line
+	5750 2450 7500 2450
+Wire Wire Line
+	7500 2450 7500 1750
+Wire Wire Line
+	7500 1750 7300 1750
+Connection ~ 5400 1550
+Wire Wire Line
+	5400 1550 5400 1600
+$Comp
+L Switch:SW_SPDT SW29
+U 1 1 5EF0562D
+P 2450 6100
+F 0 "SW29" H 2450 5775 50  0000 C CNN
+F 1 "MSK-12C02" H 2450 5866 50  0000 C CNN
+F 2 "nrfmicro:switch_MSK-12C02_smd" H 2450 6100 50  0001 C CNN
+F 3 "~" H 2450 6100 50  0001 C CNN
+	1    2450 6100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1050 2750 0    60   Input ~ 0
+P0.04
+Wire Wire Line
+	1050 2750 1650 2750
+Text GLabel 1350 2150 0    60   Input ~ 0
+P0.26
+Wire Wire Line
+	1350 2150 1650 2150
+Text GLabel 10150 2700 0    60   Input ~ 0
+VBAT
+$Comp
+L power:GND #PWR057
+U 1 1 5EA4B408
+P 10150 2400
+F 0 "#PWR057" H 10150 2150 50  0001 C CNN
+F 1 "GND" H 10155 2227 50  0000 C CNN
+F 2 "" H 10150 2400 50  0001 C CNN
+F 3 "" H 10150 2400 50  0001 C CNN
+	1    10150 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 5EA55FC6
+P 8650 2400
+F 0 "#PWR058" H 8650 2150 50  0001 C CNN
+F 1 "GND" H 8655 2227 50  0000 C CNN
+F 2 "" H 8650 2400 50  0001 C CNN
+F 3 "" H 8650 2400 50  0001 C CNN
+	1    8650 2400
+	0    1    1    0   
+$EndComp
+Text GLabel 8650 2700 0    60   Input ~ 0
+VBUS
+Wire Notes Line
+	500  3500 4050 3500
+Text Notes 550  600  0    60   ~ 0
+NRF52840
+Text Notes 4100 600  0    60   ~ 0
+USB
+Text Notes 8100 1500 0    60   ~ 0
+Indicator LED
+Text Notes 8100 600  0    60   ~ 0
+Reset button
+Text Notes 9700 600  0    60   ~ 0
+Battery connector
+Text Notes 9700 1500 0    60   ~ 0
+SWD connector
+Text Notes 8100 2300 0    60   ~ 0
+VBUS tester
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DAAE5C1
+P 4695 3390
+F 0 "SW1" H 4695 3545 50  0000 C CNN
+F 1 "SW_Push" H 4695 3584 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 4695 3590 50  0001 C CNN
+F 3 "~" H 4695 3590 50  0001 C CNN
+	1    4695 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DAB46E1
+P 5295 3390
+F 0 "SW2" H 5295 3545 50  0000 C CNN
+F 1 "SW_Push" H 5295 3584 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5295 3590 50  0001 C CNN
+F 3 "~" H 5295 3590 50  0001 C CNN
+	1    5295 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5DAB4EC8
+P 5895 3390
+F 0 "SW3" H 5895 3545 50  0000 C CNN
+F 1 "SW_Push" H 5895 3584 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5895 3590 50  0001 C CNN
+F 3 "~" H 5895 3590 50  0001 C CNN
+	1    5895 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5DAB836D
+P 6495 3390
+F 0 "SW4" H 6495 3545 50  0000 C CNN
+F 1 "SW_Push" H 6495 3584 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 6495 3590 50  0001 C CNN
+F 3 "~" H 6495 3590 50  0001 C CNN
+	1    6495 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5DAB8373
+P 7095 3390
+F 0 "SW5" H 7095 3545 50  0000 C CNN
+F 1 "SW_Push" H 7095 3584 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7095 3590 50  0001 C CNN
+F 3 "~" H 7095 3590 50  0001 C CNN
+	1    7095 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5DAB8379
+P 7695 3390
+F 0 "SW6" H 7695 3545 50  0000 C CNN
+F 1 "SW_Push" H 7695 3584 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7695 3590 50  0001 C CNN
+F 3 "~" H 7695 3590 50  0001 C CNN
+	1    7695 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5DABCF73
+P 4695 3790
+F 0 "SW7" H 4695 3945 50  0000 C CNN
+F 1 "SW_Push" H 4695 3984 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 4695 3990 50  0001 C CNN
+F 3 "~" H 4695 3990 50  0001 C CNN
+	1    4695 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5DABCF79
+P 5295 3790
+F 0 "SW8" H 5295 3945 50  0000 C CNN
+F 1 "SW_Push" H 5295 3984 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5295 3990 50  0001 C CNN
+F 3 "~" H 5295 3990 50  0001 C CNN
+	1    5295 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5DABCF7F
+P 5895 3790
+F 0 "SW9" H 5895 3945 50  0000 C CNN
+F 1 "SW_Push" H 5895 3984 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5895 3990 50  0001 C CNN
+F 3 "~" H 5895 3990 50  0001 C CNN
+	1    5895 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5DABCF85
+P 6495 3790
+F 0 "SW10" H 6495 3945 50  0000 C CNN
+F 1 "SW_Push" H 6495 3984 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 6495 3990 50  0001 C CNN
+F 3 "~" H 6495 3990 50  0001 C CNN
+	1    6495 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5DABCF8B
+P 7095 3790
+F 0 "SW11" H 7095 3945 50  0000 C CNN
+F 1 "SW_Push" H 7095 3984 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7095 3990 50  0001 C CNN
+F 3 "~" H 7095 3990 50  0001 C CNN
+	1    7095 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5DABCF91
+P 7695 3790
+F 0 "SW12" H 7695 3945 50  0000 C CNN
+F 1 "SW_Push" H 7695 3984 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7695 3990 50  0001 C CNN
+F 3 "~" H 7695 3990 50  0001 C CNN
+	1    7695 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5DAC0C7B
+P 4695 4190
+F 0 "SW13" H 4695 4345 50  0000 C CNN
+F 1 "SW_Push" H 4695 4384 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 4695 4390 50  0001 C CNN
+F 3 "~" H 4695 4390 50  0001 C CNN
+	1    4695 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5DAC0C81
+P 5295 4190
+F 0 "SW14" H 5295 4345 50  0000 C CNN
+F 1 "SW_Push" H 5295 4384 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5295 4390 50  0001 C CNN
+F 3 "~" H 5295 4390 50  0001 C CNN
+	1    5295 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5DAC0C87
+P 5895 4190
+F 0 "SW15" H 5895 4345 50  0000 C CNN
+F 1 "SW_Push" H 5895 4384 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5895 4390 50  0001 C CNN
+F 3 "~" H 5895 4390 50  0001 C CNN
+	1    5895 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5DAC0C8D
+P 6495 4190
+F 0 "SW16" H 6495 4345 50  0000 C CNN
+F 1 "SW_Push" H 6495 4384 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 6495 4390 50  0001 C CNN
+F 3 "~" H 6495 4390 50  0001 C CNN
+	1    6495 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5DAC0C93
+P 7095 4190
+F 0 "SW17" H 7095 4345 50  0000 C CNN
+F 1 "SW_Push" H 7095 4384 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7095 4390 50  0001 C CNN
+F 3 "~" H 7095 4390 50  0001 C CNN
+	1    7095 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5DAC0C99
+P 7695 4190
+F 0 "SW18" H 7695 4345 50  0000 C CNN
+F 1 "SW_Push" H 7695 4384 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7695 4390 50  0001 C CNN
+F 3 "~" H 7695 4390 50  0001 C CNN
+	1    7695 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5DAC4A60
+P 4695 4590
+F 0 "SW19" H 4695 4745 50  0000 C CNN
+F 1 "SW_Push" H 4695 4784 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 4695 4790 50  0001 C CNN
+F 3 "~" H 4695 4790 50  0001 C CNN
+	1    4695 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5DAC4A66
+P 5295 4590
+F 0 "SW20" H 5295 4745 50  0000 C CNN
+F 1 "SW_Push" H 5295 4784 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5295 4790 50  0001 C CNN
+F 3 "~" H 5295 4790 50  0001 C CNN
+	1    5295 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW21
+U 1 1 5DAC4A6C
+P 5895 4590
+F 0 "SW21" H 5895 4745 50  0000 C CNN
+F 1 "SW_Push" H 5895 4784 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 5895 4790 50  0001 C CNN
+F 3 "~" H 5895 4790 50  0001 C CNN
+	1    5895 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW22
+U 1 1 5DAC4A72
+P 6495 4590
+F 0 "SW22" H 6495 4745 50  0000 C CNN
+F 1 "SW_Push" H 6495 4784 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 6495 4790 50  0001 C CNN
+F 3 "~" H 6495 4790 50  0001 C CNN
+	1    6495 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 5DAC4A78
+P 7095 4590
+F 0 "SW23" H 7095 4745 50  0000 C CNN
+F 1 "SW_Push" H 7095 4784 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7095 4790 50  0001 C CNN
+F 3 "~" H 7095 4790 50  0001 C CNN
+	1    7095 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW24
+U 1 1 5DAC4A7E
+P 7695 4590
+F 0 "SW24" H 7695 4745 50  0000 C CNN
+F 1 "SW_Push" H 7695 4784 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7695 4790 50  0001 C CNN
+F 3 "~" H 7695 4790 50  0001 C CNN
+	1    7695 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW25
+U 1 1 5DAC93D4
+P 4695 4990
+F 0 "SW25" H 4695 5145 50  0000 C CNN
+F 1 "SW_Push" H 4695 5184 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 4695 5190 50  0001 C CNN
+F 3 "~" H 4695 5190 50  0001 C CNN
+	1    4695 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW26
+U 1 1 5DAC93E6
+P 6495 4990
+F 0 "SW26" H 6495 5145 50  0000 C CNN
+F 1 "SW_Push" H 6495 5184 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 6495 5190 50  0001 C CNN
+F 3 "~" H 6495 5190 50  0001 C CNN
+	1    6495 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW27
+U 1 1 5DAC93EC
+P 7095 4990
+F 0 "SW27" H 7095 5145 50  0000 C CNN
+F 1 "SW_Push" H 7095 5184 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7095 5190 50  0001 C CNN
+F 3 "~" H 7095 5190 50  0001 C CNN
+	1    7095 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW28
+U 1 1 5DAC93F2
+P 7695 4990
+F 0 "SW28" H 7695 5145 50  0000 C CNN
+F 1 "SW_Push" H 7695 5184 50  0001 C CNN
+F 2 "used_footprints:Switch_Mx_Hotswap_1u" H 7695 5190 50  0001 C CNN
+F 3 "~" H 7695 5190 50  0001 C CNN
+	1    7695 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5DACBEC8
+P 4495 3490
+F 0 "D1" V 4495 3422 50  0000 R CNN
+F 1 "1N4148" V 4450 3422 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 4495 3490 50  0001 C CNN
+F 3 "~" V 4495 3490 50  0001 C CNN
+	1    4495 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5DACCFB7
+P 5095 3490
+F 0 "D2" V 5095 3422 50  0000 R CNN
+F 1 "1N4148" V 5050 3422 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5095 3490 50  0001 C CNN
+F 3 "~" V 5095 3490 50  0001 C CNN
+	1    5095 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D3
+U 1 1 5DACDB06
+P 5695 3490
+F 0 "D3" V 5695 3422 50  0000 R CNN
+F 1 "1N4148" V 5650 3422 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5695 3490 50  0001 C CNN
+F 3 "~" V 5695 3490 50  0001 C CNN
+	1    5695 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D4
+U 1 1 5DACE326
+P 6295 3490
+F 0 "D4" V 6295 3422 50  0000 R CNN
+F 1 "1N4148" V 6250 3422 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6295 3490 50  0001 C CNN
+F 3 "~" V 6295 3490 50  0001 C CNN
+	1    6295 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D5
+U 1 1 5DACF0C2
+P 6895 3490
+F 0 "D5" V 6895 3422 50  0000 R CNN
+F 1 "1N4148" V 6850 3422 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6895 3490 50  0001 C CNN
+F 3 "~" V 6895 3490 50  0001 C CNN
+	1    6895 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D6
+U 1 1 5DACF9C3
+P 7495 3490
+F 0 "D6" V 7495 3422 50  0000 R CNN
+F 1 "1N4148" V 7450 3422 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 7495 3490 50  0001 C CNN
+F 3 "~" V 7495 3490 50  0001 C CNN
+	1    7495 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 5DAD32AA
+P 4495 3890
+F 0 "D7" V 4495 3822 50  0000 R CNN
+F 1 "1N4148" V 4450 3822 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 4495 3890 50  0001 C CNN
+F 3 "~" V 4495 3890 50  0001 C CNN
+	1    4495 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 5DAD32B0
+P 5095 3890
+F 0 "D8" V 5095 3822 50  0000 R CNN
+F 1 "1N4148" V 5050 3822 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5095 3890 50  0001 C CNN
+F 3 "~" V 5095 3890 50  0001 C CNN
+	1    5095 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5DAD32B6
+P 5695 3890
+F 0 "D9" V 5695 3822 50  0000 R CNN
+F 1 "1N4148" V 5650 3822 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5695 3890 50  0001 C CNN
+F 3 "~" V 5695 3890 50  0001 C CNN
+	1    5695 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D10
+U 1 1 5DAD32BC
+P 6295 3890
+F 0 "D10" V 6295 3822 50  0000 R CNN
+F 1 "1N4148" V 6250 3822 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6295 3890 50  0001 C CNN
+F 3 "~" V 6295 3890 50  0001 C CNN
+	1    6295 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D11
+U 1 1 5DAD32C2
+P 6895 3890
+F 0 "D11" V 6895 3822 50  0000 R CNN
+F 1 "1N4148" V 6850 3822 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6895 3890 50  0001 C CNN
+F 3 "~" V 6895 3890 50  0001 C CNN
+	1    6895 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D12
+U 1 1 5DAD32C8
+P 7495 3890
+F 0 "D12" V 7495 3822 50  0000 R CNN
+F 1 "1N4148" V 7450 3822 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 7495 3890 50  0001 C CNN
+F 3 "~" V 7495 3890 50  0001 C CNN
+	1    7495 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D13
+U 1 1 5DAD50DF
+P 4495 4290
+F 0 "D13" V 4495 4222 50  0000 R CNN
+F 1 "1N4148" V 4450 4222 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 4495 4290 50  0001 C CNN
+F 3 "~" V 4495 4290 50  0001 C CNN
+	1    4495 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D14
+U 1 1 5DAD50E5
+P 5095 4290
+F 0 "D14" V 5095 4222 50  0000 R CNN
+F 1 "1N4148" V 5050 4222 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5095 4290 50  0001 C CNN
+F 3 "~" V 5095 4290 50  0001 C CNN
+	1    5095 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D15
+U 1 1 5DAD50EB
+P 5695 4290
+F 0 "D15" V 5695 4222 50  0000 R CNN
+F 1 "1N4148" V 5650 4222 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5695 4290 50  0001 C CNN
+F 3 "~" V 5695 4290 50  0001 C CNN
+	1    5695 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D16
+U 1 1 5DAD50F1
+P 6295 4290
+F 0 "D16" V 6295 4222 50  0000 R CNN
+F 1 "1N4148" V 6250 4222 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6295 4290 50  0001 C CNN
+F 3 "~" V 6295 4290 50  0001 C CNN
+	1    6295 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D17
+U 1 1 5DAD50F7
+P 6895 4290
+F 0 "D17" V 6895 4222 50  0000 R CNN
+F 1 "1N4148" V 6850 4222 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6895 4290 50  0001 C CNN
+F 3 "~" V 6895 4290 50  0001 C CNN
+	1    6895 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D18
+U 1 1 5DAD50FD
+P 7495 4290
+F 0 "D18" V 7495 4222 50  0000 R CNN
+F 1 "1N4148" V 7450 4222 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 7495 4290 50  0001 C CNN
+F 3 "~" V 7495 4290 50  0001 C CNN
+	1    7495 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D19
+U 1 1 5DAD62CE
+P 4495 4690
+F 0 "D19" V 4495 4622 50  0000 R CNN
+F 1 "1N4148" V 4450 4622 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 4495 4690 50  0001 C CNN
+F 3 "~" V 4495 4690 50  0001 C CNN
+	1    4495 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D20
+U 1 1 5DAD62D4
+P 5095 4690
+F 0 "D20" V 5095 4622 50  0000 R CNN
+F 1 "1N4148" V 5050 4622 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5095 4690 50  0001 C CNN
+F 3 "~" V 5095 4690 50  0001 C CNN
+	1    5095 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D21
+U 1 1 5DAD62DA
+P 5695 4690
+F 0 "D21" V 5695 4622 50  0000 R CNN
+F 1 "1N4148" V 5650 4622 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 5695 4690 50  0001 C CNN
+F 3 "~" V 5695 4690 50  0001 C CNN
+	1    5695 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D22
+U 1 1 5DAD62E0
+P 6295 4690
+F 0 "D22" V 6295 4622 50  0000 R CNN
+F 1 "1N4148" V 6250 4622 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6295 4690 50  0001 C CNN
+F 3 "~" V 6295 4690 50  0001 C CNN
+	1    6295 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D23
+U 1 1 5DAD62E6
+P 6895 4690
+F 0 "D23" V 6895 4622 50  0000 R CNN
+F 1 "1N4148" V 6850 4622 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6895 4690 50  0001 C CNN
+F 3 "~" V 6895 4690 50  0001 C CNN
+	1    6895 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D24
+U 1 1 5DAD62EC
+P 7495 4690
+F 0 "D24" V 7495 4622 50  0000 R CNN
+F 1 "1N4148" V 7450 4622 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 7495 4690 50  0001 C CNN
+F 3 "~" V 7495 4690 50  0001 C CNN
+	1    7495 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D25
+U 1 1 5DAD7EB7
+P 4495 5090
+F 0 "D25" V 4495 5022 50  0000 R CNN
+F 1 "1N4148" V 4450 5022 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 4495 5090 50  0001 C CNN
+F 3 "~" V 4495 5090 50  0001 C CNN
+	1    4495 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D26
+U 1 1 5DAD7EC9
+P 6295 5090
+F 0 "D26" V 6295 5022 50  0000 R CNN
+F 1 "1N4148" V 6250 5022 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6295 5090 50  0001 C CNN
+F 3 "~" V 6295 5090 50  0001 C CNN
+	1    6295 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D27
+U 1 1 5DAD7ECF
+P 6895 5090
+F 0 "D27" V 6895 5022 50  0000 R CNN
+F 1 "1N4148" V 6850 5022 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 6895 5090 50  0001 C CNN
+F 3 "~" V 6895 5090 50  0001 C CNN
+	1    6895 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D28
+U 1 1 5DAD7ED5
+P 7495 5090
+F 0 "D28" V 7495 5022 50  0000 R CNN
+F 1 "1N4148" V 7450 5022 50  0001 R CNN
+F 2 "used_footprints:Diode_SMD_SOD-123" V 7495 5090 50  0001 C CNN
+F 3 "~" V 7495 5090 50  0001 C CNN
+	1    7495 5090
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4495 5190 6295 5190
+Connection ~ 6295 5190
+Wire Wire Line
+	6295 5190 6895 5190
+Connection ~ 6895 5190
+Wire Wire Line
+	6895 5190 7495 5190
+Wire Wire Line
+	4495 4790 5095 4790
+Connection ~ 5095 4790
+Wire Wire Line
+	5095 4790 5695 4790
+Connection ~ 5695 4790
+Wire Wire Line
+	5695 4790 6295 4790
+Connection ~ 6295 4790
+Wire Wire Line
+	6295 4790 6895 4790
+Connection ~ 6895 4790
+Wire Wire Line
+	6895 4790 7495 4790
+Wire Wire Line
+	4495 4390 5095 4390
+Connection ~ 5095 4390
+Wire Wire Line
+	5095 4390 5695 4390
+Connection ~ 5695 4390
+Wire Wire Line
+	5695 4390 6295 4390
+Connection ~ 6295 4390
+Wire Wire Line
+	6295 4390 6895 4390
+Connection ~ 6895 4390
+Wire Wire Line
+	6895 4390 7495 4390
+Wire Wire Line
+	4495 3990 5095 3990
+Connection ~ 5095 3990
+Wire Wire Line
+	5095 3990 5695 3990
+Connection ~ 5695 3990
+Wire Wire Line
+	5695 3990 6295 3990
+Connection ~ 6295 3990
+Wire Wire Line
+	6295 3990 6895 3990
+Connection ~ 6895 3990
+Wire Wire Line
+	6895 3990 7495 3990
+Wire Wire Line
+	4495 3590 5095 3590
+Connection ~ 5095 3590
+Wire Wire Line
+	5095 3590 5695 3590
+Connection ~ 5695 3590
+Wire Wire Line
+	5695 3590 6295 3590
+Connection ~ 6295 3590
+Wire Wire Line
+	6295 3590 6895 3590
+Connection ~ 6895 3590
+Wire Wire Line
+	6895 3590 7495 3590
+Wire Wire Line
+	4895 4990 4895 4590
+Connection ~ 4895 3790
+Wire Wire Line
+	4895 3790 4895 3390
+Connection ~ 4895 4190
+Wire Wire Line
+	4895 4190 4895 3790
+Connection ~ 4895 4590
+Wire Wire Line
+	4895 4590 4895 4190
+Wire Wire Line
+	5495 4590 5495 4190
+Connection ~ 5495 3790
+Wire Wire Line
+	5495 3790 5495 3390
+Connection ~ 5495 4190
+Wire Wire Line
+	5495 4190 5495 3790
+Wire Wire Line
+	6095 3390 6095 3790
+Connection ~ 6095 3790
+Wire Wire Line
+	6095 3790 6095 4190
+Connection ~ 6095 4190
+Wire Wire Line
+	6095 4190 6095 4590
+Wire Wire Line
+	6695 4990 6695 4590
+Connection ~ 6695 3790
+Wire Wire Line
+	6695 3790 6695 3390
+Connection ~ 6695 4190
+Wire Wire Line
+	6695 4190 6695 3790
+Connection ~ 6695 4590
+Wire Wire Line
+	6695 4590 6695 4190
+Wire Wire Line
+	7295 4990 7295 4590
+Connection ~ 7295 3790
+Wire Wire Line
+	7295 3790 7295 3390
+Connection ~ 7295 4190
+Wire Wire Line
+	7295 4190 7295 3790
+Connection ~ 7295 4590
+Wire Wire Line
+	7295 4590 7295 4190
+Wire Wire Line
+	7895 4990 7895 4590
+Connection ~ 7895 3790
+Connection ~ 7895 4190
+Wire Wire Line
+	7895 4190 7895 3790
+Connection ~ 7895 4590
+Wire Wire Line
+	7895 4590 7895 4190
+Text Label 4895 3340 1    50   ~ 0
+P0.31
+Text Label 5495 3340 1    50   ~ 0
+P0.30
+Text Label 6095 3340 1    50   ~ 0
+P0.06
+Text Label 6695 3340 1    50   ~ 0
+P0.08
+Text Label 7295 3340 1    50   ~ 0
+P0.09
+Text Label 7895 3340 1    50   ~ 0
+P0.12
+Text Label 4455 3590 2    50   ~ 0
+P1.11
+Text Label 4455 3990 2    50   ~ 0
+P0.28
+Text Label 4455 4390 2    50   ~ 0
+P1.13
+Text Label 4455 4790 2    50   ~ 0
+P0.02
+Text Label 4455 5190 2    50   ~ 0
+P0.29
+Wire Wire Line
+	4455 5190 4495 5190
+Connection ~ 4495 5190
+Wire Wire Line
+	4455 4790 4495 4790
+Connection ~ 4495 4790
+Wire Wire Line
+	4455 4390 4495 4390
+Connection ~ 4495 4390
+Wire Wire Line
+	4455 3990 4495 3990
+Connection ~ 4495 3990
+Wire Wire Line
+	4455 3590 4495 3590
+Connection ~ 4495 3590
+Wire Wire Line
+	4895 3340 4895 3390
+Connection ~ 4895 3390
+Wire Wire Line
+	5495 3340 5495 3390
+Connection ~ 5495 3390
+Wire Wire Line
+	6095 3340 6095 3390
+Connection ~ 6095 3390
+Wire Wire Line
+	6695 3340 6695 3390
+Connection ~ 6695 3390
+Wire Wire Line
+	7295 3340 7295 3390
+Connection ~ 7295 3390
+Wire Wire Line
+	7895 3340 7895 3390
+Connection ~ 7895 3390
+Wire Wire Line
+	7895 3390 7895 3790
+$Comp
+L Mechanical:MountingHole HM1
+U 1 1 5DC03D38
+P 4265 5660
+F 0 "HM1" H 4365 5706 50  0000 L CNN
+F 1 "CaseHole" H 4365 5615 50  0000 L CNN
+F 2 "used_footprints:Hole_Mount_M4" H 4265 5660 50  0001 C CNN
+F 3 "~" H 4265 5660 50  0001 C CNN
+	1    4265 5660
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HM2
+U 1 1 5DC0512E
+P 4265 5850
+F 0 "HM2" H 4365 5896 50  0000 L CNN
+F 1 "CaseHole" H 4365 5805 50  0000 L CNN
+F 2 "used_footprints:Hole_Mount_M4" H 4265 5850 50  0001 C CNN
+F 3 "~" H 4265 5850 50  0001 C CNN
+	1    4265 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HM3
+U 1 1 5DC14B86
+P 4265 6050
+F 0 "HM3" H 4365 6096 50  0000 L CNN
+F 1 "CaseHole" H 4365 6005 50  0000 L CNN
+F 2 "used_footprints:Hole_Mount_M4" H 4265 6050 50  0001 C CNN
+F 3 "~" H 4265 6050 50  0001 C CNN
+	1    4265 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HM4
+U 1 1 5DC1BC70
+P 4265 6255
+F 0 "HM4" H 4365 6301 50  0000 L CNN
+F 1 "CaseHole" H 4365 6210 50  0000 L CNN
+F 2 "used_footprints:Hole_Mount_M4" H 4265 6255 50  0001 C CNN
+F 3 "~" H 4265 6255 50  0001 C CNN
+	1    4265 6255
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HM5
+U 1 1 5DC1BC76
+P 4265 6445
+F 0 "HM5" H 4365 6491 50  0000 L CNN
+F 1 "CaseHole" H 4365 6400 50  0000 L CNN
+F 2 "used_footprints:Hole_Mount_M4" H 4265 6445 50  0001 C CNN
+F 3 "~" H 4265 6445 50  0001 C CNN
+	1    4265 6445
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HC1
+U 1 1 5DC2660A
+P 4865 5650
+F 0 "HC1" H 4965 5696 50  0000 L CNN
+F 1 "CoverHole" H 4965 5605 50  0000 L CNN
+F 2 "used_footprints:Hole_Cover_M2" H 4865 5650 50  0001 C CNN
+F 3 "~" H 4865 5650 50  0001 C CNN
+	1    4865 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HC2
+U 1 1 5DC26610
+P 4865 5850
+F 0 "HC2" H 4965 5896 50  0000 L CNN
+F 1 "CoverHole" H 4965 5805 50  0000 L CNN
+F 2 "used_footprints:Hole_Cover_M2" H 4865 5850 50  0001 C CNN
+F 3 "~" H 4865 5850 50  0001 C CNN
+	1    4865 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L jiran:logo-jiran-hotswap G1
+U 1 1 5FA214AC
+P 5650 5750
+F 0 "G1" H 5600 6000 60  0000 L CNN
+F 1 "logo-jiran-hotswap" H 5650 5500 60  0001 C CNN
+F 2 "used_footprints:Silk_Logo_Hotswap" H 5650 5750 50  0001 C CNN
+F 3 "" H 5650 5750 50  0001 C CNN
+	1    5650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L jiran:logo-jiran-hotswap G2
+U 1 1 5FA2276E
+P 6100 5750
+F 0 "G2" H 6050 6000 60  0000 L CNN
+F 1 "logo-jiran-hotswap" H 6100 5500 60  0001 C CNN
+F 2 "used_footprints:Silk_Logo_Hotswap" H 6100 5750 50  0001 C CNN
+F 3 "" H 6100 5750 50  0001 C CNN
+	1    6100 5750
+	1    0    0    -1  
+$EndComp
+Text Notes 4100 5500 0    61   ~ 0
+Holes and logo
+Wire Notes Line
+	500  500  500  7750
+Wire Notes Line
+	4050 7750 4050 500 
+Wire Notes Line
+	4050 2900 11200 2900
+Wire Notes Line
+	500  500  11200 500 
+Text Notes 4100 3000 0    61   ~ 0
+Matrix
+Wire Notes Line
+	6400 5400 6400 7750
+Wire Notes Line
+	500  7750 6400 7750
+Text Notes 8150 7650 0    61   ~ 0
+31.01.2021
+Text Notes 10600 7650 0    61   ~ 12
+0.1
+NoConn ~ 3000 1150
+NoConn ~ 3000 1950
+NoConn ~ 3000 2050
+NoConn ~ 3000 2150
+NoConn ~ 3000 2250
+NoConn ~ 1650 2650
+NoConn ~ 1650 2450
+Wire Notes Line
+	11200 4600 11200 500 
+NoConn ~ 3000 1250
+NoConn ~ 3000 1450
+NoConn ~ 1650 1250
+Wire Notes Line
+	8050 500  8050 5400
+Wire Notes Line
+	8050 2200 11200 2200
+Wire Notes Line
+	8050 1400 11200 1400
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 60210D4F
+P 8950 2500
+F 0 "J4" H 9030 2492 50  0000 L CNN
+F 1 "Conn_01x02" H 9030 2401 50  0000 L CNN
+F 2 "" H 8950 2500 50  0001 C CNN
+F 3 "~" H 8950 2500 50  0001 C CNN
+	1    8950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2500 8750 2400
+Wire Wire Line
+	8750 2400 8650 2400
+Wire Wire Line
+	8750 2600 8750 2700
+Wire Wire Line
+	8750 2700 8650 2700
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 6021ED23
+P 10450 2500
+F 0 "J3" H 10530 2492 50  0000 L CNN
+F 1 "Conn_01x02" H 10530 2401 50  0000 L CNN
+F 2 "" H 10450 2500 50  0001 C CNN
+F 3 "~" H 10450 2500 50  0001 C CNN
+	1    10450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2400 10250 2400
+Wire Wire Line
+	10250 2400 10250 2500
+Wire Wire Line
+	10250 2600 10250 2700
+Wire Wire Line
+	10250 2700 10150 2700
+Wire Notes Line
+	9650 500  9650 2900
+Text Notes 9700 2300 0    61   ~ 0
+Battery tester\n
+Wire Wire Line
+	10350 1850 10150 1850
+Wire Wire Line
+	10150 1850 10150 1950
+Wire Notes Line
+	500  5400 8050 5400
+Text Notes 7400 7500 0    61   ~ 12
+Jiran-BLE
+$EndSCHEMATC
