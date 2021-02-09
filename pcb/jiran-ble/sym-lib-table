@@ -2,4 +2,5 @@
   (lib (name candy-rescue)(type Legacy)(uri C:/Users/Ladniy/Desktop/nRF52840-instruction-master/PCB/candy-rescue.lib)(options "")(descr ""))
   (lib (name jiran-hotswap-rescue)(type Legacy)(uri D:/Git/jiran/jiran-hotswap/jiran-hotswap-rescue.lib)(options "")(descr ""))
   (lib (name nrfmicro)(type Legacy)(uri D:/Git/nrfmicro/hardware/nrfmicro.lib)(options "")(descr ""))
+  (lib (name nrfmicro-rescue)(type Legacy)(uri D:/Git/nrfmicro/hardware/nrfmicro-rescue.lib)(options "")(descr ""))
 )

@@ -13,253 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L candy-rescue:MBR0520-nrfmicro-rescue D29
-U 1 1 5E81DF67
-P 12350 2050
-F 0 "D29" H 12350 1834 50  0000 C CNN
-F 1 "1N5819" H 12350 1925 50  0000 C CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" H 12350 1875 50  0001 C CNN
-F 3 "" H 12350 2050 50  0001 C CNN
-	1    12350 2050
-	-1   0    0    1   
-$EndComp
-$Comp
-L candy-rescue:BSS83P-nrfmicro-rescue Q1
-U 1 1 5E81DF6D
-P 12850 1700
-F 0 "Q1" H 13050 1775 50  0000 L CNN
-F 1 "AO3407" H 13050 1700 50  0000 L CNN
-F 2 "jiran-ble:Package_SMD_SOT-23" H 13050 1625 50  0001 L CIN
-F 3 "" H 12850 1700 50  0001 L CNN
-	1    12850 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L candy-rescue:C-nrfmicro-rescue C3
-U 1 1 5E81DF73
-P 12650 2400
-F 0 "C3" H 12750 2450 50  0000 L CNN
-F 1 "10uF" H 12750 2350 50  0000 L CNN
-F 2 "jiran-ble:Capacitor_SMD_0805" H 12688 2250 50  0001 C CNN
-F 3 "" H 12650 2400 50  0001 C CNN
-	1    12650 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12500 2050 12650 2050
-Wire Wire Line
-	12950 1900 12950 2050
-Connection ~ 12950 2050
-Wire Wire Line
-	12650 2250 12650 2050
-Connection ~ 12650 2050
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR07
-U 1 1 5E81DF7E
-P 13800 2600
-F 0 "#PWR07" H 13800 2350 50  0001 C CNN
-F 1 "GND" H 13800 2450 50  0000 C CNN
-F 2 "" H 13800 2600 50  0001 C CNN
-F 3 "" H 13800 2600 50  0001 C CNN
-	1    13800 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13800 2450 13800 2600
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR05
-U 1 1 5E81DF85
-P 12650 2600
-F 0 "#PWR05" H 12650 2350 50  0001 C CNN
-F 1 "GND" H 12650 2450 50  0000 C CNN
-F 2 "" H 12650 2600 50  0001 C CNN
-F 3 "" H 12650 2600 50  0001 C CNN
-	1    12650 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12650 2600 12650 2550
-Wire Wire Line
-	12650 1700 12000 1700
-Wire Wire Line
-	14100 2050 14800 2050
-$Comp
-L candy-rescue:VCC-nrfmicro-rescue #PWR011
-U 1 1 5E81DF8E
-P 14800 1900
-F 0 "#PWR011" H 14800 1750 50  0001 C CNN
-F 1 "VCC" H 14800 2050 50  0000 C CNN
-F 2 "" H 14800 1900 50  0001 C CNN
-F 3 "" H 14800 1900 50  0001 C CNN
-	1    14800 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14800 2050 14800 1900
-$Comp
-L candy-rescue:R-nrfmicro-rescue R3
-U 1 1 5E81DF95
-P 12000 2400
-F 0 "R3" H 12050 2400 50  0000 L CNN
-F 1 "100K" V 12000 2300 50  0000 L CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 11930 2400 50  0001 C CNN
-F 3 "" H 12000 2400 50  0001 C CNN
-	1    12000 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 12000 2050
 Text Notes 11250 600  0    60   ~ 0
 Power and filtering
 Text Notes 550  3600 0    60   ~ 0
 LiPo charging\n
-Wire Wire Line
-	12650 2050 12950 2050
-Wire Wire Line
-	12000 1700 12000 2050
-Wire Wire Line
-	12000 2050 12200 2050
-Wire Wire Line
-	12000 2050 12000 2250
-$Comp
-L Device:C C2
-U 1 1 5E81DFB3
-P 3450 4450
-F 0 "C2" H 3565 4496 50  0000 L CNN
-F 1 "10uF" H 3565 4405 50  0000 L CNN
-F 2 "jiran-ble:Capacitor_SMD_0805" H 3488 4300 50  0001 C CNN
-F 3 "~" H 3450 4450 50  0001 C CNN
-	1    3450 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E81DFB9
-P 3000 4450
-F 0 "R2" V 3100 4450 50  0000 C CNN
-F 1 "4.7K" V 3000 4450 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 2930 4450 50  0001 C CNN
-F 3 "~" H 3000 4450 50  0001 C CNN
-	1    3000 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Battery_Management:MCP73831-2-OT U2
-U 1 1 5E81DFBF
-P 2400 4550
-F 0 "U2" H 2400 4936 50  0000 C CNN
-F 1 "MCP73831" H 2400 5027 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-5" H 2450 4300 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2250 4500 50  0001 C CNN
-	1    2400 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 5E81DFC5
-P 3450 4800
-F 0 "#PWR010" H 3450 4550 50  0001 C CNN
-F 1 "GND" H 3455 4627 50  0000 C CNN
-F 2 "" H 3450 4800 50  0001 C CNN
-F 3 "" H 3450 4800 50  0001 C CNN
-	1    3450 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5E81DFCB
-P 3250 4800
-F 0 "#PWR09" H 3250 4550 50  0001 C CNN
-F 1 "GND" H 3255 4627 50  0000 C CNN
-F 2 "" H 3250 4800 50  0001 C CNN
-F 3 "" H 3250 4800 50  0001 C CNN
-	1    3250 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 4150 2400 4250
-Wire Wire Line
-	950  4450 1100 4450
-Wire Wire Line
-	2850 4450 2800 4450
-Wire Wire Line
-	2400 4150 3250 4150
-Wire Wire Line
-	3450 4800 3450 4600
-$Comp
-L candy-rescue:AP2112K-3.3-Regulator_Linear U3
-U 1 1 5E81DFD6
-P 13800 2150
-F 0 "U3" H 13800 2492 50  0000 C CNN
-F 1 "AP2112K-3.3" H 13800 2401 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-5" H 13800 2475 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 13800 2250 50  0001 C CNN
-	1    13800 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12950 2050 13250 2050
-Wire Wire Line
-	12000 2550 12000 2600
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR01
-U 1 1 5E81DFDE
-P 12000 2600
-F 0 "#PWR01" H 12000 2350 50  0001 C CNN
-F 1 "GND" H 12000 2450 50  0000 C CNN
-F 2 "" H 12000 2600 50  0001 C CNN
-F 3 "" H 12000 2600 50  0001 C CNN
-	1    12000 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13500 2150 13400 2150
-Wire Wire Line
-	13400 2150 13400 2550
-Wire Wire Line
-	13400 2550 13250 2550
-Wire Wire Line
-	13250 2550 13250 2450
-Wire Wire Line
-	13250 2150 13250 2050
-$Comp
-L candy-rescue:C-nrfmicro-rescue C1
-U 1 1 5E81DFEB
-P 14800 2400
-F 0 "C1" H 14900 2450 50  0000 L CNN
-F 1 "10uF" H 14900 2350 50  0000 L CNN
-F 2 "jiran-ble:Capacitor_SMD_0805" H 14838 2250 50  0001 C CNN
-F 3 "" H 14800 2400 50  0001 C CNN
-	1    14800 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14800 2250 14800 2050
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR012
-U 1 1 5E81DFF2
-P 14800 2600
-F 0 "#PWR012" H 14800 2350 50  0001 C CNN
-F 1 "GND" H 14800 2450 50  0000 C CNN
-F 2 "" H 14800 2600 50  0001 C CNN
-F 3 "" H 14800 2600 50  0001 C CNN
-	1    14800 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 14800 2050
-Wire Wire Line
-	3250 4150 3250 4450
-Wire Wire Line
-	3150 4450 3250 4450
-Connection ~ 3250 4450
-Wire Wire Line
-	3250 4450 3250 4800
-Text GLabel 950  4450 0    60   Input ~ 0
-VBUS_l
-Text GLabel 3600 3950 2    60   Input ~ 0
-VBAT_l
-Text GLabel 11900 1700 0    60   Input ~ 0
-VBUS_l
 Text Label 1600 2550 2    60   ~ 0
 P0.08_l
 Text Label 1600 2350 2    60   ~ 0
@@ -270,24 +27,22 @@ Text GLabel 3250 2750 2    60   Input ~ 0
 VBUS_l
 Wire Wire Line
 	1200 1450 1600 1450
-Wire Wire Line
-	2950 3050 3050 3050
 $Comp
-L power:GND #PWR08
+L power:GND #PWR016
 U 1 1 5E81E00F
-P 3050 3050
-F 0 "#PWR08" H 3050 2800 50  0001 C CNN
-F 1 "GND" H 3055 2877 50  0000 C CNN
-F 2 "" H 3050 3050 50  0001 C CNN
-F 3 "" H 3050 3050 50  0001 C CNN
-	1    3050 3050
-	0    -1   -1   0   
+P 3625 3050
+F 0 "#PWR016" H 3625 2800 50  0001 C CNN
+F 1 "GND" H 3630 2877 50  0000 C CNN
+F 2 "" H 3625 3050 50  0001 C CNN
+F 3 "" H 3625 3050 50  0001 C CNN
+	1    3625 3050
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L power:GND #PWR015
 U 1 1 5E81E015
 P 1300 3050
-F 0 "#PWR04" H 1300 2800 50  0001 C CNN
+F 0 "#PWR015" H 1300 2800 50  0001 C CNN
 F 1 "GND" H 1305 2877 50  0000 C CNN
 F 2 "" H 1300 3050 50  0001 C CNN
 F 3 "" H 1300 3050 50  0001 C CNN
@@ -295,10 +50,10 @@ F 3 "" H 1300 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR02
+L power:GND #PWR05
 U 1 1 5E81E01B
 P 1200 1450
-F 0 "#PWR02" H 1200 1200 50  0001 C CNN
+F 0 "#PWR05" H 1200 1200 50  0001 C CNN
 F 1 "GND" H 1205 1277 50  0000 C CNN
 F 2 "" H 1200 1450 50  0001 C CNN
 F 3 "" H 1200 1450 50  0001 C CNN
@@ -306,21 +61,10 @@ F 3 "" H 1200 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L candy-rescue:VCC-nrfmicro-rescue #PWR03
-U 1 1 5E81E021
-P 1300 2850
-F 0 "#PWR03" H 1300 2700 50  0001 C CNN
-F 1 "VCC" H 1300 3031 50  0000 C CNN
-F 2 "" H 1300 2850 50  0001 C CNN
-F 3 "" H 1300 2850 50  0001 C CNN
-	1    1300 2850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L candy-rescue:E73-2G4M08S1C-52840-nrfmicro U1
+L candy-rescue:E73-2G4M08S1C-52840-nrfmicro U2
 U 1 1 5E81E027
 P 2300 2150
-F 0 "U1" H 2275 3515 50  0000 C CNN
+F 0 "U2" H 2275 3515 50  0000 C CNN
 F 1 "E73-2G4M08S1C" H 2275 3424 50  0000 C CNN
 F 2 "jiran-ble:E73-2G4M08S1C-52840" H 2300 2150 50  0001 C CNN
 F 3 "" H 2300 2150 50  0001 C CNN
@@ -360,1253 +104,125 @@ Wire Wire Line
 Wire Wire Line
 	3250 2550 2950 2550
 Wire Wire Line
-	1900 4650 2000 4650
-Text GLabel 3250 1850 2    60   Input ~ 0
-SWO_l
-Wire Wire Line
 	1600 3050 1300 3050
-Wire Wire Line
-	2950 1850 3250 1850
 Text GLabel 1250 1150 0    60   Input ~ 0
 BLUE_LED_l
 Wire Wire Line
 	1600 1150 1250 1150
-Wire Wire Line
-	14800 2550 14800 2600
-Wire Wire Line
-	2950 1650 3250 1650
-Wire Wire Line
-	1600 2850 1300 2850
-NoConn ~ 2950 2950
-NoConn ~ 2950 3150
-Text GLabel 1000 3150 0    60   Input ~ 0
-BOOT_l
-Wire Wire Line
-	1000 3150 1600 3150
-Wire Wire Line
-	2000 4450 1750 4450
-Text GLabel 13850 1400 2    60   Input ~ 0
-VBAT_l
 $Comp
-L Device:R R6
+L Device:R R3
 U 1 1 5E81E11B
-P 9150 1900
-F 0 "R6" V 9250 1900 50  0000 C CNN
-F 1 "1K" V 9150 1900 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 9080 1900 50  0001 C CNN
-F 3 "~" H 9150 1900 50  0001 C CNN
-	1    9150 1900
+P 7525 2425
+F 0 "R3" V 7675 2425 50  0000 C CNN
+F 1 "1K" V 7600 2425 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 7455 2425 50  0001 C CNN
+F 3 "~" H 7525 2425 50  0001 C CNN
+	1    7525 2425
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR06
+L power:GND #PWR08
 U 1 1 5E81E121
-P 9300 1900
-F 0 "#PWR06" H 9300 1650 50  0001 C CNN
-F 1 "GND" H 9305 1727 50  0000 C CNN
-F 2 "" H 9300 1900 50  0001 C CNN
-F 3 "" H 9300 1900 50  0001 C CNN
-	1    9300 1900
+P 7675 2425
+F 0 "#PWR08" H 7675 2175 50  0001 C CNN
+F 1 "GND" H 7675 2275 50  0000 C CNN
+F 2 "" H 7675 2425 50  0001 C CNN
+F 3 "" H 7675 2425 50  0001 C CNN
+	1    7675 2425
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED LED1
 U 1 1 5E81E127
-P 8850 1900
-F 0 "LED1" H 8850 1650 50  0000 C CNN
-F 1 "BT" H 8850 1750 50  0000 C CNN
-F 2 "jiran-ble:LED_SMD_0805" H 8850 1900 50  0001 C CNN
-F 3 "~" H 8850 1900 50  0001 C CNN
-	1    8850 1900
+P 7225 2425
+F 0 "LED1" H 7225 2175 50  0000 C CNN
+F 1 "BT" H 7225 2275 50  0000 C CNN
+F 2 "jiran-ble:LED_SMD_0805" H 7225 2425 50  0001 C CNN
+F 3 "~" H 7225 2425 50  0001 C CNN
+	1    7225 2425
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R7
-U 1 1 5E81E12D
-P 1600 4450
-F 0 "R7" V 1700 4450 50  0000 C CNN
-F 1 "1K" V 1600 4450 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 1530 4450 50  0001 C CNN
-F 3 "~" H 1600 4450 50  0001 C CNN
-	1    1600 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED LED2
-U 1 1 5E81E133
-P 1300 4450
-F 0 "LED2" H 1300 4200 50  0000 C CNN
-F 1 "CHG" H 1300 4300 50  0000 C CNN
-F 2 "jiran-ble:LED_SMD_0805" H 1300 4450 50  0001 C CNN
-F 3 "~" H 1300 4450 50  0001 C CNN
-	1    1300 4450
-	-1   0    0    1   
-$EndComp
-Text GLabel 8700 1900 0    60   Input ~ 0
+Text GLabel 7075 2425 0    60   Input ~ 0
 BLUE_LED_l
-Text GLabel 12350 1250 0    60   Input ~ 0
-P0.04_l
-$Comp
-L candy-rescue:R-nrfmicro-rescue R8
-U 1 1 5E81E13B
-P 12650 1250
-F 0 "R8" V 12550 1250 50  0000 C CNN
-F 1 "10K" V 12650 1250 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 12580 1250 50  0001 C CNN
-F 3 "" H 12650 1250 50  0001 C CNN
-	1    12650 1250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12950 1500 13300 1500
-Wire Wire Line
-	12350 1250 12425 1250
-Wire Wire Line
-	12800 1250 12950 1250
-Wire Wire Line
-	12950 1250 12950 1500
-Connection ~ 12950 1500
-Wire Wire Line
-	13700 1400 13850 1400
-Wire Wire Line
-	12000 1700 11900 1700
-Connection ~ 12000 1700
-Wire Wire Line
-	1900 3950 1900 4650
-Wire Wire Line
-	1900 3950 3450 3950
-Wire Wire Line
-	3450 3950 3450 4300
-Connection ~ 3450 3950
-Wire Wire Line
-	3450 3950 3600 3950
-Wire Wire Line
-	2400 4850 1100 4850
-Wire Wire Line
-	1100 4850 1100 4450
-Connection ~ 1100 4450
-Wire Wire Line
-	1100 4450 1150 4450
-$Comp
-L candy-rescue:R-nrfmicro-rescue R1
-U 1 1 5E81E18E
-P 13250 2300
-F 0 "R1" H 13200 2300 50  0000 R CNN
-F 1 "100K" V 13250 2400 50  0000 R CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 13180 2300 50  0001 C CNN
-F 3 "" H 13250 2300 50  0001 C CNN
-	1    13250 2300
-	1    0    0    -1  
-$EndComp
-Text GLabel 3250 1650 2    60   Input ~ 0
-DFU_l
 Text GLabel 3250 1550 2    60   Input ~ 0
 SWC_l
-Text GLabel 10300 2050 0    60   Input ~ 0
+Text GLabel 8575 2525 0    60   Input ~ 0
 SWC_l
-Text GLabel 10300 1950 0    60   Input ~ 0
+Text GLabel 8575 2425 0    60   Input ~ 0
 SWD_l
-Text GLabel 12350 1425 0    60   Input ~ 0
-P0.26_l
-Wire Wire Line
-	12350 1425 12425 1425
-Wire Wire Line
-	12425 1425 12425 1250
-Connection ~ 12425 1250
-Wire Wire Line
-	12425 1250 12500 1250
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L Connector_Generic:Conn_01x04 J3
 U 1 1 5E8FC792
-P 10500 1850
-F 0 "J2" H 10580 1842 50  0000 L CNN
-F 1 "Conn_01x04" H 10580 1751 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x4_2.54" H 10500 1850 50  0001 C CNN
-F 3 "~" H 10500 1850 50  0001 C CNN
-	1    10500 1850
+P 9000 2325
+F 0 "J3" H 9075 2400 50  0000 L CNN
+F 1 "SWD" H 9075 2250 50  0000 L CNN
+F 2 "jiran-ble:Connector_THT_1x4_2.54" H 9000 2325 50  0001 C CNN
+F 3 "~" H 9000 2325 50  0001 C CNN
+	1    9000 2325
 	1    0    0    -1  
 $EndComp
 $Comp
-L candy-rescue:VCC-nrfmicro-rescue #PWR0101
-U 1 1 5E9085DD
-P 10100 1750
-F 0 "#PWR0101" H 10100 1600 50  0001 C CNN
-F 1 "VCC" H 10100 1904 50  0000 C CNN
-F 2 "" H 10100 1750 50  0001 C CNN
-F 3 "" H 10100 1750 50  0001 C CNN
-	1    10100 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
+L power:GND #PWR07
 U 1 1 5E908C24
-P 10300 1750
-F 0 "#PWR0102" H 10300 1500 50  0001 C CNN
-F 1 "GND" H 10300 1600 50  0000 C CNN
-F 2 "" H 10300 1750 50  0001 C CNN
-F 3 "" H 10300 1750 50  0001 C CNN
-	1    10300 1750
+P 8800 2225
+F 0 "#PWR07" H 8800 1975 50  0001 C CNN
+F 1 "GND" H 8800 2075 50  0000 C CNN
+F 2 "" H 8800 2225 50  0001 C CNN
+F 3 "" H 8800 2225 50  0001 C CNN
+	1    8800 2225
 	-1   0    0    1   
 $EndComp
-Text GLabel 3650 2650 2    50   Input ~ 0
-SDA_l
-Text GLabel 3650 2450 2    50   Input ~ 0
-SCL_l
-Wire Wire Line
-	3650 2450 2950 2450
-Wire Wire Line
-	2950 2650 3650 2650
 Text Label 1600 1850 2    60   ~ 0
 P0.31_l
 Text Label 1600 1950 2    60   ~ 0
 P0.30_l
-Wire Wire Line
-	13500 2050 13250 2050
-Connection ~ 13250 2050
 $Comp
-L candy-rescue:USB_C_Receptacle_USB2.0-Connector USB1
-U 1 1 5E8142B8
-P 4800 1650
-F 0 "USB1" H 4907 2517 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 4907 2426 50  0000 C CNN
-F 2 "jiran-ble:USB-C_MidMount" H 4950 1650 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4950 1650 50  0001 C CNN
-	1    4800 1650
-	1    0    0    -1  
-$EndComp
-Text GLabel 6100 900  2    60   Input ~ 0
-VBUS_l
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0103
-U 1 1 5E81D1E1
-P 4800 2550
-F 0 "#PWR0103" H 4800 2300 50  0001 C CNN
-F 1 "GND" H 4800 2400 50  0000 C CNN
-F 2 "" H 4800 2550 50  0001 C CNN
-F 3 "" H 4800 2550 50  0001 C CNN
-	1    4800 2550
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5400 2150
-NoConn ~ 5400 2250
-$Comp
-L Device:R R4
-U 1 1 5E82692E
-P 5950 1250
-F 0 "R4" V 5850 1250 50  0000 C CNN
-F 1 "5.1K" V 5950 1250 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 5880 1250 50  0001 C CNN
-F 3 "~" H 5950 1250 50  0001 C CNN
-	1    5950 1250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5E8270C0
-P 5950 1350
-F 0 "R5" V 6050 1350 50  0000 C CNN
-F 1 "5.1K" V 5950 1350 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 5880 1350 50  0001 C CNN
-F 3 "~" H 5950 1350 50  0001 C CNN
-	1    5950 1350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 1350 5800 1350
-Wire Wire Line
-	5400 1250 5800 1250
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0104
-U 1 1 5E842B4B
-P 6150 1350
-F 0 "#PWR0104" H 6150 1100 50  0001 C CNN
-F 1 "GND" H 6150 1200 50  0000 C CNN
-F 2 "" H 6150 1350 50  0001 C CNN
-F 3 "" H 6150 1350 50  0001 C CNN
-	1    6150 1350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6150 1250 6100 1250
-Wire Wire Line
-	6100 1350 6150 1350
-Connection ~ 6150 1350
-Wire Wire Line
-	6150 1350 6150 1250
-Wire Wire Line
-	5400 1550 5500 1550
-Wire Wire Line
-	5400 1650 5500 1650
-Wire Wire Line
-	5400 1750 5500 1750
-Wire Wire Line
-	5400 1850 5500 1850
-$Comp
-L candy-rescue:SW_PUSH-keyboard_parts SW30
+L candy-rescue:SW_PUSH-keyboard_parts SW1
 U 1 1 5E9908FE
-P 8900 1000
-F 0 "SW30" H 8900 1255 50  0000 C CNN
-F 1 "SW_PUSH" H 8900 1164 50  0000 C CNN
-F 2 "jiran-ble:Switch_SMD_Tact_3-6-3,5" H 8900 1000 60  0001 C CNN
-F 3 "" H 8900 1000 60  0000 C CNN
-	1    8900 1000
+P 7275 1175
+F 0 "SW1" H 7275 1430 50  0000 C CNN
+F 1 "SW_PUSH" H 7275 1339 50  0000 C CNN
+F 2 "jiran-ble:Switch_SMD_Tact_3-6-3,5" H 7275 1175 60  0001 C CNN
+F 3 "" H 7275 1175 60  0000 C CNN
+	1    7275 1175
 	1    0    0    -1  
 $EndComp
-Text GLabel 8600 1000 0    60   Input ~ 0
+Text GLabel 6975 1175 0    60   Input ~ 0
 RESET_l
 $Comp
-L power:GND #PWR0105
+L power:GND #PWR03
 U 1 1 5E991365
-P 9200 1000
-F 0 "#PWR0105" H 9200 750 50  0001 C CNN
-F 1 "GND" H 9205 827 50  0000 C CNN
-F 2 "" H 9200 1000 50  0001 C CNN
-F 3 "" H 9200 1000 50  0001 C CNN
-	1    9200 1000
+P 7575 1175
+F 0 "#PWR03" H 7575 925 50  0001 C CNN
+F 1 "GND" H 7580 1002 50  0000 C CNN
+F 2 "" H 7575 1175 50  0001 C CNN
+F 3 "" H 7575 1175 50  0001 C CNN
+	1    7575 1175
 	0    -1   -1   0   
 $EndComp
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0106
-U 1 1 5E9A6799
-P 4500 2550
-F 0 "#PWR0106" H 4500 2300 50  0001 C CNN
-F 1 "GND" H 4500 2400 50  0000 C CNN
-F 2 "" H 4500 2550 50  0001 C CNN
-F 3 "" H 4500 2550 50  0001 C CNN
-	1    4500 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Polyfuse F1
-U 1 1 5E90D7EC
-P 5950 900
-F 0 "F1" V 5700 900 50  0000 C CNN
-F 1 "500mA" V 5800 900 50  0000 C CNN
-F 2 "jiran-ble:Fuse_SMD_0805" H 6000 700 50  0001 L CNN
-F 3 "~" H 5950 900 50  0001 C CNN
-	1    5950 900 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 1050 5800 900 
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR013
-U 1 1 5E93CAA0
-P 6900 2200
-F 0 "#PWR013" H 6900 1950 50  0001 C CNN
-F 1 "GND" H 6900 2050 50  0000 C CNN
-F 2 "" H 6900 2200 50  0001 C CNN
-F 3 "" H 6900 2200 50  0001 C CNN
-	1    6900 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 1050 6900 1050
-Wire Wire Line
-	6900 1050 6900 1200
-Connection ~ 5800 1050
-Wire Wire Line
-	5400 1050 5800 1050
-Wire Wire Line
-	5500 1550 5500 1600
-Wire Wire Line
-	5500 1750 5500 1800
-$Comp
-L candy-rescue:USBLC6-2SC6-Power_Protection U4
-U 1 1 5E93AE0B
-P 6900 1700
-F 0 "U4" H 7050 1250 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 7250 1350 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-6" H 6150 2100 50  0001 C CNN
-F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 7100 2050 50  0001 C CNN
-	1    6900 1700
-	1    0    0    -1  
-$EndComp
-Text GLabel 6400 1600 0    60   Input ~ 0
-DATA+_l
-Text GLabel 7400 1600 2    60   Input ~ 0
-DATA-_l
-Wire Wire Line
-	6400 1800 5500 1800
-Connection ~ 5500 1800
-Wire Wire Line
-	5500 1800 5500 1850
-Wire Wire Line
-	5500 1600 5850 1600
-Wire Wire Line
-	5850 1600 5850 2500
-Wire Wire Line
-	5850 2500 7600 2500
-Wire Wire Line
-	7600 2500 7600 1800
-Wire Wire Line
-	7600 1800 7400 1800
-Connection ~ 5500 1600
-Wire Wire Line
-	5500 1600 5500 1650
-$Comp
-L Switch:SW_SPDT SW29
-U 1 1 5EF0562D
-P 13500 1400
-F 0 "SW29" H 13500 1075 50  0000 C CNN
-F 1 "MSK-12C02" H 13500 1166 50  0000 C CNN
-F 2 "jiran-ble:Switch_SMD_MSK-12C02" H 13500 1400 50  0001 C CNN
-F 3 "~" H 13500 1400 50  0001 C CNN
-	1    13500 1400
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1000 2750 0    60   Input ~ 0
-P0.04_l
-Wire Wire Line
-	1000 2750 1600 2750
-Text GLabel 1300 2150 0    60   Input ~ 0
-P0.26_l
-Wire Wire Line
-	1300 2150 1600 2150
-Text GLabel 10200 2750 0    60   Input ~ 0
-VBAT_l
-$Comp
-L power:GND #PWR057
-U 1 1 5EA4B408
-P 10200 2450
-F 0 "#PWR057" H 10200 2200 50  0001 C CNN
-F 1 "GND" H 10205 2277 50  0000 C CNN
-F 2 "" H 10200 2450 50  0001 C CNN
-F 3 "" H 10200 2450 50  0001 C CNN
-	1    10200 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR058
-U 1 1 5EA55FC6
-P 8650 2400
-F 0 "#PWR058" H 8650 2150 50  0001 C CNN
-F 1 "GND" H 8655 2227 50  0000 C CNN
-F 2 "" H 8650 2400 50  0001 C CNN
-F 3 "" H 8650 2400 50  0001 C CNN
-	1    8650 2400
-	0    1    1    0   
-$EndComp
-Text GLabel 8650 2700 0    60   Input ~ 0
-VBUS_l
+Text GLabel 1300 2750 0    60   Input ~ 0
+BATTERY_PIN_l
 Wire Notes Line
 	500  3500 4050 3500
 Text Notes 550  600  0    60   ~ 0
 NRF52840
 Text Notes 4100 600  0    60   ~ 0
 USB
-Text Notes 8100 1500 0    60   ~ 0
+Text Notes 6425 1800 0    60   ~ 0
 Indicator LED
-Text Notes 8100 600  0    60   ~ 0
+Text Notes 6425 600  0    60   ~ 0
 Reset button
-Text Notes 9700 600  0    60   ~ 0
+Text Notes 8075 600  0    60   ~ 0
 Battery connector
-Text Notes 9700 1500 0    60   ~ 0
+Text Notes 8075 1800 0    60   ~ 0
 SWD connector
-Text Notes 8100 2300 0    60   ~ 0
-VBUS tester
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5DAAE5C1
-P 4695 3390
-F 0 "SW1" H 4695 3545 50  0000 C CNN
-F 1 "SW_Push" H 4695 3584 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 3590 50  0001 C CNN
-F 3 "~" H 4695 3590 50  0001 C CNN
-	1    4695 3390
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5DAB46E1
-P 5295 3390
-F 0 "SW2" H 5295 3545 50  0000 C CNN
-F 1 "SW_Push" H 5295 3584 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 3590 50  0001 C CNN
-F 3 "~" H 5295 3590 50  0001 C CNN
-	1    5295 3390
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5DAB4EC8
-P 5895 3390
-F 0 "SW3" H 5895 3545 50  0000 C CNN
-F 1 "SW_Push" H 5895 3584 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 3590 50  0001 C CNN
-F 3 "~" H 5895 3590 50  0001 C CNN
-	1    5895 3390
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW4
-U 1 1 5DAB836D
-P 6495 3390
-F 0 "SW4" H 6495 3545 50  0000 C CNN
-F 1 "SW_Push" H 6495 3584 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 3590 50  0001 C CNN
-F 3 "~" H 6495 3590 50  0001 C CNN
-	1    6495 3390
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW5
-U 1 1 5DAB8373
-P 7095 3390
-F 0 "SW5" H 7095 3545 50  0000 C CNN
-F 1 "SW_Push" H 7095 3584 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 3590 50  0001 C CNN
-F 3 "~" H 7095 3590 50  0001 C CNN
-	1    7095 3390
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW6
-U 1 1 5DAB8379
-P 7695 3390
-F 0 "SW6" H 7695 3545 50  0000 C CNN
-F 1 "SW_Push" H 7695 3584 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 3590 50  0001 C CNN
-F 3 "~" H 7695 3590 50  0001 C CNN
-	1    7695 3390
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW7
-U 1 1 5DABCF73
-P 4695 3790
-F 0 "SW7" H 4695 3945 50  0000 C CNN
-F 1 "SW_Push" H 4695 3984 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 3990 50  0001 C CNN
-F 3 "~" H 4695 3990 50  0001 C CNN
-	1    4695 3790
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW8
-U 1 1 5DABCF79
-P 5295 3790
-F 0 "SW8" H 5295 3945 50  0000 C CNN
-F 1 "SW_Push" H 5295 3984 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 3990 50  0001 C CNN
-F 3 "~" H 5295 3990 50  0001 C CNN
-	1    5295 3790
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW9
-U 1 1 5DABCF7F
-P 5895 3790
-F 0 "SW9" H 5895 3945 50  0000 C CNN
-F 1 "SW_Push" H 5895 3984 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 3990 50  0001 C CNN
-F 3 "~" H 5895 3990 50  0001 C CNN
-	1    5895 3790
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW10
-U 1 1 5DABCF85
-P 6495 3790
-F 0 "SW10" H 6495 3945 50  0000 C CNN
-F 1 "SW_Push" H 6495 3984 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 3990 50  0001 C CNN
-F 3 "~" H 6495 3990 50  0001 C CNN
-	1    6495 3790
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW11
-U 1 1 5DABCF8B
-P 7095 3790
-F 0 "SW11" H 7095 3945 50  0000 C CNN
-F 1 "SW_Push" H 7095 3984 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 3990 50  0001 C CNN
-F 3 "~" H 7095 3990 50  0001 C CNN
-	1    7095 3790
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW12
-U 1 1 5DABCF91
-P 7695 3790
-F 0 "SW12" H 7695 3945 50  0000 C CNN
-F 1 "SW_Push" H 7695 3984 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 3990 50  0001 C CNN
-F 3 "~" H 7695 3990 50  0001 C CNN
-	1    7695 3790
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW13
-U 1 1 5DAC0C7B
-P 4695 4190
-F 0 "SW13" H 4695 4345 50  0000 C CNN
-F 1 "SW_Push" H 4695 4384 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 4390 50  0001 C CNN
-F 3 "~" H 4695 4390 50  0001 C CNN
-	1    4695 4190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW14
-U 1 1 5DAC0C81
-P 5295 4190
-F 0 "SW14" H 5295 4345 50  0000 C CNN
-F 1 "SW_Push" H 5295 4384 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 4390 50  0001 C CNN
-F 3 "~" H 5295 4390 50  0001 C CNN
-	1    5295 4190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW15
-U 1 1 5DAC0C87
-P 5895 4190
-F 0 "SW15" H 5895 4345 50  0000 C CNN
-F 1 "SW_Push" H 5895 4384 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 4390 50  0001 C CNN
-F 3 "~" H 5895 4390 50  0001 C CNN
-	1    5895 4190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW16
-U 1 1 5DAC0C8D
-P 6495 4190
-F 0 "SW16" H 6495 4345 50  0000 C CNN
-F 1 "SW_Push" H 6495 4384 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 4390 50  0001 C CNN
-F 3 "~" H 6495 4390 50  0001 C CNN
-	1    6495 4190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW17
-U 1 1 5DAC0C93
-P 7095 4190
-F 0 "SW17" H 7095 4345 50  0000 C CNN
-F 1 "SW_Push" H 7095 4384 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 4390 50  0001 C CNN
-F 3 "~" H 7095 4390 50  0001 C CNN
-	1    7095 4190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW18
-U 1 1 5DAC0C99
-P 7695 4190
-F 0 "SW18" H 7695 4345 50  0000 C CNN
-F 1 "SW_Push" H 7695 4384 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 4390 50  0001 C CNN
-F 3 "~" H 7695 4390 50  0001 C CNN
-	1    7695 4190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW19
-U 1 1 5DAC4A60
-P 4695 4590
-F 0 "SW19" H 4695 4745 50  0000 C CNN
-F 1 "SW_Push" H 4695 4784 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 4790 50  0001 C CNN
-F 3 "~" H 4695 4790 50  0001 C CNN
-	1    4695 4590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW20
-U 1 1 5DAC4A66
-P 5295 4590
-F 0 "SW20" H 5295 4745 50  0000 C CNN
-F 1 "SW_Push" H 5295 4784 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 4790 50  0001 C CNN
-F 3 "~" H 5295 4790 50  0001 C CNN
-	1    5295 4590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW21
-U 1 1 5DAC4A6C
-P 5895 4590
-F 0 "SW21" H 5895 4745 50  0000 C CNN
-F 1 "SW_Push" H 5895 4784 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 4790 50  0001 C CNN
-F 3 "~" H 5895 4790 50  0001 C CNN
-	1    5895 4590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW22
-U 1 1 5DAC4A72
-P 6495 4590
-F 0 "SW22" H 6495 4745 50  0000 C CNN
-F 1 "SW_Push" H 6495 4784 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 4790 50  0001 C CNN
-F 3 "~" H 6495 4790 50  0001 C CNN
-	1    6495 4590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW23
-U 1 1 5DAC4A78
-P 7095 4590
-F 0 "SW23" H 7095 4745 50  0000 C CNN
-F 1 "SW_Push" H 7095 4784 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 4790 50  0001 C CNN
-F 3 "~" H 7095 4790 50  0001 C CNN
-	1    7095 4590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW24
-U 1 1 5DAC4A7E
-P 7695 4590
-F 0 "SW24" H 7695 4745 50  0000 C CNN
-F 1 "SW_Push" H 7695 4784 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 4790 50  0001 C CNN
-F 3 "~" H 7695 4790 50  0001 C CNN
-	1    7695 4590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW25
-U 1 1 5DAC93D4
-P 4695 4990
-F 0 "SW25" H 4695 5145 50  0000 C CNN
-F 1 "SW_Push" H 4695 5184 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 5190 50  0001 C CNN
-F 3 "~" H 4695 5190 50  0001 C CNN
-	1    4695 4990
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW26
-U 1 1 5DAC93E6
-P 6495 4990
-F 0 "SW26" H 6495 5145 50  0000 C CNN
-F 1 "SW_Push" H 6495 5184 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 5190 50  0001 C CNN
-F 3 "~" H 6495 5190 50  0001 C CNN
-	1    6495 4990
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW27
-U 1 1 5DAC93EC
-P 7095 4990
-F 0 "SW27" H 7095 5145 50  0000 C CNN
-F 1 "SW_Push" H 7095 5184 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 5190 50  0001 C CNN
-F 3 "~" H 7095 5190 50  0001 C CNN
-	1    7095 4990
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW28
-U 1 1 5DAC93F2
-P 7695 4990
-F 0 "SW28" H 7695 5145 50  0000 C CNN
-F 1 "SW_Push" H 7695 5184 50  0001 C CNN
-F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 5190 50  0001 C CNN
-F 3 "~" H 7695 5190 50  0001 C CNN
-	1    7695 4990
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D1
-U 1 1 5DACBEC8
-P 4495 3490
-F 0 "D1" V 4495 3422 50  0000 R CNN
-F 1 "1N4148" V 4450 3422 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 3490 50  0001 C CNN
-F 3 "~" V 4495 3490 50  0001 C CNN
-	1    4495 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D2
-U 1 1 5DACCFB7
-P 5095 3490
-F 0 "D2" V 5095 3422 50  0000 R CNN
-F 1 "1N4148" V 5050 3422 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 3490 50  0001 C CNN
-F 3 "~" V 5095 3490 50  0001 C CNN
-	1    5095 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D3
-U 1 1 5DACDB06
-P 5695 3490
-F 0 "D3" V 5695 3422 50  0000 R CNN
-F 1 "1N4148" V 5650 3422 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 3490 50  0001 C CNN
-F 3 "~" V 5695 3490 50  0001 C CNN
-	1    5695 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D4
-U 1 1 5DACE326
-P 6295 3490
-F 0 "D4" V 6295 3422 50  0000 R CNN
-F 1 "1N4148" V 6250 3422 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 3490 50  0001 C CNN
-F 3 "~" V 6295 3490 50  0001 C CNN
-	1    6295 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D5
-U 1 1 5DACF0C2
-P 6895 3490
-F 0 "D5" V 6895 3422 50  0000 R CNN
-F 1 "1N4148" V 6850 3422 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 3490 50  0001 C CNN
-F 3 "~" V 6895 3490 50  0001 C CNN
-	1    6895 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D6
-U 1 1 5DACF9C3
-P 7495 3490
-F 0 "D6" V 7495 3422 50  0000 R CNN
-F 1 "1N4148" V 7450 3422 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 3490 50  0001 C CNN
-F 3 "~" V 7495 3490 50  0001 C CNN
-	1    7495 3490
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D7
-U 1 1 5DAD32AA
-P 4495 3890
-F 0 "D7" V 4495 3822 50  0000 R CNN
-F 1 "1N4148" V 4450 3822 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 3890 50  0001 C CNN
-F 3 "~" V 4495 3890 50  0001 C CNN
-	1    4495 3890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D8
-U 1 1 5DAD32B0
-P 5095 3890
-F 0 "D8" V 5095 3822 50  0000 R CNN
-F 1 "1N4148" V 5050 3822 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 3890 50  0001 C CNN
-F 3 "~" V 5095 3890 50  0001 C CNN
-	1    5095 3890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D9
-U 1 1 5DAD32B6
-P 5695 3890
-F 0 "D9" V 5695 3822 50  0000 R CNN
-F 1 "1N4148" V 5650 3822 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 3890 50  0001 C CNN
-F 3 "~" V 5695 3890 50  0001 C CNN
-	1    5695 3890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D10
-U 1 1 5DAD32BC
-P 6295 3890
-F 0 "D10" V 6295 3822 50  0000 R CNN
-F 1 "1N4148" V 6250 3822 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 3890 50  0001 C CNN
-F 3 "~" V 6295 3890 50  0001 C CNN
-	1    6295 3890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D11
-U 1 1 5DAD32C2
-P 6895 3890
-F 0 "D11" V 6895 3822 50  0000 R CNN
-F 1 "1N4148" V 6850 3822 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 3890 50  0001 C CNN
-F 3 "~" V 6895 3890 50  0001 C CNN
-	1    6895 3890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D12
-U 1 1 5DAD32C8
-P 7495 3890
-F 0 "D12" V 7495 3822 50  0000 R CNN
-F 1 "1N4148" V 7450 3822 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 3890 50  0001 C CNN
-F 3 "~" V 7495 3890 50  0001 C CNN
-	1    7495 3890
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D13
-U 1 1 5DAD50DF
-P 4495 4290
-F 0 "D13" V 4495 4222 50  0000 R CNN
-F 1 "1N4148" V 4450 4222 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 4290 50  0001 C CNN
-F 3 "~" V 4495 4290 50  0001 C CNN
-	1    4495 4290
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D14
-U 1 1 5DAD50E5
-P 5095 4290
-F 0 "D14" V 5095 4222 50  0000 R CNN
-F 1 "1N4148" V 5050 4222 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 4290 50  0001 C CNN
-F 3 "~" V 5095 4290 50  0001 C CNN
-	1    5095 4290
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D15
-U 1 1 5DAD50EB
-P 5695 4290
-F 0 "D15" V 5695 4222 50  0000 R CNN
-F 1 "1N4148" V 5650 4222 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 4290 50  0001 C CNN
-F 3 "~" V 5695 4290 50  0001 C CNN
-	1    5695 4290
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D16
-U 1 1 5DAD50F1
-P 6295 4290
-F 0 "D16" V 6295 4222 50  0000 R CNN
-F 1 "1N4148" V 6250 4222 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 4290 50  0001 C CNN
-F 3 "~" V 6295 4290 50  0001 C CNN
-	1    6295 4290
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D17
-U 1 1 5DAD50F7
-P 6895 4290
-F 0 "D17" V 6895 4222 50  0000 R CNN
-F 1 "1N4148" V 6850 4222 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 4290 50  0001 C CNN
-F 3 "~" V 6895 4290 50  0001 C CNN
-	1    6895 4290
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D18
-U 1 1 5DAD50FD
-P 7495 4290
-F 0 "D18" V 7495 4222 50  0000 R CNN
-F 1 "1N4148" V 7450 4222 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 4290 50  0001 C CNN
-F 3 "~" V 7495 4290 50  0001 C CNN
-	1    7495 4290
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D19
-U 1 1 5DAD62CE
-P 4495 4690
-F 0 "D19" V 4495 4622 50  0000 R CNN
-F 1 "1N4148" V 4450 4622 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 4690 50  0001 C CNN
-F 3 "~" V 4495 4690 50  0001 C CNN
-	1    4495 4690
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D20
-U 1 1 5DAD62D4
-P 5095 4690
-F 0 "D20" V 5095 4622 50  0000 R CNN
-F 1 "1N4148" V 5050 4622 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 4690 50  0001 C CNN
-F 3 "~" V 5095 4690 50  0001 C CNN
-	1    5095 4690
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D21
-U 1 1 5DAD62DA
-P 5695 4690
-F 0 "D21" V 5695 4622 50  0000 R CNN
-F 1 "1N4148" V 5650 4622 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 4690 50  0001 C CNN
-F 3 "~" V 5695 4690 50  0001 C CNN
-	1    5695 4690
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D22
-U 1 1 5DAD62E0
-P 6295 4690
-F 0 "D22" V 6295 4622 50  0000 R CNN
-F 1 "1N4148" V 6250 4622 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 4690 50  0001 C CNN
-F 3 "~" V 6295 4690 50  0001 C CNN
-	1    6295 4690
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D23
-U 1 1 5DAD62E6
-P 6895 4690
-F 0 "D23" V 6895 4622 50  0000 R CNN
-F 1 "1N4148" V 6850 4622 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 4690 50  0001 C CNN
-F 3 "~" V 6895 4690 50  0001 C CNN
-	1    6895 4690
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D24
-U 1 1 5DAD62EC
-P 7495 4690
-F 0 "D24" V 7495 4622 50  0000 R CNN
-F 1 "1N4148" V 7450 4622 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 4690 50  0001 C CNN
-F 3 "~" V 7495 4690 50  0001 C CNN
-	1    7495 4690
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D25
-U 1 1 5DAD7EB7
-P 4495 5090
-F 0 "D25" V 4495 5022 50  0000 R CNN
-F 1 "1N4148" V 4450 5022 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 5090 50  0001 C CNN
-F 3 "~" V 4495 5090 50  0001 C CNN
-	1    4495 5090
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D26
-U 1 1 5DAD7EC9
-P 6295 5090
-F 0 "D26" V 6295 5022 50  0000 R CNN
-F 1 "1N4148" V 6250 5022 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 5090 50  0001 C CNN
-F 3 "~" V 6295 5090 50  0001 C CNN
-	1    6295 5090
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D27
-U 1 1 5DAD7ECF
-P 6895 5090
-F 0 "D27" V 6895 5022 50  0000 R CNN
-F 1 "1N4148" V 6850 5022 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 5090 50  0001 C CNN
-F 3 "~" V 6895 5090 50  0001 C CNN
-	1    6895 5090
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D28
-U 1 1 5DAD7ED5
-P 7495 5090
-F 0 "D28" V 7495 5022 50  0000 R CNN
-F 1 "1N4148" V 7450 5022 50  0001 R CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 5090 50  0001 C CNN
-F 3 "~" V 7495 5090 50  0001 C CNN
-	1    7495 5090
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4495 5190 6295 5190
-Connection ~ 6295 5190
-Wire Wire Line
-	6295 5190 6895 5190
-Connection ~ 6895 5190
-Wire Wire Line
-	6895 5190 7495 5190
-Wire Wire Line
-	4495 4790 5095 4790
-Connection ~ 5095 4790
-Wire Wire Line
-	5095 4790 5695 4790
-Connection ~ 5695 4790
-Wire Wire Line
-	5695 4790 6295 4790
-Connection ~ 6295 4790
-Wire Wire Line
-	6295 4790 6895 4790
-Connection ~ 6895 4790
-Wire Wire Line
-	6895 4790 7495 4790
-Wire Wire Line
-	4495 4390 5095 4390
-Connection ~ 5095 4390
-Wire Wire Line
-	5095 4390 5695 4390
-Connection ~ 5695 4390
-Wire Wire Line
-	5695 4390 6295 4390
-Connection ~ 6295 4390
-Wire Wire Line
-	6295 4390 6895 4390
-Connection ~ 6895 4390
-Wire Wire Line
-	6895 4390 7495 4390
-Wire Wire Line
-	4495 3990 5095 3990
-Connection ~ 5095 3990
-Wire Wire Line
-	5095 3990 5695 3990
-Connection ~ 5695 3990
-Wire Wire Line
-	5695 3990 6295 3990
-Connection ~ 6295 3990
-Wire Wire Line
-	6295 3990 6895 3990
-Connection ~ 6895 3990
-Wire Wire Line
-	6895 3990 7495 3990
-Wire Wire Line
-	4495 3590 5095 3590
-Connection ~ 5095 3590
-Wire Wire Line
-	5095 3590 5695 3590
-Connection ~ 5695 3590
-Wire Wire Line
-	5695 3590 6295 3590
-Connection ~ 6295 3590
-Wire Wire Line
-	6295 3590 6895 3590
-Connection ~ 6895 3590
-Wire Wire Line
-	6895 3590 7495 3590
-Wire Wire Line
-	4895 4990 4895 4590
-Connection ~ 4895 3790
-Wire Wire Line
-	4895 3790 4895 3390
-Connection ~ 4895 4190
-Wire Wire Line
-	4895 4190 4895 3790
-Connection ~ 4895 4590
-Wire Wire Line
-	4895 4590 4895 4190
-Wire Wire Line
-	5495 4590 5495 4190
-Connection ~ 5495 3790
-Wire Wire Line
-	5495 3790 5495 3390
-Connection ~ 5495 4190
-Wire Wire Line
-	5495 4190 5495 3790
-Wire Wire Line
-	6095 3390 6095 3790
-Connection ~ 6095 3790
-Wire Wire Line
-	6095 3790 6095 4190
-Connection ~ 6095 4190
-Wire Wire Line
-	6095 4190 6095 4590
-Wire Wire Line
-	6695 4990 6695 4590
-Connection ~ 6695 3790
-Wire Wire Line
-	6695 3790 6695 3390
-Connection ~ 6695 4190
-Wire Wire Line
-	6695 4190 6695 3790
-Connection ~ 6695 4590
-Wire Wire Line
-	6695 4590 6695 4190
-Wire Wire Line
-	7295 4990 7295 4590
-Connection ~ 7295 3790
-Wire Wire Line
-	7295 3790 7295 3390
-Connection ~ 7295 4190
-Wire Wire Line
-	7295 4190 7295 3790
-Connection ~ 7295 4590
-Wire Wire Line
-	7295 4590 7295 4190
-Wire Wire Line
-	7895 4990 7895 4590
-Connection ~ 7895 3790
-Connection ~ 7895 4190
-Wire Wire Line
-	7895 4190 7895 3790
-Connection ~ 7895 4590
-Wire Wire Line
-	7895 4590 7895 4190
-Text Label 4895 3340 1    50   ~ 0
-P0.31_l
-Text Label 5495 3340 1    50   ~ 0
-P0.30_l
-Text Label 6095 3340 1    50   ~ 0
-P0.06_l
-Text Label 6695 3340 1    50   ~ 0
-P0.08_l
-Text Label 7295 3340 1    50   ~ 0
-P0.09_l
-Text Label 7895 3340 1    50   ~ 0
-P0.12_l
-Text Label 4455 3590 2    50   ~ 0
-P1.11_l
-Text Label 4455 3990 2    50   ~ 0
-P0.28_l
-Text Label 4455 4390 2    50   ~ 0
-P1.13_l
-Text Label 4455 4790 2    50   ~ 0
-P0.02_l
-Text Label 4455 5190 2    50   ~ 0
-P0.29_l
-Wire Wire Line
-	4455 5190 4495 5190
-Connection ~ 4495 5190
-Wire Wire Line
-	4455 4790 4495 4790
-Connection ~ 4495 4790
-Wire Wire Line
-	4455 4390 4495 4390
-Connection ~ 4495 4390
-Wire Wire Line
-	4455 3990 4495 3990
-Connection ~ 4495 3990
-Wire Wire Line
-	4455 3590 4495 3590
-Connection ~ 4495 3590
-Wire Wire Line
-	4895 3340 4895 3390
-Connection ~ 4895 3390
-Wire Wire Line
-	5495 3340 5495 3390
-Connection ~ 5495 3390
-Wire Wire Line
-	6095 3340 6095 3390
-Connection ~ 6095 3390
-Wire Wire Line
-	6695 3340 6695 3390
-Connection ~ 6695 3390
-Wire Wire Line
-	7295 3340 7295 3390
-Connection ~ 7295 3390
-Wire Wire Line
-	7895 3340 7895 3390
-Connection ~ 7895 3390
-Wire Wire Line
-	7895 3390 7895 3790
 $Comp
 L Mechanical:MountingHole HM1
 U 1 1 5DC03D38
 P 8315 3260
 F 0 "HM1" H 8415 3306 50  0000 L CNN
 F 1 "CaseHole" H 8415 3215 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 3260 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 3260 50  0001 C CNN
 F 3 "~" H 8315 3260 50  0001 C CNN
 	1    8315 3260
 	1    0    0    -1  
@@ -1617,7 +233,7 @@ U 1 1 5DC0512E
 P 8315 3450
 F 0 "HM2" H 8415 3496 50  0000 L CNN
 F 1 "CaseHole" H 8415 3405 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 3450 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 3450 50  0001 C CNN
 F 3 "~" H 8315 3450 50  0001 C CNN
 	1    8315 3450
 	1    0    0    -1  
@@ -1628,7 +244,7 @@ U 1 1 5DC14B86
 P 8315 3650
 F 0 "HM3" H 8415 3696 50  0000 L CNN
 F 1 "CaseHole" H 8415 3605 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 3650 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 3650 50  0001 C CNN
 F 3 "~" H 8315 3650 50  0001 C CNN
 	1    8315 3650
 	1    0    0    -1  
@@ -1639,7 +255,7 @@ U 1 1 5DC1BC70
 P 8315 3855
 F 0 "HM4" H 8415 3901 50  0000 L CNN
 F 1 "CaseHole" H 8415 3810 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 3855 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 3855 50  0001 C CNN
 F 3 "~" H 8315 3855 50  0001 C CNN
 	1    8315 3855
 	1    0    0    -1  
@@ -1650,7 +266,7 @@ U 1 1 5DC1BC76
 P 8315 4045
 F 0 "HM5" H 8415 4091 50  0000 L CNN
 F 1 "CaseHole" H 8415 4000 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 4045 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 4045 50  0001 C CNN
 F 3 "~" H 8315 4045 50  0001 C CNN
 	1    8315 4045
 	1    0    0    -1  
@@ -1666,17 +282,6 @@ F 3 "" H 9150 3350 50  0001 C CNN
 	1    9150 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L jiran-ble:jiran-ble G2
-U 1 1 5FA2276E
-P 9150 9200
-F 0 "G2" H 9100 9450 60  0000 L CNN
-F 1 "logo-jiran-hotswap" H 9150 8950 60  0001 C CNN
-F 2 "jiran-ble:logotype" H 9150 9200 50  0001 C CNN
-F 3 "" H 9150 9200 50  0001 C CNN
-	1    9150 9200
-	1    0    0    -1  
-$EndComp
 Text Notes 8100 3000 0    61   ~ 0
 Holes and logo
 Wire Notes Line
@@ -1688,65 +293,13 @@ NoConn ~ 2950 1950
 NoConn ~ 2950 2050
 NoConn ~ 2950 2150
 NoConn ~ 2950 2250
-NoConn ~ 1600 2650
-NoConn ~ 1600 2450
 NoConn ~ 2950 1250
 NoConn ~ 2950 1450
 NoConn ~ 1600 1250
 Wire Notes Line
 	8050 500  8050 5400
 Wire Notes Line
-	8050 2200 11200 2200
-Wire Notes Line
-	8050 1400 11200 1400
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 60210D4F
-P 8950 2500
-F 0 "J4" H 9030 2492 50  0000 L CNN
-F 1 "Conn_01x02" H 9030 2401 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x2_2.54" H 8950 2500 50  0001 C CNN
-F 3 "~" H 8950 2500 50  0001 C CNN
-	1    8950 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2500 8750 2400
-Wire Wire Line
-	8750 2400 8650 2400
-Wire Wire Line
-	8750 2600 8750 2700
-Wire Wire Line
-	8750 2700 8650 2700
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 6021ED23
-P 10500 2550
-F 0 "J3" H 10580 2542 50  0000 L CNN
-F 1 "Conn_01x02" H 10580 2451 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x2_2.54" H 10500 2550 50  0001 C CNN
-F 3 "~" H 10500 2550 50  0001 C CNN
-	1    10500 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 2450 10300 2450
-Wire Wire Line
-	10300 2450 10300 2550
-Wire Wire Line
-	10300 2650 10300 2750
-Wire Wire Line
-	10300 2750 10200 2750
-Text Notes 9700 2300 0    61   ~ 0
-Battery tester\n
-NoConn ~ 1600 2050
-NoConn ~ 1600 2250
-Wire Notes Line
 	11200 500  11200 5400
-Wire Wire Line
-	10300 1850 10100 1850
-Wire Wire Line
-	10100 1850 10100 1750
 Wire Notes Line
 	16050 500  16050 5400
 Wire Notes Line
@@ -1764,9 +317,9 @@ Left side of PCB, be careful when making changes!
 Wire Notes Line
 	9650 500  9650 5400
 Text Notes 14100 5300 0    61   ~ 0
-Jiran-ble (left side) / r0.1 / 02.02.21
-Text Notes 9750 4150 0    61   ~ 0
-Left side contain:\nSW1 - SW30\nD1 - D29\nR1 - R8\nHM1 - HM5\nU1 - U4\nJ1 - J4\nC1 - C3\nLED1 - LED2\nUSB1\nF1\nG1\n
+Jiran-ble (left side) / r0.2 / 06.02.21
+Text Notes 9725 3850 0    61   ~ 0
+Left side contain:\nSW1 - SW29\nD1 - D29\nR1 - R9\nHM1 - HM5\nU1 - U3\nJ1 - J3\nLED1 - LED2\nG1\n
 Wire Notes Line
 	9700 2950 11150 2950
 Wire Notes Line
@@ -1783,285 +336,500 @@ Wire Notes Line
 	16000 5350 11250 5350
 Wire Notes Line
 	11250 5350 11250 4150
-Text GLabel 10200 1100 0    60   Input ~ 0
+Text GLabel 8700 1275 0    60   Input ~ 0
 VBAT_l
 $Comp
-L power:GND #PWR0107
+L power:GND #PWR01
 U 1 1 602E5398
-P 10200 800
-F 0 "#PWR0107" H 10200 550 50  0001 C CNN
-F 1 "GND" H 10205 627 50  0000 C CNN
-F 2 "" H 10200 800 50  0001 C CNN
-F 3 "" H 10200 800 50  0001 C CNN
-	1    10200 800 
+P 8700 975
+F 0 "#PWR01" H 8700 725 50  0001 C CNN
+F 1 "GND" H 8700 825 50  0000 C CNN
+F 2 "" H 8700 975 50  0001 C CNN
+F 3 "" H 8700 975 50  0001 C CNN
+	1    8700 975 
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 602E539E
-P 10500 900
-F 0 "J1" H 10580 892 50  0000 L CNN
-F 1 "Conn_01x02" H 10580 801 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x2_2.54" H 10500 900 50  0001 C CNN
-F 3 "~" H 10500 900 50  0001 C CNN
-	1    10500 900 
+P 9000 1075
+F 0 "J1" H 9080 1067 50  0000 L CNN
+F 1 "BATT" H 9080 976 50  0000 L CNN
+F 2 "jiran-ble:Connector_THT_1x2_2.54" H 9000 1075 50  0001 C CNN
+F 3 "~" H 9000 1075 50  0001 C CNN
+	1    9000 1075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 800  10300 800 
+	8700 975  8800 975 
 Wire Wire Line
-	10300 800  10300 900 
+	8800 975  8800 1075
 Wire Wire Line
-	10300 1000 10300 1100
+	8800 1175 8800 1275
 Wire Wire Line
-	10300 1100 10200 1100
+	8800 1275 8700 1275
+Text Notes 12260 10670 0    61   ~ 0
+jiran-ble
+Text Notes 12195 10930 0    70   ~ 14
+jiran-ble
+Text Notes 12975 11070 0    61   ~ 0
+31.01.21
+Text Notes 15415 11075 0    70   ~ 14
+r0.2
+Text GLabel 5175 1600 2    60   Input ~ 0
+DATA-_l
 $Comp
-L candy-rescue:MBR0520-nrfmicro-rescue D30
-U 1 1 6038A885
-P 12400 7650
-F 0 "D30" H 12400 7434 50  0000 C CNN
-F 1 "1N5819" H 12400 7525 50  0000 C CNN
-F 2 "jiran-ble:Diode_SMD_SOD-123" H 12400 7475 50  0001 C CNN
-F 3 "" H 12400 7650 50  0001 C CNN
-	1    12400 7650
+L Device:R R2
+U 1 1 5CAA680B
+P 5775 1450
+F 0 "R2" V 5600 1400 50  0000 L CNN
+F 1 "5.1K" V 5675 1375 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 5705 1450 50  0001 C CNN
+F 3 "~" H 5775 1450 50  0001 C CNN
+	1    5775 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CAA879F
+P 5775 1250
+F 0 "R1" V 5950 1200 50  0000 L CNN
+F 1 "5.1K" V 5875 1175 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 5705 1250 50  0001 C CNN
+F 3 "~" H 5775 1250 50  0001 C CNN
+	1    5775 1250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5175 1700 2    60   Input ~ 0
+DATA-_l
+Text GLabel 5175 1800 2    60   Input ~ 0
+DATA+_l
+Text GLabel 5175 1900 2    60   Input ~ 0
+DATA+_l
+$Comp
+L power:GND #PWR04
+U 1 1 5E5DBB46
+P 5925 1250
+F 0 "#PWR04" H 5925 1000 50  0001 C CNN
+F 1 "GND" H 5925 1100 50  0000 C CNN
+F 2 "" H 5925 1250 50  0001 C CNN
+F 3 "" H 5925 1250 50  0001 C CNN
+	1    5925 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E5DDBCF
+P 5925 1450
+F 0 "#PWR06" H 5925 1200 50  0001 C CNN
+F 1 "GND" H 5925 1300 50  0000 C CNN
+F 2 "" H 5925 1450 50  0001 C CNN
+F 3 "" H 5925 1450 50  0001 C CNN
+	1    5925 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5E5EC00A
+P 4575 2600
+F 0 "#PWR013" H 4575 2350 50  0001 C CNN
+F 1 "GND" H 4575 2450 50  0000 C CNN
+F 2 "" H 4575 2600 50  0001 C CNN
+F 3 "" H 4575 2600 50  0001 C CNN
+	1    4575 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5175 1100 2    60   Input ~ 0
+VBUS_l
+$Comp
+L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J2
+U 1 1 5C743564
+P 4575 1700
+F 0 "J2" H 4575 2525 50  0000 C CNN
+F 1 "USB-C Conn" H 4575 2450 50  0000 C CNN
+F 2 "jiran-ble:USB-C_MidMount" H 4682 2475 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4725 1700 50  0001 C CNN
+	1    4575 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5B159927
+P 11925 2600
+F 0 "R4" H 11995 2646 50  0000 L CNN
+F 1 "100K" H 11975 2550 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 11855 2600 50  0001 C CNN
+F 3 "" H 11925 2600 50  0001 C CNN
+	1    11925 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 5B158495
+P 12125 2400
+F 0 "D1" H 12125 2184 50  0000 C CNN
+F 1 "1N5819" H 12125 2275 50  0000 C CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" H 12125 2225 50  0001 C CNN
+F 3 "" H 12125 2400 50  0001 C CNN
+	1    12125 2400
 	-1   0    0    1   
 $EndComp
 $Comp
-L candy-rescue:BSS83P-nrfmicro-rescue Q2
-U 1 1 6038A88B
-P 12900 7300
-F 0 "Q2" H 13100 7375 50  0000 L CNN
-F 1 "AO3407" H 13100 7300 50  0000 L CNN
-F 2 "jiran-ble:Package_SMD_SOT-23" H 13100 7225 50  0001 L CIN
-F 3 "" H 12900 7300 50  0001 L CNN
-	1    12900 7300
+L Device:Q_PMOS_GSD Q1
+U 1 1 5B1587C5
+P 12225 2050
+F 0 "Q1" H 12425 2125 50  0000 L CNN
+F 1 "AO3407" H 12425 2050 50  0000 L CNN
+F 2 "jiran-ble:Package_SMD_SOT-23" H 12425 1975 50  0001 L CIN
+F 3 "" H 12225 2050 50  0001 L CNN
+	1    12225 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 11825 2050 0    60   Input ~ 0
+VBUS_l
+Wire Wire Line
+	13250 2400 13300 2400
+$Comp
+L nrfmicro-rescue:AP2112K-3.3-Regulator_Linear U1
+U 1 1 5EBF7400
+P 12950 2500
+F 0 "U1" H 12950 2842 50  0000 C CNN
+F 1 "XC6220B331MR-G" H 12950 2751 50  0000 C CNN
+F 2 "jiran-ble:Package_SMD_SOT-23-5" H 12950 2825 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 12950 2600 50  0001 C CNN
+	1    12950 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 13300 2400 2    60   Input ~ 0
+nRF_VDD_l
+Text Notes 2425 3975 2    60   ~ 0
+LiPo Charging\n
+$Comp
+L Battery_Management:MCP73831-3-OT U3
+U 1 1 5EC2C51F
+P 2125 4525
+F 0 "U3" H 2125 4975 50  0000 C CNN
+F 1 "TP4054" H 2125 4875 50  0000 C CNN
+F 2 "jiran-ble:Package_SMD_SOT-23-5" H 2175 4275 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1975 4475 50  0001 C CNN
+	1    2125 4525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5ED0E40C
+P 2675 4625
+F 0 "R9" V 2468 4625 50  0000 C CNN
+F 1 "RPROG" V 2559 4625 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 2605 4625 50  0001 C CNN
+F 3 "" H 2675 4625 50  0001 C CNN
+	1    2675 4625
+	0    -1   1    0   
+$EndComp
+Text GLabel 15000 2400 0    60   Input ~ 0
+BATTERY_PIN_l
+Text GLabel 15100 1950 1    60   Input ~ 0
+VBAT_l
+$Comp
+L Device:R_Small R7
+U 1 1 5ED6EA28
+P 15100 2625
+F 0 "R7" H 15170 2671 50  0000 L CNN
+F 1 "2M" H 15170 2580 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 15030 2625 50  0001 C CNN
+F 3 "" H 15100 2625 50  0001 C CNN
+	1    15100 2625
 	1    0    0    -1  
 $EndComp
 $Comp
-L candy-rescue:C-nrfmicro-rescue C4
-U 1 1 6038A891
-P 12700 8000
-F 0 "C4" H 12800 8050 50  0000 L CNN
-F 1 "10uF" H 12800 7950 50  0000 L CNN
-F 2 "jiran-ble:Capacitor_SMD_0805" H 12738 7850 50  0001 C CNN
-F 3 "" H 12700 8000 50  0001 C CNN
-	1    12700 8000
+L Device:R_Small R5
+U 1 1 5ED6D985
+P 15100 2200
+F 0 "R5" H 15170 2246 50  0000 L CNN
+F 1 "820K" H 15170 2155 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 15030 2200 50  0001 C CNN
+F 3 "" H 15100 2200 50  0001 C CNN
+	1    15100 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12550 7650 12700 7650
-Wire Wire Line
-	13000 7500 13000 7650
-Connection ~ 13000 7650
-Wire Wire Line
-	12700 7850 12700 7650
-Connection ~ 12700 7650
 $Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0108
-U 1 1 6038A89C
-P 13850 8200
-F 0 "#PWR0108" H 13850 7950 50  0001 C CNN
-F 1 "GND" H 13850 8050 50  0000 C CNN
-F 2 "" H 13850 8200 50  0001 C CNN
-F 3 "" H 13850 8200 50  0001 C CNN
-	1    13850 8200
-	1    0    0    -1  
+L power:PWR_FLAG #FLG01
+U 1 1 5ED1CBFB
+P 10000 1025
+F 0 "#FLG01" H 10000 1100 50  0001 C CNN
+F 1 "PWR_FLAG" H 10000 1198 50  0000 C CNN
+F 2 "" H 10000 1025 50  0001 C CNN
+F 3 "~" H 10000 1025 50  0001 C CNN
+	1    10000 1025
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	13850 8050 13850 8200
 $Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0109
-U 1 1 6038A8A3
-P 12700 8200
-F 0 "#PWR0109" H 12700 7950 50  0001 C CNN
-F 1 "GND" H 12700 8050 50  0000 C CNN
-F 2 "" H 12700 8200 50  0001 C CNN
-F 3 "" H 12700 8200 50  0001 C CNN
-	1    12700 8200
-	1    0    0    -1  
+L power:PWR_FLAG #FLG02
+U 1 1 5ED1D873
+P 10000 2375
+F 0 "#FLG02" H 10000 2450 50  0001 C CNN
+F 1 "PWR_FLAG" H 10000 2548 50  0000 C CNN
+F 2 "" H 10000 2375 50  0001 C CNN
+F 3 "~" H 10000 2375 50  0001 C CNN
+	1    10000 2375
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	12700 8200 12700 8150
-Wire Wire Line
-	12700 7300 12050 7300
-Wire Wire Line
-	14150 7650 14850 7650
 $Comp
-L candy-rescue:VCC-nrfmicro-rescue #PWR0110
-U 1 1 6038A8AC
-P 14850 7500
-F 0 "#PWR0110" H 14850 7350 50  0001 C CNN
-F 1 "VCC" H 14850 7650 50  0000 C CNN
-F 2 "" H 14850 7500 50  0001 C CNN
-F 3 "" H 14850 7500 50  0001 C CNN
-	1    14850 7500
+L power:GND #PWR02
+U 1 1 5ED1EA28
+P 10000 2375
+F 0 "#PWR02" H 10000 2125 50  0001 C CNN
+F 1 "GND" H 10000 2225 50  0000 C CNN
+F 2 "" H 10000 2375 50  0001 C CNN
+F 3 "" H 10000 2375 50  0001 C CNN
+	1    10000 2375
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10000 1025 2    60   Input ~ 0
+nRF_VDD_l
+Text GLabel 10000 1925 2    60   Input ~ 0
+VBUS_l
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5ED2274A
+P 10000 1925
+F 0 "#FLG04" H 10000 2000 50  0001 C CNN
+F 1 "PWR_FLAG" H 10000 2098 50  0000 C CNN
+F 2 "" H 10000 1925 50  0001 C CNN
+F 3 "~" H 10000 1925 50  0001 C CNN
+	1    10000 1925
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10000 1475 2    60   Input ~ 0
+VBAT_l
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5ED2570F
+P 10000 1475
+F 0 "#FLG03" H 10000 1550 50  0001 C CNN
+F 1 "PWR_FLAG" H 10000 1648 50  0000 C CNN
+F 2 "" H 10000 1475 50  0001 C CNN
+F 3 "~" H 10000 1475 50  0001 C CNN
+	1    10000 1475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15000 2400 15100 2400
+Connection ~ 15100 2400
+Wire Wire Line
+	12325 2250 12325 2400
+Text GLabel 12325 1750 1    60   Input ~ 0
+VBAT_l
+$Comp
+L power:GND #PWR019
+U 1 1 5F73D403
+P 2125 4825
+F 0 "#PWR019" H 2125 4575 50  0001 C CNN
+F 1 "GND" H 2125 4675 50  0000 C CNN
+F 2 "" H 2125 4825 50  0001 C CNN
+F 3 "" H 2125 4825 50  0001 C CNN
+	1    2125 4825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14850 7650 14850 7500
+	2525 4625 2575 4625
+Text GLabel 1625 4425 0    60   Input ~ 0
+VBAT_l
+Wire Wire Line
+	1625 4425 1725 4425
+Text GLabel 1025 4225 0    60   Input ~ 0
+VBUS_l
+Wire Wire Line
+	2775 4625 2875 4625
 $Comp
-L candy-rescue:R-nrfmicro-rescue R14
-U 1 1 6038A8B3
-P 12050 8000
-F 0 "R14" H 12100 8000 50  0000 L CNN
-F 1 "100K" V 12050 7900 50  0000 L CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 11980 8000 50  0001 C CNN
-F 3 "" H 12050 8000 50  0001 C CNN
-	1    12050 8000
+L power:GND #PWR010
+U 1 1 5F7552D5
+P 12950 2800
+F 0 "#PWR010" H 12950 2550 50  0001 C CNN
+F 1 "GND" H 12950 2650 50  0000 C CNN
+F 2 "" H 12950 2800 50  0001 C CNN
+F 3 "" H 12950 2800 50  0001 C CNN
+	1    12950 2800
 	1    0    0    -1  
 $EndComp
-Connection ~ 12050 7650
+$Comp
+L power:GND #PWR09
+U 1 1 5F7578BA
+P 11925 2700
+F 0 "#PWR09" H 11925 2450 50  0001 C CNN
+F 1 "GND" H 11925 2550 50  0000 C CNN
+F 2 "" H 11925 2700 50  0001 C CNN
+F 3 "" H 11925 2700 50  0001 C CNN
+	1    11925 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5F75E8D6
+P 15100 2725
+F 0 "#PWR018" H 15100 2475 50  0001 C CNN
+F 1 "GND" H 15100 2575 50  0000 C CNN
+F 2 "" H 15100 2725 50  0001 C CNN
+F 3 "" H 15100 2725 50  0001 C CNN
+	1    15100 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15100 2400 15100 2525
+Wire Wire Line
+	15100 2300 15100 2400
+Wire Wire Line
+	15100 1950 15100 2100
+Wire Wire Line
+	12550 2400 12650 2400
+Wire Wire Line
+	12650 2500 12550 2500
+Wire Wire Line
+	12550 2500 12550 2400
+Connection ~ 12550 2400
+Connection ~ 12325 2400
+Wire Wire Line
+	12325 2400 12550 2400
+$Comp
+L power:GND #PWR020
+U 1 1 5F6F7451
+P 2875 4825
+F 0 "#PWR020" H 2875 4575 50  0001 C CNN
+F 1 "GND" H 2875 4675 50  0000 C CNN
+F 2 "" H 2875 4825 50  0001 C CNN
+F 3 "" H 2875 4825 50  0001 C CNN
+	1    2875 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 4825 2875 4625
+$Comp
+L Device:LED LED2
+U 1 1 5F6FEF9E
+P 1225 4625
+F 0 "LED2" H 1218 4370 50  0000 C CNN
+F 1 "RED" H 1218 4461 50  0000 C CNN
+F 2 "jiran-ble:LED_SMD_0805" H 1225 4625 50  0001 C CNN
+F 3 "~" H 1225 4625 50  0001 C CNN
+	1    1225 4625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5F6FEFA4
+P 1575 4625
+F 0 "R8" V 1725 4625 50  0000 C CNN
+F 1 "1K" V 1650 4625 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 1505 4625 50  0001 C CNN
+F 3 "" H 1575 4625 50  0001 C CNN
+	1    1575 4625
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1375 4625 1475 4625
+Wire Wire Line
+	1075 4225 2125 4225
+Wire Wire Line
+	1075 4225 1075 4625
+Wire Wire Line
+	1075 4225 1025 4225
+Connection ~ 1075 4225
+Wire Wire Line
+	4275 2600 4575 2600
+Connection ~ 4575 2600
+Wire Wire Line
+	1675 4625 1725 4625
+Wire Wire Line
+	12225 2400 12325 2400
+Wire Wire Line
+	11925 2500 11925 2400
+Wire Wire Line
+	11925 2400 12025 2400
+Wire Wire Line
+	11925 2400 11925 2050
+Connection ~ 11925 2400
+Connection ~ 11925 2050
+Wire Wire Line
+	11825 2050 11925 2050
+Wire Wire Line
+	11925 2050 12025 2050
+Wire Wire Line
+	12325 1750 12325 1850
+NoConn ~ 5175 2200
+NoConn ~ 5175 2300
+Text Notes 3200 4325 0    60   ~ 0
+RProg\n10k\n5k\n2.5k\n2k\n1.25k
+Text Notes 3550 4325 0    60   ~ 0
+IBat\n100mA\n200mA\n400mA\n500mA\n800mA
+Text Notes 3100 3700 0    60   ~ 0
+RProg = 1000/IBat\nIBat in amps
+Text GLabel 1125 2850 0    61   Input ~ 0
+nRF_VDD_l
+Text GLabel 1000 2450 0    61   Input ~ 0
+PROG_l
+Wire Wire Line
+	1000 2450 1600 2450
+Text GLabel 1250 2650 0    61   Input ~ 0
+POWER_PIN_l
+Wire Wire Line
+	1125 2850 1600 2850
+Wire Wire Line
+	1300 2750 1600 2750
+Wire Wire Line
+	1250 2650 1600 2650
+$Comp
+L Device:Crystal_Small X1
+U 1 1 603F47FF
+P 1075 2150
+F 0 "X1" H 1025 1975 50  0000 L CNN
+F 1 "Crystal" H 950 2050 50  0000 L CNN
+F 2 "jiran-ble:Crystal_SMD_CM9V" H 1075 2150 50  0001 C CNN
+F 3 "~" H 1075 2150 50  0001 C CNN
+	1    1075 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1075 2050 1600 2050
+Wire Wire Line
+	1075 2250 1600 2250
+NoConn ~ 2950 1850
+NoConn ~ 2950 1650
+NoConn ~ 2950 2650
+NoConn ~ 2950 2450
+Text GLabel 3275 2950 2    61   Input ~ 0
+DCCH_l
+Wire Wire Line
+	3275 2950 2950 2950
+Text GLabel 3000 3150 2    61   Input ~ 0
+nRF_VDD_l
+Wire Wire Line
+	2950 3150 3000 3150
+Wire Wire Line
+	2950 3050 3625 3050
+Wire Wire Line
+	5175 1300 5625 1300
+Wire Wire Line
+	5625 1300 5625 1250
+Wire Wire Line
+	5175 1400 5625 1400
+Wire Wire Line
+	5625 1400 5625 1450
+Text GLabel 8775 2325 0    60   Input ~ 0
+nRF_VDD_l
+Wire Wire Line
+	8575 2525 8800 2525
+Wire Wire Line
+	8575 2425 8800 2425
+Wire Notes Line
+	6400 500  6400 2900
+Text Notes 9675 600  0    61   ~ 0
+Power Flags
+NoConn ~ 1600 2150
+NoConn ~ 1600 3150
 Text Notes 11250 6400 0    60   ~ 0
 Power and filtering
 Text Notes 550  9400 0    60   ~ 0
 LiPo charging\n
-Wire Wire Line
-	12700 7650 13000 7650
-Wire Wire Line
-	12050 7300 12050 7650
-Wire Wire Line
-	12050 7650 12250 7650
-Wire Wire Line
-	12050 7650 12050 7850
-$Comp
-L Device:C C6
-U 1 1 6038A8C0
-P 3450 10250
-F 0 "C6" H 3565 10296 50  0000 L CNN
-F 1 "10uF" H 3565 10205 50  0000 L CNN
-F 2 "jiran-ble:Capacitor_SMD_0805" H 3488 10100 50  0001 C CNN
-F 3 "~" H 3450 10250 50  0001 C CNN
-	1    3450 10250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 6038A8C6
-P 3000 10250
-F 0 "R16" V 3100 10250 50  0000 C CNN
-F 1 "4.7K" V 3000 10250 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 2930 10250 50  0001 C CNN
-F 3 "~" H 3000 10250 50  0001 C CNN
-	1    3000 10250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Battery_Management:MCP73831-2-OT U8
-U 1 1 6038A8CC
-P 2400 10350
-F 0 "U8" H 2400 10736 50  0000 C CNN
-F 1 "MCP73831" H 2400 10827 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-5" H 2450 10100 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2250 10300 50  0001 C CNN
-	1    2400 10350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 6038A8D2
-P 3450 10600
-F 0 "#PWR0111" H 3450 10350 50  0001 C CNN
-F 1 "GND" H 3455 10427 50  0000 C CNN
-F 2 "" H 3450 10600 50  0001 C CNN
-F 3 "" H 3450 10600 50  0001 C CNN
-	1    3450 10600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 6038A8D8
-P 3250 10600
-F 0 "#PWR0112" H 3250 10350 50  0001 C CNN
-F 1 "GND" H 3255 10427 50  0000 C CNN
-F 2 "" H 3250 10600 50  0001 C CNN
-F 3 "" H 3250 10600 50  0001 C CNN
-	1    3250 10600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 9950 2400 10050
-Wire Wire Line
-	950  10250 1100 10250
-Wire Wire Line
-	2850 10250 2800 10250
-Wire Wire Line
-	2400 9950 3250 9950
-Wire Wire Line
-	3450 10600 3450 10400
-$Comp
-L candy-rescue:AP2112K-3.3-Regulator_Linear U6
-U 1 1 6038A8E3
-P 13850 7750
-F 0 "U6" H 13850 8092 50  0000 C CNN
-F 1 "AP2112K-3.3" H 13850 8001 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-5" H 13850 8075 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 13850 7850 50  0001 C CNN
-	1    13850 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13000 7650 13300 7650
-Wire Wire Line
-	12050 8150 12050 8200
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0113
-U 1 1 6038A8EB
-P 12050 8200
-F 0 "#PWR0113" H 12050 7950 50  0001 C CNN
-F 1 "GND" H 12050 8050 50  0000 C CNN
-F 2 "" H 12050 8200 50  0001 C CNN
-F 3 "" H 12050 8200 50  0001 C CNN
-	1    12050 8200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13550 7750 13450 7750
-Wire Wire Line
-	13450 7750 13450 8150
-Wire Wire Line
-	13450 8150 13300 8150
-Wire Wire Line
-	13300 8150 13300 8050
-Wire Wire Line
-	13300 7750 13300 7650
-$Comp
-L candy-rescue:C-nrfmicro-rescue C5
-U 1 1 6038A8F6
-P 14850 8000
-F 0 "C5" H 14950 8050 50  0000 L CNN
-F 1 "10uF" H 14950 7950 50  0000 L CNN
-F 2 "jiran-ble:Capacitor_SMD_0805" H 14888 7850 50  0001 C CNN
-F 3 "" H 14850 8000 50  0001 C CNN
-	1    14850 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 7850 14850 7650
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0114
-U 1 1 6038A8FD
-P 14850 8200
-F 0 "#PWR0114" H 14850 7950 50  0001 C CNN
-F 1 "GND" H 14850 8050 50  0000 C CNN
-F 2 "" H 14850 8200 50  0001 C CNN
-F 3 "" H 14850 8200 50  0001 C CNN
-	1    14850 8200
-	1    0    0    -1  
-$EndComp
-Connection ~ 14850 7650
-Wire Wire Line
-	3250 9950 3250 10250
-Wire Wire Line
-	3150 10250 3250 10250
-Connection ~ 3250 10250
-Wire Wire Line
-	3250 10250 3250 10600
-Text GLabel 950  10250 0    60   Input ~ 0
-VBUS_r
-Text GLabel 3600 9750 2    60   Input ~ 0
-VBAT_r
-Text GLabel 11950 7300 0    60   Input ~ 0
-VBUS_r
 Text Label 1600 8350 2    60   ~ 0
 P0.08_r
 Text Label 1600 8150 2    60   ~ 0
@@ -2072,24 +840,22 @@ Text GLabel 3250 8550 2    60   Input ~ 0
 VBUS_r
 Wire Wire Line
 	1200 7250 1600 7250
-Wire Wire Line
-	2950 8850 3050 8850
 $Comp
-L power:GND #PWR0115
-U 1 1 6038A911
-P 3050 8850
-F 0 "#PWR0115" H 3050 8600 50  0001 C CNN
-F 1 "GND" H 3055 8677 50  0000 C CNN
-F 2 "" H 3050 8850 50  0001 C CNN
-F 3 "" H 3050 8850 50  0001 C CNN
-	1    3050 8850
-	0    -1   -1   0   
+L power:GND #PWR038
+U 1 1 6048A973
+P 3625 8850
+F 0 "#PWR038" H 3625 8600 50  0001 C CNN
+F 1 "GND" H 3630 8677 50  0000 C CNN
+F 2 "" H 3625 8850 50  0001 C CNN
+F 3 "" H 3625 8850 50  0001 C CNN
+	1    3625 8850
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0116
-U 1 1 6038A917
+L power:GND #PWR037
+U 1 1 6048A979
 P 1300 8850
-F 0 "#PWR0116" H 1300 8600 50  0001 C CNN
+F 0 "#PWR037" H 1300 8600 50  0001 C CNN
 F 1 "GND" H 1305 8677 50  0000 C CNN
 F 2 "" H 1300 8850 50  0001 C CNN
 F 3 "" H 1300 8850 50  0001 C CNN
@@ -2097,10 +863,10 @@ F 3 "" H 1300 8850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0117
-U 1 1 6038A91D
+L power:GND #PWR025
+U 1 1 6048A97F
 P 1200 7250
-F 0 "#PWR0117" H 1200 7000 50  0001 C CNN
+F 0 "#PWR025" H 1200 7000 50  0001 C CNN
 F 1 "GND" H 1205 7077 50  0000 C CNN
 F 2 "" H 1200 7250 50  0001 C CNN
 F 3 "" H 1200 7250 50  0001 C CNN
@@ -2108,21 +874,10 @@ F 3 "" H 1200 7250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L candy-rescue:VCC-nrfmicro-rescue #PWR0118
-U 1 1 6038A923
-P 1300 8650
-F 0 "#PWR0118" H 1300 8500 50  0001 C CNN
-F 1 "VCC" H 1300 8831 50  0000 C CNN
-F 2 "" H 1300 8650 50  0001 C CNN
-F 3 "" H 1300 8650 50  0001 C CNN
-	1    1300 8650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L candy-rescue:E73-2G4M08S1C-52840-nrfmicro U7
-U 1 1 6038A929
+L candy-rescue:E73-2G4M08S1C-52840-nrfmicro U5
+U 1 1 6048A985
 P 2300 7950
-F 0 "U7" H 2275 9315 50  0000 C CNN
+F 0 "U5" H 2275 9315 50  0000 C CNN
 F 1 "E73-2G4M08S1C" H 2275 9224 50  0000 C CNN
 F 2 "jiran-ble:E73-2G4M08S1C-52840" H 2300 7950 50  0001 C CNN
 F 3 "" H 2300 7950 50  0001 C CNN
@@ -2162,456 +917,123 @@ Wire Wire Line
 Wire Wire Line
 	3250 8350 2950 8350
 Wire Wire Line
-	1900 10450 2000 10450
-Text GLabel 3250 7650 2    60   Input ~ 0
-SWO_r
-Wire Wire Line
 	1600 8850 1300 8850
-Wire Wire Line
-	2950 7650 3250 7650
 Text GLabel 1250 6950 0    60   Input ~ 0
 BLUE_LED_r
 Wire Wire Line
 	1600 6950 1250 6950
-Wire Wire Line
-	14850 8150 14850 8200
-Wire Wire Line
-	2950 7450 3250 7450
-Wire Wire Line
-	1600 8650 1300 8650
-NoConn ~ 2950 8750
-NoConn ~ 2950 8950
-Text GLabel 1000 8950 0    60   Input ~ 0
-BOOT_r
-Wire Wire Line
-	1000 8950 1600 8950
-Wire Wire Line
-	2000 10250 1750 10250
-Text GLabel 13900 7000 2    60   Input ~ 0
-VBAT_r
 $Comp
-L Device:R R12
-U 1 1 6038A94E
-P 9150 7700
-F 0 "R12" V 9250 7700 50  0000 C CNN
-F 1 "1K" V 9150 7700 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 9080 7700 50  0001 C CNN
-F 3 "~" H 9150 7700 50  0001 C CNN
-	1    9150 7700
+L Device:R R13
+U 1 1 6048A99E
+P 7575 8200
+F 0 "R13" V 7725 8200 50  0000 C CNN
+F 1 "1K" V 7650 8200 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 7505 8200 50  0001 C CNN
+F 3 "~" H 7575 8200 50  0001 C CNN
+	1    7575 8200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0119
-U 1 1 6038A954
-P 9300 7700
-F 0 "#PWR0119" H 9300 7450 50  0001 C CNN
-F 1 "GND" H 9305 7527 50  0000 C CNN
-F 2 "" H 9300 7700 50  0001 C CNN
-F 3 "" H 9300 7700 50  0001 C CNN
-	1    9300 7700
+L power:GND #PWR028
+U 1 1 6048A9A4
+P 7725 8200
+F 0 "#PWR028" H 7725 7950 50  0001 C CNN
+F 1 "GND" H 7725 8050 50  0000 C CNN
+F 2 "" H 7725 8200 50  0001 C CNN
+F 3 "" H 7725 8200 50  0001 C CNN
+	1    7725 8200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED LED3
-U 1 1 6038A95A
-P 8850 7700
-F 0 "LED3" H 8850 7450 50  0000 C CNN
-F 1 "BT" H 8850 7550 50  0000 C CNN
-F 2 "jiran-ble:LED_SMD_0805" H 8850 7700 50  0001 C CNN
-F 3 "~" H 8850 7700 50  0001 C CNN
-	1    8850 7700
+U 1 1 6048A9AA
+P 7275 8200
+F 0 "LED3" H 7275 7950 50  0000 C CNN
+F 1 "BT" H 7275 8050 50  0000 C CNN
+F 2 "jiran-ble:LED_SMD_0805" H 7275 8200 50  0001 C CNN
+F 3 "~" H 7275 8200 50  0001 C CNN
+	1    7275 8200
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R15
-U 1 1 6038A960
-P 1600 10250
-F 0 "R15" V 1700 10250 50  0000 C CNN
-F 1 "1K" V 1600 10250 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 1530 10250 50  0001 C CNN
-F 3 "~" H 1600 10250 50  0001 C CNN
-	1    1600 10250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED LED4
-U 1 1 6038A966
-P 1300 10250
-F 0 "LED4" H 1300 10000 50  0000 C CNN
-F 1 "CHG" H 1300 10100 50  0000 C CNN
-F 2 "jiran-ble:LED_SMD_0805" H 1300 10250 50  0001 C CNN
-F 3 "~" H 1300 10250 50  0001 C CNN
-	1    1300 10250
-	-1   0    0    1   
-$EndComp
-Text GLabel 8700 7700 0    60   Input ~ 0
+Text GLabel 7125 8200 0    60   Input ~ 0
 BLUE_LED_r
-Text GLabel 12400 6850 0    60   Input ~ 0
-P0.04_r
-$Comp
-L candy-rescue:R-nrfmicro-rescue R9
-U 1 1 6038A96E
-P 12700 6850
-F 0 "R9" V 12600 6850 50  0000 C CNN
-F 1 "10K" V 12700 6850 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 12630 6850 50  0001 C CNN
-F 3 "" H 12700 6850 50  0001 C CNN
-	1    12700 6850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13000 7100 13350 7100
-Wire Wire Line
-	12400 6850 12475 6850
-Wire Wire Line
-	12850 6850 13000 6850
-Wire Wire Line
-	13000 6850 13000 7100
-Connection ~ 13000 7100
-Wire Wire Line
-	13750 7000 13900 7000
-Wire Wire Line
-	12050 7300 11950 7300
-Connection ~ 12050 7300
-Wire Wire Line
-	1900 9750 1900 10450
-Wire Wire Line
-	1900 9750 3450 9750
-Wire Wire Line
-	3450 9750 3450 10100
-Connection ~ 3450 9750
-Wire Wire Line
-	3450 9750 3600 9750
-Wire Wire Line
-	2400 10650 1100 10650
-Wire Wire Line
-	1100 10650 1100 10250
-Connection ~ 1100 10250
-Wire Wire Line
-	1100 10250 1150 10250
-$Comp
-L candy-rescue:R-nrfmicro-rescue R13
-U 1 1 6038A985
-P 13300 7900
-F 0 "R13" H 13250 7900 50  0000 R CNN
-F 1 "100K" V 13300 8000 50  0000 R CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 13230 7900 50  0001 C CNN
-F 3 "" H 13300 7900 50  0001 C CNN
-	1    13300 7900
-	1    0    0    -1  
-$EndComp
-Text GLabel 3250 7450 2    60   Input ~ 0
-DFU_r
 Text GLabel 3250 7350 2    60   Input ~ 0
 SWC_r
-Text GLabel 10300 7850 0    60   Input ~ 0
+Text GLabel 8625 8325 0    60   Input ~ 0
 SWC_r
-Text GLabel 10300 7750 0    60   Input ~ 0
+Text GLabel 8625 8225 0    60   Input ~ 0
 SWD_r
-Text GLabel 12400 7025 0    60   Input ~ 0
-P0.26_r
-Wire Wire Line
-	12400 7025 12475 7025
-Wire Wire Line
-	12475 7025 12475 6850
-Connection ~ 12475 6850
-Wire Wire Line
-	12475 6850 12550 6850
 $Comp
 L Connector_Generic:Conn_01x04 J6
-U 1 1 6038A994
-P 10500 7650
-F 0 "J6" H 10580 7642 50  0000 L CNN
-F 1 "Conn_01x04" H 10580 7551 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x4_2.54" H 10500 7650 50  0001 C CNN
-F 3 "~" H 10500 7650 50  0001 C CNN
-	1    10500 7650
+U 1 1 6048A9B4
+P 9050 8125
+F 0 "J6" H 9125 8200 50  0000 L CNN
+F 1 "SWD" H 9125 8050 50  0000 L CNN
+F 2 "jiran-ble:Connector_THT_1x4_2.54" H 9050 8125 50  0001 C CNN
+F 3 "~" H 9050 8125 50  0001 C CNN
+	1    9050 8125
 	1    0    0    -1  
 $EndComp
 $Comp
-L candy-rescue:VCC-nrfmicro-rescue #PWR0120
-U 1 1 6038A99A
-P 10100 7550
-F 0 "#PWR0120" H 10100 7400 50  0001 C CNN
-F 1 "VCC" H 10100 7704 50  0000 C CNN
-F 2 "" H 10100 7550 50  0001 C CNN
-F 3 "" H 10100 7550 50  0001 C CNN
-	1    10100 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 6038A9A0
-P 10300 7550
-F 0 "#PWR0121" H 10300 7300 50  0001 C CNN
-F 1 "GND" H 10300 7400 50  0000 C CNN
-F 2 "" H 10300 7550 50  0001 C CNN
-F 3 "" H 10300 7550 50  0001 C CNN
-	1    10300 7550
+L power:GND #PWR027
+U 1 1 6048A9BA
+P 8850 8025
+F 0 "#PWR027" H 8850 7775 50  0001 C CNN
+F 1 "GND" H 8850 7875 50  0000 C CNN
+F 2 "" H 8850 8025 50  0001 C CNN
+F 3 "" H 8850 8025 50  0001 C CNN
+	1    8850 8025
 	-1   0    0    1   
 $EndComp
-Text GLabel 3650 8450 2    50   Input ~ 0
-SDA_r
-Text GLabel 3650 8250 2    50   Input ~ 0
-SCL_r
-Wire Wire Line
-	3650 8250 2950 8250
-Wire Wire Line
-	2950 8450 3650 8450
 Text Label 1600 7650 2    60   ~ 0
 P0.31_r
 Text Label 1600 7750 2    60   ~ 0
 P0.30_r
-Wire Wire Line
-	13550 7650 13300 7650
-Connection ~ 13300 7650
 $Comp
-L candy-rescue:USB_C_Receptacle_USB2.0-Connector USB2
-U 1 1 6038A9AE
-P 4800 7400
-F 0 "USB2" H 4907 8267 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 4907 8176 50  0000 C CNN
-F 2 "jiran-ble:USB-C_MidMount" H 4950 7400 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4950 7400 50  0001 C CNN
-	1    4800 7400
+L candy-rescue:SW_PUSH-keyboard_parts SW30
+U 1 1 6048A9C2
+P 7300 7000
+F 0 "SW30" H 7300 7255 50  0000 C CNN
+F 1 "SW_PUSH" H 7300 7164 50  0000 C CNN
+F 2 "jiran-ble:Switch_SMD_Tact_3-6-3,5" H 7300 7000 60  0001 C CNN
+F 3 "" H 7300 7000 60  0000 C CNN
+	1    7300 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6100 6650 2    60   Input ~ 0
-VBUS_r
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0122
-U 1 1 6038A9B5
-P 4800 8300
-F 0 "#PWR0122" H 4800 8050 50  0001 C CNN
-F 1 "GND" H 4800 8150 50  0000 C CNN
-F 2 "" H 4800 8300 50  0001 C CNN
-F 3 "" H 4800 8300 50  0001 C CNN
-	1    4800 8300
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5400 7900
-NoConn ~ 5400 8000
-$Comp
-L Device:R R10
-U 1 1 6038A9BD
-P 5950 7000
-F 0 "R10" V 5850 7000 50  0000 C CNN
-F 1 "5.1K" V 5950 7000 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 5880 7000 50  0001 C CNN
-F 3 "~" H 5950 7000 50  0001 C CNN
-	1    5950 7000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 6038A9C3
-P 5950 7100
-F 0 "R11" V 6050 7100 50  0000 C CNN
-F 1 "5.1K" V 5950 7100 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 5880 7100 50  0001 C CNN
-F 3 "~" H 5950 7100 50  0001 C CNN
-	1    5950 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 7100 5800 7100
-Wire Wire Line
-	5400 7000 5800 7000
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0123
-U 1 1 6038A9CB
-P 6150 7100
-F 0 "#PWR0123" H 6150 6850 50  0001 C CNN
-F 1 "GND" H 6150 6950 50  0000 C CNN
-F 2 "" H 6150 7100 50  0001 C CNN
-F 3 "" H 6150 7100 50  0001 C CNN
-	1    6150 7100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6150 7000 6100 7000
-Wire Wire Line
-	6100 7100 6150 7100
-Connection ~ 6150 7100
-Wire Wire Line
-	6150 7100 6150 7000
-Wire Wire Line
-	5400 7300 5500 7300
-Wire Wire Line
-	5400 7400 5500 7400
-Wire Wire Line
-	5400 7500 5500 7500
-Wire Wire Line
-	5400 7600 5500 7600
-$Comp
-L candy-rescue:SW_PUSH-keyboard_parts SW31
-U 1 1 6038A9D9
-P 8900 6800
-F 0 "SW31" H 8900 7055 50  0000 C CNN
-F 1 "SW_PUSH" H 8900 6964 50  0000 C CNN
-F 2 "jiran-ble:Switch_SMD_Tact_3-6-3,5" H 8900 6800 60  0001 C CNN
-F 3 "" H 8900 6800 60  0000 C CNN
-	1    8900 6800
-	1    0    0    -1  
-$EndComp
-Text GLabel 8600 6800 0    60   Input ~ 0
+Text GLabel 7000 7000 0    60   Input ~ 0
 RESET_r
 $Comp
-L power:GND #PWR0124
-U 1 1 6038A9E0
-P 9200 6800
-F 0 "#PWR0124" H 9200 6550 50  0001 C CNN
-F 1 "GND" H 9205 6627 50  0000 C CNN
-F 2 "" H 9200 6800 50  0001 C CNN
-F 3 "" H 9200 6800 50  0001 C CNN
-	1    9200 6800
+L power:GND #PWR023
+U 1 1 6048A9C9
+P 7600 7000
+F 0 "#PWR023" H 7600 6750 50  0001 C CNN
+F 1 "GND" H 7605 6827 50  0000 C CNN
+F 2 "" H 7600 7000 50  0001 C CNN
+F 3 "" H 7600 7000 50  0001 C CNN
+	1    7600 7000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0125
-U 1 1 6038A9E6
-P 4500 8300
-F 0 "#PWR0125" H 4500 8050 50  0001 C CNN
-F 1 "GND" H 4500 8150 50  0000 C CNN
-F 2 "" H 4500 8300 50  0001 C CNN
-F 3 "" H 4500 8300 50  0001 C CNN
-	1    4500 8300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Polyfuse F2
-U 1 1 6038A9EC
-P 5950 6650
-F 0 "F2" V 5700 6650 50  0000 C CNN
-F 1 "500mA" V 5800 6650 50  0000 C CNN
-F 2 "jiran-ble:Fuse_SMD_0805" H 6000 6450 50  0001 L CNN
-F 3 "~" H 5950 6650 50  0001 C CNN
-	1    5950 6650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 6800 5800 6650
-$Comp
-L candy-rescue:GND-nrfmicro-rescue #PWR0126
-U 1 1 6038A9F3
-P 6900 7950
-F 0 "#PWR0126" H 6900 7700 50  0001 C CNN
-F 1 "GND" H 6900 7800 50  0000 C CNN
-F 2 "" H 6900 7950 50  0001 C CNN
-F 3 "" H 6900 7950 50  0001 C CNN
-	1    6900 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 6800 6900 6800
-Wire Wire Line
-	6900 6800 6900 6950
-Connection ~ 5800 6800
-Wire Wire Line
-	5400 6800 5800 6800
-Wire Wire Line
-	5500 7300 5500 7350
-Wire Wire Line
-	5500 7500 5500 7550
-$Comp
-L candy-rescue:USBLC6-2SC6-Power_Protection U5
-U 1 1 6038A9FF
-P 6900 7450
-F 0 "U5" H 7050 7000 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 7250 7100 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-6" H 6150 7850 50  0001 C CNN
-F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 7100 7800 50  0001 C CNN
-	1    6900 7450
-	1    0    0    -1  
-$EndComp
-Text GLabel 6400 7350 0    60   Input ~ 0
-DATA+_r
-Text GLabel 7400 7350 2    60   Input ~ 0
-DATA-_r
-Wire Wire Line
-	6400 7550 5500 7550
-Connection ~ 5500 7550
-Wire Wire Line
-	5500 7550 5500 7600
-Wire Wire Line
-	5500 7350 5850 7350
-Wire Wire Line
-	5850 7350 5850 8250
-Wire Wire Line
-	5850 8250 7600 8250
-Wire Wire Line
-	7600 8250 7600 7550
-Wire Wire Line
-	7600 7550 7400 7550
-Connection ~ 5500 7350
-Wire Wire Line
-	5500 7350 5500 7400
-$Comp
-L Switch:SW_SPDT SW32
-U 1 1 6038AA11
-P 13550 7000
-F 0 "SW32" H 13550 6675 50  0000 C CNN
-F 1 "MSK-12C02" H 13550 6766 50  0000 C CNN
-F 2 "jiran-ble:Switch_SMD_MSK-12C02" H 13550 7000 50  0001 C CNN
-F 3 "~" H 13550 7000 50  0001 C CNN
-	1    13550 7000
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1000 8550 0    60   Input ~ 0
-P0.04_r
-Wire Wire Line
-	1000 8550 1600 8550
-Text GLabel 1300 7950 0    60   Input ~ 0
-P0.26_r
-Wire Wire Line
-	1300 7950 1600 7950
-Text GLabel 10200 8550 0    60   Input ~ 0
-VBAT_r
-$Comp
-L power:GND #PWR0127
-U 1 1 6038AA1C
-P 10200 8250
-F 0 "#PWR0127" H 10200 8000 50  0001 C CNN
-F 1 "GND" H 10205 8077 50  0000 C CNN
-F 2 "" H 10200 8250 50  0001 C CNN
-F 3 "" H 10200 8250 50  0001 C CNN
-	1    10200 8250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 6038AA22
-P 8650 8200
-F 0 "#PWR0128" H 8650 7950 50  0001 C CNN
-F 1 "GND" H 8655 8027 50  0000 C CNN
-F 2 "" H 8650 8200 50  0001 C CNN
-F 3 "" H 8650 8200 50  0001 C CNN
-	1    8650 8200
-	0    1    1    0   
-$EndComp
-Text GLabel 8650 8500 0    60   Input ~ 0
-VBUS_r
+Text GLabel 1300 8550 0    60   Input ~ 0
+BATTERY_PIN_r
 Wire Notes Line
 	500  9300 4050 9300
 Text Notes 550  6400 0    60   ~ 0
 NRF52840
 Text Notes 4100 6400 0    60   ~ 0
 USB
-Text Notes 8100 7300 0    60   ~ 0
+Text Notes 6425 7600 0    60   ~ 0
 Indicator LED
-Text Notes 8100 6400 0    60   ~ 0
+Text Notes 6425 6400 0    60   ~ 0
 Reset button
-Text Notes 9700 6400 0    60   ~ 0
+Text Notes 8075 6400 0    60   ~ 0
 Battery connector
-Text Notes 9700 7300 0    60   ~ 0
+Text Notes 8075 7600 0    60   ~ 0
 SWD connector
-Text Notes 8100 8100 0    60   ~ 0
-VBUS tester
 $Comp
-L Switch:SW_Push SW33
-U 1 1 6038AA31
+L Switch:SW_Push SW31
+U 1 1 6048A9DF
 P 4695 9190
-F 0 "SW33" H 4695 9345 50  0000 C CNN
+F 0 "SW31" H 4695 9345 50  0000 C CNN
 F 1 "SW_Push" H 4695 9384 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 9390 50  0001 C CNN
 F 3 "~" H 4695 9390 50  0001 C CNN
@@ -2619,10 +1041,10 @@ F 3 "~" H 4695 9390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW34
-U 1 1 6038AA37
+L Switch:SW_Push SW32
+U 1 1 6048A9E5
 P 5295 9190
-F 0 "SW34" H 5295 9345 50  0000 C CNN
+F 0 "SW32" H 5295 9345 50  0000 C CNN
 F 1 "SW_Push" H 5295 9384 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 9390 50  0001 C CNN
 F 3 "~" H 5295 9390 50  0001 C CNN
@@ -2630,10 +1052,10 @@ F 3 "~" H 5295 9390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW35
-U 1 1 6038AA3D
+L Switch:SW_Push SW33
+U 1 1 6048A9EB
 P 5895 9190
-F 0 "SW35" H 5895 9345 50  0000 C CNN
+F 0 "SW33" H 5895 9345 50  0000 C CNN
 F 1 "SW_Push" H 5895 9384 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 9390 50  0001 C CNN
 F 3 "~" H 5895 9390 50  0001 C CNN
@@ -2641,10 +1063,10 @@ F 3 "~" H 5895 9390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW36
-U 1 1 6038AA43
+L Switch:SW_Push SW34
+U 1 1 6048A9F1
 P 6495 9190
-F 0 "SW36" H 6495 9345 50  0000 C CNN
+F 0 "SW34" H 6495 9345 50  0000 C CNN
 F 1 "SW_Push" H 6495 9384 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 9390 50  0001 C CNN
 F 3 "~" H 6495 9390 50  0001 C CNN
@@ -2652,10 +1074,10 @@ F 3 "~" H 6495 9390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW37
-U 1 1 6038AA49
+L Switch:SW_Push SW35
+U 1 1 6048A9F7
 P 7095 9190
-F 0 "SW37" H 7095 9345 50  0000 C CNN
+F 0 "SW35" H 7095 9345 50  0000 C CNN
 F 1 "SW_Push" H 7095 9384 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 9390 50  0001 C CNN
 F 3 "~" H 7095 9390 50  0001 C CNN
@@ -2663,10 +1085,10 @@ F 3 "~" H 7095 9390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW38
-U 1 1 6038AA4F
+L Switch:SW_Push SW36
+U 1 1 6048A9FD
 P 7695 9190
-F 0 "SW38" H 7695 9345 50  0000 C CNN
+F 0 "SW36" H 7695 9345 50  0000 C CNN
 F 1 "SW_Push" H 7695 9384 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 9390 50  0001 C CNN
 F 3 "~" H 7695 9390 50  0001 C CNN
@@ -2674,10 +1096,10 @@ F 3 "~" H 7695 9390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW39
-U 1 1 6038AA55
+L Switch:SW_Push SW37
+U 1 1 6048AA03
 P 4695 9590
-F 0 "SW39" H 4695 9745 50  0000 C CNN
+F 0 "SW37" H 4695 9745 50  0000 C CNN
 F 1 "SW_Push" H 4695 9784 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 9790 50  0001 C CNN
 F 3 "~" H 4695 9790 50  0001 C CNN
@@ -2685,10 +1107,10 @@ F 3 "~" H 4695 9790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW40
-U 1 1 6038AA5B
+L Switch:SW_Push SW38
+U 1 1 6048AA09
 P 5295 9590
-F 0 "SW40" H 5295 9745 50  0000 C CNN
+F 0 "SW38" H 5295 9745 50  0000 C CNN
 F 1 "SW_Push" H 5295 9784 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 9790 50  0001 C CNN
 F 3 "~" H 5295 9790 50  0001 C CNN
@@ -2696,10 +1118,10 @@ F 3 "~" H 5295 9790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW41
-U 1 1 6038AA61
+L Switch:SW_Push SW39
+U 1 1 6048AA0F
 P 5895 9590
-F 0 "SW41" H 5895 9745 50  0000 C CNN
+F 0 "SW39" H 5895 9745 50  0000 C CNN
 F 1 "SW_Push" H 5895 9784 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 9790 50  0001 C CNN
 F 3 "~" H 5895 9790 50  0001 C CNN
@@ -2707,10 +1129,10 @@ F 3 "~" H 5895 9790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW42
-U 1 1 6038AA67
+L Switch:SW_Push SW40
+U 1 1 6048AA15
 P 6495 9590
-F 0 "SW42" H 6495 9745 50  0000 C CNN
+F 0 "SW40" H 6495 9745 50  0000 C CNN
 F 1 "SW_Push" H 6495 9784 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 9790 50  0001 C CNN
 F 3 "~" H 6495 9790 50  0001 C CNN
@@ -2718,10 +1140,10 @@ F 3 "~" H 6495 9790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW43
-U 1 1 6038AA6D
+L Switch:SW_Push SW41
+U 1 1 6048AA1B
 P 7095 9590
-F 0 "SW43" H 7095 9745 50  0000 C CNN
+F 0 "SW41" H 7095 9745 50  0000 C CNN
 F 1 "SW_Push" H 7095 9784 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 9790 50  0001 C CNN
 F 3 "~" H 7095 9790 50  0001 C CNN
@@ -2729,10 +1151,10 @@ F 3 "~" H 7095 9790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW44
-U 1 1 6038AA73
+L Switch:SW_Push SW42
+U 1 1 6048AA21
 P 7695 9590
-F 0 "SW44" H 7695 9745 50  0000 C CNN
+F 0 "SW42" H 7695 9745 50  0000 C CNN
 F 1 "SW_Push" H 7695 9784 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 9790 50  0001 C CNN
 F 3 "~" H 7695 9790 50  0001 C CNN
@@ -2740,10 +1162,10 @@ F 3 "~" H 7695 9790 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW45
-U 1 1 6038AA79
+L Switch:SW_Push SW43
+U 1 1 6048AA27
 P 4695 9990
-F 0 "SW45" H 4695 10145 50  0000 C CNN
+F 0 "SW43" H 4695 10145 50  0000 C CNN
 F 1 "SW_Push" H 4695 10184 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 10190 50  0001 C CNN
 F 3 "~" H 4695 10190 50  0001 C CNN
@@ -2751,10 +1173,10 @@ F 3 "~" H 4695 10190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW46
-U 1 1 6038AA7F
+L Switch:SW_Push SW44
+U 1 1 6048AA2D
 P 5295 9990
-F 0 "SW46" H 5295 10145 50  0000 C CNN
+F 0 "SW44" H 5295 10145 50  0000 C CNN
 F 1 "SW_Push" H 5295 10184 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 10190 50  0001 C CNN
 F 3 "~" H 5295 10190 50  0001 C CNN
@@ -2762,10 +1184,10 @@ F 3 "~" H 5295 10190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW47
-U 1 1 6038AA85
+L Switch:SW_Push SW45
+U 1 1 6048AA33
 P 5895 9990
-F 0 "SW47" H 5895 10145 50  0000 C CNN
+F 0 "SW45" H 5895 10145 50  0000 C CNN
 F 1 "SW_Push" H 5895 10184 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 10190 50  0001 C CNN
 F 3 "~" H 5895 10190 50  0001 C CNN
@@ -2773,10 +1195,10 @@ F 3 "~" H 5895 10190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW48
-U 1 1 6038AA8B
+L Switch:SW_Push SW46
+U 1 1 6048AA39
 P 6495 9990
-F 0 "SW48" H 6495 10145 50  0000 C CNN
+F 0 "SW46" H 6495 10145 50  0000 C CNN
 F 1 "SW_Push" H 6495 10184 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 10190 50  0001 C CNN
 F 3 "~" H 6495 10190 50  0001 C CNN
@@ -2784,10 +1206,10 @@ F 3 "~" H 6495 10190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW49
-U 1 1 6038AA91
+L Switch:SW_Push SW47
+U 1 1 6048AA3F
 P 7095 9990
-F 0 "SW49" H 7095 10145 50  0000 C CNN
+F 0 "SW47" H 7095 10145 50  0000 C CNN
 F 1 "SW_Push" H 7095 10184 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 10190 50  0001 C CNN
 F 3 "~" H 7095 10190 50  0001 C CNN
@@ -2795,10 +1217,10 @@ F 3 "~" H 7095 10190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW50
-U 1 1 6038AA97
+L Switch:SW_Push SW48
+U 1 1 6048AA45
 P 7695 9990
-F 0 "SW50" H 7695 10145 50  0000 C CNN
+F 0 "SW48" H 7695 10145 50  0000 C CNN
 F 1 "SW_Push" H 7695 10184 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 10190 50  0001 C CNN
 F 3 "~" H 7695 10190 50  0001 C CNN
@@ -2806,10 +1228,10 @@ F 3 "~" H 7695 10190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW51
-U 1 1 6038AA9D
+L Switch:SW_Push SW49
+U 1 1 6048AA4B
 P 4695 10390
-F 0 "SW51" H 4695 10545 50  0000 C CNN
+F 0 "SW49" H 4695 10545 50  0000 C CNN
 F 1 "SW_Push" H 4695 10584 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 10590 50  0001 C CNN
 F 3 "~" H 4695 10590 50  0001 C CNN
@@ -2817,10 +1239,10 @@ F 3 "~" H 4695 10590 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW52
-U 1 1 6038AAA3
+L Switch:SW_Push SW50
+U 1 1 6048AA51
 P 5295 10390
-F 0 "SW52" H 5295 10545 50  0000 C CNN
+F 0 "SW50" H 5295 10545 50  0000 C CNN
 F 1 "SW_Push" H 5295 10584 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 10590 50  0001 C CNN
 F 3 "~" H 5295 10590 50  0001 C CNN
@@ -2828,10 +1250,10 @@ F 3 "~" H 5295 10590 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW53
-U 1 1 6038AAA9
+L Switch:SW_Push SW51
+U 1 1 6048AA57
 P 5895 10390
-F 0 "SW53" H 5895 10545 50  0000 C CNN
+F 0 "SW51" H 5895 10545 50  0000 C CNN
 F 1 "SW_Push" H 5895 10584 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 10590 50  0001 C CNN
 F 3 "~" H 5895 10590 50  0001 C CNN
@@ -2839,10 +1261,10 @@ F 3 "~" H 5895 10590 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW54
-U 1 1 6038AAAF
+L Switch:SW_Push SW52
+U 1 1 6048AA5D
 P 6495 10390
-F 0 "SW54" H 6495 10545 50  0000 C CNN
+F 0 "SW52" H 6495 10545 50  0000 C CNN
 F 1 "SW_Push" H 6495 10584 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 10590 50  0001 C CNN
 F 3 "~" H 6495 10590 50  0001 C CNN
@@ -2850,10 +1272,10 @@ F 3 "~" H 6495 10590 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW55
-U 1 1 6038AAB5
+L Switch:SW_Push SW53
+U 1 1 6048AA63
 P 7095 10390
-F 0 "SW55" H 7095 10545 50  0000 C CNN
+F 0 "SW53" H 7095 10545 50  0000 C CNN
 F 1 "SW_Push" H 7095 10584 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 10590 50  0001 C CNN
 F 3 "~" H 7095 10590 50  0001 C CNN
@@ -2861,10 +1283,10 @@ F 3 "~" H 7095 10590 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW56
-U 1 1 6038AABB
+L Switch:SW_Push SW54
+U 1 1 6048AA69
 P 7695 10390
-F 0 "SW56" H 7695 10545 50  0000 C CNN
+F 0 "SW54" H 7695 10545 50  0000 C CNN
 F 1 "SW_Push" H 7695 10584 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 10590 50  0001 C CNN
 F 3 "~" H 7695 10590 50  0001 C CNN
@@ -2872,10 +1294,10 @@ F 3 "~" H 7695 10590 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW57
-U 1 1 6038AAC1
+L Switch:SW_Push SW55
+U 1 1 6048AA6F
 P 4695 10790
-F 0 "SW57" H 4695 10945 50  0000 C CNN
+F 0 "SW55" H 4695 10945 50  0000 C CNN
 F 1 "SW_Push" H 4695 10984 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 10990 50  0001 C CNN
 F 3 "~" H 4695 10990 50  0001 C CNN
@@ -2883,10 +1305,10 @@ F 3 "~" H 4695 10990 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW58
-U 1 1 6038AAC7
+L Switch:SW_Push SW56
+U 1 1 6048AA75
 P 6495 10790
-F 0 "SW58" H 6495 10945 50  0000 C CNN
+F 0 "SW56" H 6495 10945 50  0000 C CNN
 F 1 "SW_Push" H 6495 10984 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 10990 50  0001 C CNN
 F 3 "~" H 6495 10990 50  0001 C CNN
@@ -2894,10 +1316,10 @@ F 3 "~" H 6495 10990 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW59
-U 1 1 6038AACD
+L Switch:SW_Push SW57
+U 1 1 6048AA7B
 P 7095 10790
-F 0 "SW59" H 7095 10945 50  0000 C CNN
+F 0 "SW57" H 7095 10945 50  0000 C CNN
 F 1 "SW_Push" H 7095 10984 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 10990 50  0001 C CNN
 F 3 "~" H 7095 10990 50  0001 C CNN
@@ -2905,10 +1327,10 @@ F 3 "~" H 7095 10990 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW60
-U 1 1 6038AAD3
+L Switch:SW_Push SW58
+U 1 1 6048AA81
 P 7695 10790
-F 0 "SW60" H 7695 10945 50  0000 C CNN
+F 0 "SW58" H 7695 10945 50  0000 C CNN
 F 1 "SW_Push" H 7695 10984 50  0001 C CNN
 F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 10990 50  0001 C CNN
 F 3 "~" H 7695 10990 50  0001 C CNN
@@ -2917,7 +1339,7 @@ F 3 "~" H 7695 10990 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D31
-U 1 1 6038AAD9
+U 1 1 6048AA87
 P 4495 9290
 F 0 "D31" V 4495 9222 50  0000 R CNN
 F 1 "1N4148" V 4450 9222 50  0001 R CNN
@@ -2928,7 +1350,7 @@ F 3 "~" V 4495 9290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D32
-U 1 1 6038AADF
+U 1 1 6048AA8D
 P 5095 9290
 F 0 "D32" V 5095 9222 50  0000 R CNN
 F 1 "1N4148" V 5050 9222 50  0001 R CNN
@@ -2939,7 +1361,7 @@ F 3 "~" V 5095 9290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D33
-U 1 1 6038AAE5
+U 1 1 6048AA93
 P 5695 9290
 F 0 "D33" V 5695 9222 50  0000 R CNN
 F 1 "1N4148" V 5650 9222 50  0001 R CNN
@@ -2950,7 +1372,7 @@ F 3 "~" V 5695 9290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D34
-U 1 1 6038AAEB
+U 1 1 6048AA99
 P 6295 9290
 F 0 "D34" V 6295 9222 50  0000 R CNN
 F 1 "1N4148" V 6250 9222 50  0001 R CNN
@@ -2961,7 +1383,7 @@ F 3 "~" V 6295 9290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D35
-U 1 1 6038AAF1
+U 1 1 6048AA9F
 P 6895 9290
 F 0 "D35" V 6895 9222 50  0000 R CNN
 F 1 "1N4148" V 6850 9222 50  0001 R CNN
@@ -2972,7 +1394,7 @@ F 3 "~" V 6895 9290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D36
-U 1 1 6038AAF7
+U 1 1 6048AAA5
 P 7495 9290
 F 0 "D36" V 7495 9222 50  0000 R CNN
 F 1 "1N4148" V 7450 9222 50  0001 R CNN
@@ -2983,7 +1405,7 @@ F 3 "~" V 7495 9290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D37
-U 1 1 6038AAFD
+U 1 1 6048AAAB
 P 4495 9690
 F 0 "D37" V 4495 9622 50  0000 R CNN
 F 1 "1N4148" V 4450 9622 50  0001 R CNN
@@ -2994,7 +1416,7 @@ F 3 "~" V 4495 9690 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D38
-U 1 1 6038AB03
+U 1 1 6048AAB1
 P 5095 9690
 F 0 "D38" V 5095 9622 50  0000 R CNN
 F 1 "1N4148" V 5050 9622 50  0001 R CNN
@@ -3005,7 +1427,7 @@ F 3 "~" V 5095 9690 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D39
-U 1 1 6038AB09
+U 1 1 6048AAB7
 P 5695 9690
 F 0 "D39" V 5695 9622 50  0000 R CNN
 F 1 "1N4148" V 5650 9622 50  0001 R CNN
@@ -3016,7 +1438,7 @@ F 3 "~" V 5695 9690 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D40
-U 1 1 6038AB0F
+U 1 1 6048AABD
 P 6295 9690
 F 0 "D40" V 6295 9622 50  0000 R CNN
 F 1 "1N4148" V 6250 9622 50  0001 R CNN
@@ -3027,7 +1449,7 @@ F 3 "~" V 6295 9690 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D41
-U 1 1 6038AB15
+U 1 1 6048AAC3
 P 6895 9690
 F 0 "D41" V 6895 9622 50  0000 R CNN
 F 1 "1N4148" V 6850 9622 50  0001 R CNN
@@ -3038,7 +1460,7 @@ F 3 "~" V 6895 9690 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D42
-U 1 1 6038AB1B
+U 1 1 6048AAC9
 P 7495 9690
 F 0 "D42" V 7495 9622 50  0000 R CNN
 F 1 "1N4148" V 7450 9622 50  0001 R CNN
@@ -3049,7 +1471,7 @@ F 3 "~" V 7495 9690 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D43
-U 1 1 6038AB21
+U 1 1 6048AACF
 P 4495 10090
 F 0 "D43" V 4495 10022 50  0000 R CNN
 F 1 "1N4148" V 4450 10022 50  0001 R CNN
@@ -3060,7 +1482,7 @@ F 3 "~" V 4495 10090 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D44
-U 1 1 6038AB27
+U 1 1 6048AAD5
 P 5095 10090
 F 0 "D44" V 5095 10022 50  0000 R CNN
 F 1 "1N4148" V 5050 10022 50  0001 R CNN
@@ -3071,7 +1493,7 @@ F 3 "~" V 5095 10090 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D45
-U 1 1 6038AB2D
+U 1 1 6048AADB
 P 5695 10090
 F 0 "D45" V 5695 10022 50  0000 R CNN
 F 1 "1N4148" V 5650 10022 50  0001 R CNN
@@ -3082,7 +1504,7 @@ F 3 "~" V 5695 10090 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D46
-U 1 1 6038AB33
+U 1 1 6048AAE1
 P 6295 10090
 F 0 "D46" V 6295 10022 50  0000 R CNN
 F 1 "1N4148" V 6250 10022 50  0001 R CNN
@@ -3093,7 +1515,7 @@ F 3 "~" V 6295 10090 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D47
-U 1 1 6038AB39
+U 1 1 6048AAE7
 P 6895 10090
 F 0 "D47" V 6895 10022 50  0000 R CNN
 F 1 "1N4148" V 6850 10022 50  0001 R CNN
@@ -3104,7 +1526,7 @@ F 3 "~" V 6895 10090 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D48
-U 1 1 6038AB3F
+U 1 1 6048AAED
 P 7495 10090
 F 0 "D48" V 7495 10022 50  0000 R CNN
 F 1 "1N4148" V 7450 10022 50  0001 R CNN
@@ -3115,7 +1537,7 @@ F 3 "~" V 7495 10090 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D49
-U 1 1 6038AB45
+U 1 1 6048AAF3
 P 4495 10490
 F 0 "D49" V 4495 10422 50  0000 R CNN
 F 1 "1N4148" V 4450 10422 50  0001 R CNN
@@ -3126,7 +1548,7 @@ F 3 "~" V 4495 10490 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D50
-U 1 1 6038AB4B
+U 1 1 6048AAF9
 P 5095 10490
 F 0 "D50" V 5095 10422 50  0000 R CNN
 F 1 "1N4148" V 5050 10422 50  0001 R CNN
@@ -3137,7 +1559,7 @@ F 3 "~" V 5095 10490 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D51
-U 1 1 6038AB51
+U 1 1 6048AAFF
 P 5695 10490
 F 0 "D51" V 5695 10422 50  0000 R CNN
 F 1 "1N4148" V 5650 10422 50  0001 R CNN
@@ -3148,7 +1570,7 @@ F 3 "~" V 5695 10490 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D52
-U 1 1 6038AB57
+U 1 1 6048AB05
 P 6295 10490
 F 0 "D52" V 6295 10422 50  0000 R CNN
 F 1 "1N4148" V 6250 10422 50  0001 R CNN
@@ -3159,7 +1581,7 @@ F 3 "~" V 6295 10490 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D53
-U 1 1 6038AB5D
+U 1 1 6048AB0B
 P 6895 10490
 F 0 "D53" V 6895 10422 50  0000 R CNN
 F 1 "1N4148" V 6850 10422 50  0001 R CNN
@@ -3170,7 +1592,7 @@ F 3 "~" V 6895 10490 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D54
-U 1 1 6038AB63
+U 1 1 6048AB11
 P 7495 10490
 F 0 "D54" V 7495 10422 50  0000 R CNN
 F 1 "1N4148" V 7450 10422 50  0001 R CNN
@@ -3181,7 +1603,7 @@ F 3 "~" V 7495 10490 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D55
-U 1 1 6038AB69
+U 1 1 6048AB17
 P 4495 10890
 F 0 "D55" V 4495 10822 50  0000 R CNN
 F 1 "1N4148" V 4450 10822 50  0001 R CNN
@@ -3192,7 +1614,7 @@ F 3 "~" V 4495 10890 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D56
-U 1 1 6038AB6F
+U 1 1 6048AB1D
 P 6295 10890
 F 0 "D56" V 6295 10822 50  0000 R CNN
 F 1 "1N4148" V 6250 10822 50  0001 R CNN
@@ -3203,7 +1625,7 @@ F 3 "~" V 6295 10890 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D57
-U 1 1 6038AB75
+U 1 1 6048AB23
 P 6895 10890
 F 0 "D57" V 6895 10822 50  0000 R CNN
 F 1 "1N4148" V 6850 10822 50  0001 R CNN
@@ -3214,7 +1636,7 @@ F 3 "~" V 6895 10890 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D58
-U 1 1 6038AB7B
+U 1 1 6048AB29
 P 7495 10890
 F 0 "D58" V 7495 10822 50  0000 R CNN
 F 1 "1N4148" V 7450 10822 50  0001 R CNN
@@ -3404,57 +1826,68 @@ Wire Wire Line
 	7895 9190 7895 9590
 $Comp
 L Mechanical:MountingHole HM6
-U 1 1 6038ABF1
+U 1 1 6048AB9F
 P 8315 9060
 F 0 "HM6" H 8415 9106 50  0000 L CNN
 F 1 "CaseHole" H 8415 9015 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 9060 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 9060 50  0001 C CNN
 F 3 "~" H 8315 9060 50  0001 C CNN
 	1    8315 9060
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole HM7
-U 1 1 6038ABF7
+U 1 1 6048ABA5
 P 8315 9250
 F 0 "HM7" H 8415 9296 50  0000 L CNN
 F 1 "CaseHole" H 8415 9205 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 9250 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 9250 50  0001 C CNN
 F 3 "~" H 8315 9250 50  0001 C CNN
 	1    8315 9250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole HM8
-U 1 1 6038ABFD
+U 1 1 6048ABAB
 P 8315 9450
 F 0 "HM8" H 8415 9496 50  0000 L CNN
 F 1 "CaseHole" H 8415 9405 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 9450 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 9450 50  0001 C CNN
 F 3 "~" H 8315 9450 50  0001 C CNN
 	1    8315 9450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole HM9
-U 1 1 6038AC03
+U 1 1 6048ABB1
 P 8315 9655
 F 0 "HM9" H 8415 9701 50  0000 L CNN
 F 1 "CaseHole" H 8415 9610 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 9655 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 9655 50  0001 C CNN
 F 3 "~" H 8315 9655 50  0001 C CNN
 	1    8315 9655
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole HM10
-U 1 1 6038AC09
+U 1 1 6048ABB7
 P 8315 9845
 F 0 "HM10" H 8415 9891 50  0000 L CNN
 F 1 "CaseHole" H 8415 9800 50  0000 L CNN
-F 2 "used_footprints:Hole_Mount_M4" H 8315 9845 50  0001 C CNN
+F 2 "jiran-ble:Hole_Mount_M4" H 8315 9845 50  0001 C CNN
 F 3 "~" H 8315 9845 50  0001 C CNN
 	1    8315 9845
+	1    0    0    -1  
+$EndComp
+$Comp
+L jiran-ble:jiran-ble G2
+U 1 1 6048ABBD
+P 9150 9150
+F 0 "G2" H 9100 9400 60  0000 L CNN
+F 1 "logo-jiran-hotswap" H 9150 8900 60  0001 C CNN
+F 2 "jiran-ble:logotype" H 9150 9150 50  0001 C CNN
+F 3 "" H 9150 9150 50  0001 C CNN
+	1    9150 9150
 	1    0    0    -1  
 $EndComp
 Text Notes 8100 8800 0    61   ~ 0
@@ -3466,65 +1899,17 @@ NoConn ~ 2950 7750
 NoConn ~ 2950 7850
 NoConn ~ 2950 7950
 NoConn ~ 2950 8050
-NoConn ~ 1600 8450
-NoConn ~ 1600 8250
 NoConn ~ 2950 7050
 NoConn ~ 2950 7250
 NoConn ~ 1600 7050
 Wire Notes Line
 	8050 6300 8050 11200
 Wire Notes Line
-	8050 8000 11200 8000
-Wire Notes Line
-	8050 7200 11200 7200
-$Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 6038AC25
-P 8950 8300
-F 0 "J7" H 9030 8292 50  0000 L CNN
-F 1 "Conn_01x02" H 9030 8201 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x2_2.54" H 8950 8300 50  0001 C CNN
-F 3 "~" H 8950 8300 50  0001 C CNN
-	1    8950 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 8300 8750 8200
-Wire Wire Line
-	8750 8200 8650 8200
-Wire Wire Line
-	8750 8400 8750 8500
-Wire Wire Line
-	8750 8500 8650 8500
-$Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 6038AC2F
-P 10500 8350
-F 0 "J8" H 10580 8342 50  0000 L CNN
-F 1 "Conn_01x02" H 10580 8251 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x2_2.54" H 10500 8350 50  0001 C CNN
-F 3 "~" H 10500 8350 50  0001 C CNN
-	1    10500 8350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 8250 10300 8250
-Wire Wire Line
-	10300 8250 10300 8350
-Wire Wire Line
-	10300 8450 10300 8550
-Wire Wire Line
-	10300 8550 10200 8550
-Text Notes 9700 8100 0    61   ~ 0
-Battery tester\n
-NoConn ~ 1600 7850
-NoConn ~ 1600 8050
-Wire Notes Line
 	11200 6300 11200 11200
-Wire Wire Line
-	10300 7650 10100 7650
-Wire Wire Line
-	10100 7650 10100 7550
+Wire Notes Line
+	16050 6300 16050 11200
+Wire Notes Line
+	16050 11200 500  11200
 Wire Notes Line
 	500  11200 500  6300
 Wire Notes Line
@@ -3533,14 +1918,14 @@ Wire Notes Line
 	4050 6300 4050 11200
 Wire Notes Line
 	11200 9900 16050 9900
-Text Notes 11200 8900 0    118  ~ 24
+Text Notes 11275 8950 0    115  ~ 23
 Right side of PCB, be careful when making changes!
 Wire Notes Line
 	9650 6300 9650 11200
-Text Notes 14100 9850 0    61   ~ 0
-Jiran-ble (right side) / r0.1 / 02.02.21
-Text Notes 9750 9950 0    61   ~ 0
-Left side contain:\nSW31 - SW60\nD30 - D59\nR9 - R16\nHM6 - HM10\nU5 - U8\nJ5 - J8\nC4 - C6\nLED3 - LED4\nUSB2\nF2\nG2\n
+Text Notes 14125 9825 0    61   ~ 0
+Jiran-ble (left side) / r0.2 / 06.02.21
+Text Notes 9725 9650 0    61   ~ 0
+Left side contain:\nSW30 - SW58\nD30 - D58\nR10 - R18\nHM6 - HM10\nU4 - U6\nJ4 - J6\nLED3 - LED4\nG2\n
 Wire Notes Line
 	9700 8750 11150 8750
 Wire Notes Line
@@ -3549,58 +1934,1248 @@ Wire Notes Line
 	11150 11150 9700 11150
 Wire Notes Line
 	9700 11150 9700 8750
-Text GLabel 10200 6900 0    60   Input ~ 0
+Text GLabel 8750 7100 0    60   Input ~ 0
 VBAT_r
 $Comp
-L power:GND #PWR0129
-U 1 1 6038AC52
-P 10200 6600
-F 0 "#PWR0129" H 10200 6350 50  0001 C CNN
-F 1 "GND" H 10205 6427 50  0000 C CNN
-F 2 "" H 10200 6600 50  0001 C CNN
-F 3 "" H 10200 6600 50  0001 C CNN
-	1    10200 6600
+L power:GND #PWR021
+U 1 1 6048ABEE
+P 8750 6800
+F 0 "#PWR021" H 8750 6550 50  0001 C CNN
+F 1 "GND" H 8750 6650 50  0000 C CNN
+F 2 "" H 8750 6800 50  0001 C CNN
+F 3 "" H 8750 6800 50  0001 C CNN
+	1    8750 6800
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 6038AC58
-P 10500 6700
-F 0 "J5" H 10580 6692 50  0000 L CNN
-F 1 "Conn_01x02" H 10580 6601 50  0000 L CNN
-F 2 "jiran-ble:Connector_THT_1x2_2.54" H 10500 6700 50  0001 C CNN
-F 3 "~" H 10500 6700 50  0001 C CNN
-	1    10500 6700
+L Connector_Generic:Conn_01x02 J4
+U 1 1 6048ABF4
+P 9050 6900
+F 0 "J4" H 9130 6892 50  0000 L CNN
+F 1 "BATT" H 9130 6801 50  0000 L CNN
+F 2 "jiran-ble:Connector_THT_1x2_2.54" H 9050 6900 50  0001 C CNN
+F 3 "~" H 9050 6900 50  0001 C CNN
+	1    9050 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 6600 10300 6600
+	8750 6800 8850 6800
 Wire Wire Line
-	10300 6600 10300 6700
+	8850 6800 8850 6900
 Wire Wire Line
-	10300 6800 10300 6900
+	8850 7000 8850 7100
 Wire Wire Line
-	10300 6900 10200 6900
+	8850 7100 8750 7100
+Text GLabel 5175 7400 2    60   Input ~ 0
+DATA-_r
+$Comp
+L Device:R R11
+U 1 1 6048ABFF
+P 5775 7250
+F 0 "R11" V 5600 7200 50  0000 L CNN
+F 1 "5.1K" V 5675 7175 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 5705 7250 50  0001 C CNN
+F 3 "~" H 5775 7250 50  0001 C CNN
+	1    5775 7250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6048AC05
+P 5775 7050
+F 0 "R10" V 5950 7000 50  0000 L CNN
+F 1 "5.1K" V 5875 6975 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 5705 7050 50  0001 C CNN
+F 3 "~" H 5775 7050 50  0001 C CNN
+	1    5775 7050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5175 7500 2    60   Input ~ 0
+DATA-_r
+Text GLabel 5175 7600 2    60   Input ~ 0
+DATA+_r
+Text GLabel 5175 7700 2    60   Input ~ 0
+DATA+_r
+$Comp
+L power:GND #PWR024
+U 1 1 6048AC0E
+P 5925 7050
+F 0 "#PWR024" H 5925 6800 50  0001 C CNN
+F 1 "GND" H 5925 6900 50  0000 C CNN
+F 2 "" H 5925 7050 50  0001 C CNN
+F 3 "" H 5925 7050 50  0001 C CNN
+	1    5925 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 6048AC14
+P 5925 7250
+F 0 "#PWR026" H 5925 7000 50  0001 C CNN
+F 1 "GND" H 5925 7100 50  0000 C CNN
+F 2 "" H 5925 7250 50  0001 C CNN
+F 3 "" H 5925 7250 50  0001 C CNN
+	1    5925 7250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 6048AC1A
+P 4575 8400
+F 0 "#PWR035" H 4575 8150 50  0001 C CNN
+F 1 "GND" H 4575 8250 50  0000 C CNN
+F 2 "" H 4575 8400 50  0001 C CNN
+F 3 "" H 4575 8400 50  0001 C CNN
+	1    4575 8400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5175 6900 2    60   Input ~ 0
+VBUS_r
+$Comp
+L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J5
+U 1 1 6048AC21
+P 4575 7500
+F 0 "J5" H 4575 8325 50  0000 C CNN
+F 1 "USB-C Conn" H 4575 8250 50  0000 C CNN
+F 2 "jiran-ble:USB-C_MidMount" H 4682 8275 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4725 7500 50  0001 C CNN
+	1    4575 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 6048AC27
+P 12075 7850
+F 0 "R15" H 12145 7896 50  0000 L CNN
+F 1 "100K" H 12125 7800 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 12005 7850 50  0001 C CNN
+F 3 "" H 12075 7850 50  0001 C CNN
+	1    12075 7850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D30
+U 1 1 6048AC2D
+P 12275 7650
+F 0 "D30" H 12275 7434 50  0000 C CNN
+F 1 "1N5819" H 12275 7525 50  0000 C CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" H 12275 7475 50  0001 C CNN
+F 3 "" H 12275 7650 50  0001 C CNN
+	1    12275 7650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q3
+U 1 1 6048AC33
+P 12375 7300
+F 0 "Q3" H 12575 7375 50  0000 L CNN
+F 1 "AO3407" H 12575 7300 50  0000 L CNN
+F 2 "jiran-ble:Package_SMD_SOT-23" H 12575 7225 50  0001 L CIN
+F 3 "" H 12375 7300 50  0001 L CNN
+	1    12375 7300
+	1    0    0    -1  
+$EndComp
+Text GLabel 11975 7300 0    60   Input ~ 0
+VBUS_r
+$Comp
+L nrfmicro-rescue:AP2112K-3.3-Regulator_Linear U4
+U 1 1 6048AC3B
+P 13100 7750
+F 0 "U4" H 13100 8092 50  0000 C CNN
+F 1 "XC6220B331MR-G" H 13100 8001 50  0000 C CNN
+F 2 "jiran-ble:Package_SMD_SOT-23-5" H 13100 8075 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 13100 7850 50  0001 C CNN
+	1    13100 7750
+	1    0    0    -1  
+$EndComp
+Text GLabel 13575 7650 3    60   Input ~ 0
+nRF_VDD_r
+Text Notes 2425 9775 2    60   ~ 0
+LiPo Charging\n
+$Comp
+L Battery_Management:MCP73831-3-OT U6
+U 1 1 6048AC43
+P 2125 10325
+F 0 "U6" H 2125 10775 50  0000 C CNN
+F 1 "TP4054" H 2125 10675 50  0000 C CNN
+F 2 "jiran-ble:Package_SMD_SOT-23-5" H 2175 10075 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1975 10275 50  0001 C CNN
+	1    2125 10325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 6048AC49
+P 2675 10425
+F 0 "R18" V 2468 10425 50  0000 C CNN
+F 1 "RPROG" V 2559 10425 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 2605 10425 50  0001 C CNN
+F 3 "" H 2675 10425 50  0001 C CNN
+	1    2675 10425
+	0    -1   1    0   
+$EndComp
+Text GLabel 14675 7675 1    60   Input ~ 0
+BATTERY_PIN_r
+Text GLabel 14975 7225 1    60   Input ~ 0
+VBAT_r
+$Comp
+L Device:R_Small R16
+U 1 1 6048AC51
+P 14975 7900
+F 0 "R16" H 15045 7946 50  0000 L CNN
+F 1 "2M" H 15045 7855 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 14905 7900 50  0001 C CNN
+F 3 "" H 14975 7900 50  0001 C CNN
+	1    14975 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 6048AC57
+P 14975 7475
+F 0 "R12" H 15045 7521 50  0000 L CNN
+F 1 "820K" H 15045 7430 50  0000 L CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 14905 7475 50  0001 C CNN
+F 3 "" H 14975 7475 50  0001 C CNN
+	1    14975 7475
+	1    0    0    -1  
+$EndComp
+Connection ~ 14975 7675
+Wire Wire Line
+	12475 7500 12475 7650
+Text GLabel 12475 7000 1    60   Input ~ 0
+VBAT_r
+$Comp
+L power:GND #PWR039
+U 1 1 6048AC8B
+P 2125 10625
+F 0 "#PWR039" H 2125 10375 50  0001 C CNN
+F 1 "GND" H 2125 10475 50  0000 C CNN
+F 2 "" H 2125 10625 50  0001 C CNN
+F 3 "" H 2125 10625 50  0001 C CNN
+	1    2125 10625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 10425 2575 10425
+Text GLabel 1625 10225 0    60   Input ~ 0
+VBAT_r
+Wire Wire Line
+	1625 10225 1725 10225
+Text GLabel 1025 10025 0    60   Input ~ 0
+VBUS_r
+Wire Wire Line
+	2775 10425 2875 10425
+$Comp
+L power:GND #PWR032
+U 1 1 6048AC96
+P 13100 8050
+F 0 "#PWR032" H 13100 7800 50  0001 C CNN
+F 1 "GND" H 13100 7900 50  0000 C CNN
+F 2 "" H 13100 8050 50  0001 C CNN
+F 3 "" H 13100 8050 50  0001 C CNN
+	1    13100 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 6048AC9C
+P 12075 7950
+F 0 "#PWR030" H 12075 7700 50  0001 C CNN
+F 1 "GND" H 12075 7800 50  0000 C CNN
+F 2 "" H 12075 7950 50  0001 C CNN
+F 3 "" H 12075 7950 50  0001 C CNN
+	1    12075 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 6048ACA2
+P 14975 8000
+F 0 "#PWR031" H 14975 7750 50  0001 C CNN
+F 1 "GND" H 14975 7850 50  0000 C CNN
+F 2 "" H 14975 8000 50  0001 C CNN
+F 3 "" H 14975 8000 50  0001 C CNN
+	1    14975 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14975 7675 14975 7800
+Wire Wire Line
+	14975 7575 14975 7675
+Wire Wire Line
+	14975 7225 14975 7375
+Wire Wire Line
+	12700 7650 12800 7650
+Wire Wire Line
+	12800 7750 12700 7750
+Wire Wire Line
+	12700 7750 12700 7650
+Connection ~ 12700 7650
+Connection ~ 12475 7650
+Wire Wire Line
+	12475 7650 12700 7650
+$Comp
+L power:GND #PWR040
+U 1 1 6048ACB1
+P 2875 10625
+F 0 "#PWR040" H 2875 10375 50  0001 C CNN
+F 1 "GND" H 2875 10475 50  0000 C CNN
+F 2 "" H 2875 10625 50  0001 C CNN
+F 3 "" H 2875 10625 50  0001 C CNN
+	1    2875 10625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 10625 2875 10425
+$Comp
+L Device:LED LED4
+U 1 1 6048ACB8
+P 1225 10425
+F 0 "LED4" H 1218 10170 50  0000 C CNN
+F 1 "RED" H 1218 10261 50  0000 C CNN
+F 2 "jiran-ble:LED_SMD_0805" H 1225 10425 50  0001 C CNN
+F 3 "~" H 1225 10425 50  0001 C CNN
+	1    1225 10425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 6048ACBE
+P 1575 10425
+F 0 "R17" V 1725 10425 50  0000 C CNN
+F 1 "1K" V 1650 10425 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 1505 10425 50  0001 C CNN
+F 3 "" H 1575 10425 50  0001 C CNN
+	1    1575 10425
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1375 10425 1475 10425
+Wire Wire Line
+	1075 10025 2125 10025
+Wire Wire Line
+	1075 10025 1075 10425
+Wire Wire Line
+	1075 10025 1025 10025
+Connection ~ 1075 10025
+Wire Wire Line
+	4275 8400 4575 8400
+Connection ~ 4575 8400
+Wire Wire Line
+	1675 10425 1725 10425
+Wire Wire Line
+	12375 7650 12475 7650
+Wire Wire Line
+	12075 7750 12075 7650
+Wire Wire Line
+	12075 7650 12175 7650
+Wire Wire Line
+	12075 7650 12075 7300
+Connection ~ 12075 7650
+Connection ~ 12075 7300
+Wire Wire Line
+	11975 7300 12075 7300
+Wire Wire Line
+	12075 7300 12175 7300
+Wire Wire Line
+	12475 7000 12475 7100
+NoConn ~ 5175 8000
+NoConn ~ 5175 8100
+Text Notes 3200 10125 0    60   ~ 0
+RProg\n10k\n5k\n2.5k\n2k\n1.25k
+Text Notes 3550 10125 0    60   ~ 0
+IBat\n100mA\n200mA\n400mA\n500mA\n800mA
+Text Notes 3100 9500 0    60   ~ 0
+RProg = 1000/IBat\nIBat in amps
+Text GLabel 1125 8650 0    61   Input ~ 0
+nRF_VDD_r
+Text GLabel 1000 8250 0    61   Input ~ 0
+PROG_r
+Wire Wire Line
+	1000 8250 1600 8250
+Text GLabel 1250 8450 0    61   Input ~ 0
+POWER_PIN_r
+Wire Wire Line
+	1125 8650 1600 8650
+Wire Wire Line
+	1300 8550 1600 8550
+Wire Wire Line
+	1250 8450 1600 8450
+$Comp
+L Device:Crystal_Small X2
+U 1 1 6048AD01
+P 1075 7950
+F 0 "X2" H 1025 7775 50  0000 L CNN
+F 1 "Crystal" H 950 7850 50  0000 L CNN
+F 2 "jiran-ble:Crystal_SMD_CM9V" H 1075 7950 50  0001 C CNN
+F 3 "~" H 1075 7950 50  0001 C CNN
+	1    1075 7950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1075 7850 1600 7850
+Wire Wire Line
+	1075 8050 1600 8050
+NoConn ~ 2950 7650
+NoConn ~ 2950 7450
+NoConn ~ 2950 8450
+NoConn ~ 2950 8250
+Text GLabel 3275 8750 2    61   Input ~ 0
+DCCH_r
+Wire Wire Line
+	3275 8750 2950 8750
+Text GLabel 3000 8950 2    61   Input ~ 0
+nRF_VDD_r
+Wire Wire Line
+	2950 8950 3000 8950
+Wire Wire Line
+	2950 8850 3625 8850
+Wire Wire Line
+	5175 7100 5625 7100
+Wire Wire Line
+	5625 7100 5625 7050
+Wire Wire Line
+	5175 7200 5625 7200
+Wire Wire Line
+	5625 7200 5625 7250
+Text GLabel 8825 8125 0    60   Input ~ 0
+nRF_VDD_r
+Wire Wire Line
+	8625 8325 8850 8325
+Wire Wire Line
+	8625 8225 8850 8225
 Wire Notes Line
-	16050 9900 16050 6300
-Wire Notes Line
-	11200 11200 500  11200
+	6400 6300 6400 8700
+Text Notes 9675 6400 0    61   ~ 0
+Power Flags
+NoConn ~ 1600 7950
+NoConn ~ 1600 8950
+Wire Wire Line
+	13400 7650 13575 7650
+Wire Wire Line
+	14675 7675 14975 7675
 Wire Notes Line
 	4050 8700 16050 8700
 Wire Notes Line
-	500  5450 500  6250
+	16000 9850 11250 9850
 Wire Notes Line
-	500  6250 16050 6250
+	11250 9850 11250 8750
 Wire Notes Line
-	16050 6250 16050 5450
+	11250 8750 16000 8750
 Wire Notes Line
-	16050 5450 500  5450
-Text Notes 12260 10670 0    61   ~ 0
-jiran-ble
-Text Notes 12195 10930 0    70   ~ 14
-jiran-ble
-Text Notes 12975 11070 0    61   ~ 0
-31.01.21
-Text Notes 15415 11075 0    70   ~ 14
-r0.1
+	16000 8750 16000 9850
+Wire Wire Line
+	7895 3390 7895 3790
+Connection ~ 7895 3390
+Wire Wire Line
+	7895 3340 7895 3390
+Connection ~ 7295 3390
+Wire Wire Line
+	7295 3340 7295 3390
+Connection ~ 6695 3390
+Wire Wire Line
+	6695 3340 6695 3390
+Connection ~ 6095 3390
+Wire Wire Line
+	6095 3340 6095 3390
+Connection ~ 5495 3390
+Wire Wire Line
+	5495 3340 5495 3390
+Connection ~ 4895 3390
+Wire Wire Line
+	4895 3340 4895 3390
+Connection ~ 4495 3590
+Wire Wire Line
+	4455 3590 4495 3590
+Connection ~ 4495 3990
+Wire Wire Line
+	4455 3990 4495 3990
+Connection ~ 4495 4390
+Wire Wire Line
+	4455 4390 4495 4390
+Connection ~ 4495 4790
+Wire Wire Line
+	4455 4790 4495 4790
+Connection ~ 4495 5190
+Wire Wire Line
+	4455 5190 4495 5190
+Text Label 4455 5190 2    50   ~ 0
+P0.29_l
+Text Label 4455 4790 2    50   ~ 0
+P0.02_l
+Text Label 4455 4390 2    50   ~ 0
+P1.13_l
+Text Label 4455 3990 2    50   ~ 0
+P0.28_l
+Text Label 4455 3590 2    50   ~ 0
+P1.11_l
+Text Label 7895 3340 1    50   ~ 0
+P0.12_l
+Text Label 7295 3340 1    50   ~ 0
+P0.09_l
+Text Label 6695 3340 1    50   ~ 0
+P0.08_l
+Text Label 6095 3340 1    50   ~ 0
+P0.06_l
+Text Label 5495 3340 1    50   ~ 0
+P0.30_l
+Text Label 4895 3340 1    50   ~ 0
+P0.31_l
+Wire Wire Line
+	7895 4590 7895 4190
+Connection ~ 7895 4590
+Wire Wire Line
+	7895 4190 7895 3790
+Connection ~ 7895 4190
+Connection ~ 7895 3790
+Wire Wire Line
+	7895 4990 7895 4590
+Wire Wire Line
+	7295 4590 7295 4190
+Connection ~ 7295 4590
+Wire Wire Line
+	7295 4190 7295 3790
+Connection ~ 7295 4190
+Wire Wire Line
+	7295 3790 7295 3390
+Connection ~ 7295 3790
+Wire Wire Line
+	7295 4990 7295 4590
+Wire Wire Line
+	6695 4590 6695 4190
+Connection ~ 6695 4590
+Wire Wire Line
+	6695 4190 6695 3790
+Connection ~ 6695 4190
+Wire Wire Line
+	6695 3790 6695 3390
+Connection ~ 6695 3790
+Wire Wire Line
+	6695 4990 6695 4590
+Wire Wire Line
+	6095 4190 6095 4590
+Connection ~ 6095 4190
+Wire Wire Line
+	6095 3790 6095 4190
+Connection ~ 6095 3790
+Wire Wire Line
+	6095 3390 6095 3790
+Wire Wire Line
+	5495 4190 5495 3790
+Connection ~ 5495 4190
+Wire Wire Line
+	5495 3790 5495 3390
+Connection ~ 5495 3790
+Wire Wire Line
+	5495 4590 5495 4190
+Wire Wire Line
+	4895 4590 4895 4190
+Connection ~ 4895 4590
+Wire Wire Line
+	4895 4190 4895 3790
+Connection ~ 4895 4190
+Wire Wire Line
+	4895 3790 4895 3390
+Connection ~ 4895 3790
+Wire Wire Line
+	4895 4990 4895 4590
+Wire Wire Line
+	6895 3590 7495 3590
+Connection ~ 6895 3590
+Wire Wire Line
+	6295 3590 6895 3590
+Connection ~ 6295 3590
+Wire Wire Line
+	5695 3590 6295 3590
+Connection ~ 5695 3590
+Wire Wire Line
+	5095 3590 5695 3590
+Connection ~ 5095 3590
+Wire Wire Line
+	4495 3590 5095 3590
+Wire Wire Line
+	6895 3990 7495 3990
+Connection ~ 6895 3990
+Wire Wire Line
+	6295 3990 6895 3990
+Connection ~ 6295 3990
+Wire Wire Line
+	5695 3990 6295 3990
+Connection ~ 5695 3990
+Wire Wire Line
+	5095 3990 5695 3990
+Connection ~ 5095 3990
+Wire Wire Line
+	4495 3990 5095 3990
+Wire Wire Line
+	6895 4390 7495 4390
+Connection ~ 6895 4390
+Wire Wire Line
+	6295 4390 6895 4390
+Connection ~ 6295 4390
+Wire Wire Line
+	5695 4390 6295 4390
+Connection ~ 5695 4390
+Wire Wire Line
+	5095 4390 5695 4390
+Connection ~ 5095 4390
+Wire Wire Line
+	4495 4390 5095 4390
+Wire Wire Line
+	6895 4790 7495 4790
+Connection ~ 6895 4790
+Wire Wire Line
+	6295 4790 6895 4790
+Connection ~ 6295 4790
+Wire Wire Line
+	5695 4790 6295 4790
+Connection ~ 5695 4790
+Wire Wire Line
+	5095 4790 5695 4790
+Connection ~ 5095 4790
+Wire Wire Line
+	4495 4790 5095 4790
+Wire Wire Line
+	6895 5190 7495 5190
+Connection ~ 6895 5190
+Wire Wire Line
+	6295 5190 6895 5190
+Connection ~ 6295 5190
+Wire Wire Line
+	4495 5190 6295 5190
+$Comp
+L Device:D_Small D29
+U 1 1 5DAD7ED5
+P 7495 5090
+F 0 "D29" V 7495 5022 50  0000 R CNN
+F 1 "1N4148" V 7450 5022 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 5090 50  0001 C CNN
+F 3 "~" V 7495 5090 50  0001 C CNN
+	1    7495 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D28
+U 1 1 5DAD7ECF
+P 6895 5090
+F 0 "D28" V 6895 5022 50  0000 R CNN
+F 1 "1N4148" V 6850 5022 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 5090 50  0001 C CNN
+F 3 "~" V 6895 5090 50  0001 C CNN
+	1    6895 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D27
+U 1 1 5DAD7EC9
+P 6295 5090
+F 0 "D27" V 6295 5022 50  0000 R CNN
+F 1 "1N4148" V 6250 5022 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 5090 50  0001 C CNN
+F 3 "~" V 6295 5090 50  0001 C CNN
+	1    6295 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D26
+U 1 1 5DAD7EB7
+P 4495 5090
+F 0 "D26" V 4495 5022 50  0000 R CNN
+F 1 "1N4148" V 4450 5022 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 5090 50  0001 C CNN
+F 3 "~" V 4495 5090 50  0001 C CNN
+	1    4495 5090
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D25
+U 1 1 5DAD62EC
+P 7495 4690
+F 0 "D25" V 7495 4622 50  0000 R CNN
+F 1 "1N4148" V 7450 4622 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 4690 50  0001 C CNN
+F 3 "~" V 7495 4690 50  0001 C CNN
+	1    7495 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D24
+U 1 1 5DAD62E6
+P 6895 4690
+F 0 "D24" V 6895 4622 50  0000 R CNN
+F 1 "1N4148" V 6850 4622 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 4690 50  0001 C CNN
+F 3 "~" V 6895 4690 50  0001 C CNN
+	1    6895 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D23
+U 1 1 5DAD62E0
+P 6295 4690
+F 0 "D23" V 6295 4622 50  0000 R CNN
+F 1 "1N4148" V 6250 4622 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 4690 50  0001 C CNN
+F 3 "~" V 6295 4690 50  0001 C CNN
+	1    6295 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D22
+U 1 1 5DAD62DA
+P 5695 4690
+F 0 "D22" V 5695 4622 50  0000 R CNN
+F 1 "1N4148" V 5650 4622 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 4690 50  0001 C CNN
+F 3 "~" V 5695 4690 50  0001 C CNN
+	1    5695 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D21
+U 1 1 5DAD62D4
+P 5095 4690
+F 0 "D21" V 5095 4622 50  0000 R CNN
+F 1 "1N4148" V 5050 4622 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 4690 50  0001 C CNN
+F 3 "~" V 5095 4690 50  0001 C CNN
+	1    5095 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D20
+U 1 1 5DAD62CE
+P 4495 4690
+F 0 "D20" V 4495 4622 50  0000 R CNN
+F 1 "1N4148" V 4450 4622 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 4690 50  0001 C CNN
+F 3 "~" V 4495 4690 50  0001 C CNN
+	1    4495 4690
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D19
+U 1 1 5DAD50FD
+P 7495 4290
+F 0 "D19" V 7495 4222 50  0000 R CNN
+F 1 "1N4148" V 7450 4222 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 4290 50  0001 C CNN
+F 3 "~" V 7495 4290 50  0001 C CNN
+	1    7495 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D18
+U 1 1 5DAD50F7
+P 6895 4290
+F 0 "D18" V 6895 4222 50  0000 R CNN
+F 1 "1N4148" V 6850 4222 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 4290 50  0001 C CNN
+F 3 "~" V 6895 4290 50  0001 C CNN
+	1    6895 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D17
+U 1 1 5DAD50F1
+P 6295 4290
+F 0 "D17" V 6295 4222 50  0000 R CNN
+F 1 "1N4148" V 6250 4222 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 4290 50  0001 C CNN
+F 3 "~" V 6295 4290 50  0001 C CNN
+	1    6295 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D16
+U 1 1 5DAD50EB
+P 5695 4290
+F 0 "D16" V 5695 4222 50  0000 R CNN
+F 1 "1N4148" V 5650 4222 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 4290 50  0001 C CNN
+F 3 "~" V 5695 4290 50  0001 C CNN
+	1    5695 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D15
+U 1 1 5DAD50E5
+P 5095 4290
+F 0 "D15" V 5095 4222 50  0000 R CNN
+F 1 "1N4148" V 5050 4222 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 4290 50  0001 C CNN
+F 3 "~" V 5095 4290 50  0001 C CNN
+	1    5095 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D14
+U 1 1 5DAD50DF
+P 4495 4290
+F 0 "D14" V 4495 4222 50  0000 R CNN
+F 1 "1N4148" V 4450 4222 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 4290 50  0001 C CNN
+F 3 "~" V 4495 4290 50  0001 C CNN
+	1    4495 4290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D13
+U 1 1 5DAD32C8
+P 7495 3890
+F 0 "D13" V 7495 3822 50  0000 R CNN
+F 1 "1N4148" V 7450 3822 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 3890 50  0001 C CNN
+F 3 "~" V 7495 3890 50  0001 C CNN
+	1    7495 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D12
+U 1 1 5DAD32C2
+P 6895 3890
+F 0 "D12" V 6895 3822 50  0000 R CNN
+F 1 "1N4148" V 6850 3822 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 3890 50  0001 C CNN
+F 3 "~" V 6895 3890 50  0001 C CNN
+	1    6895 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D11
+U 1 1 5DAD32BC
+P 6295 3890
+F 0 "D11" V 6295 3822 50  0000 R CNN
+F 1 "1N4148" V 6250 3822 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 3890 50  0001 C CNN
+F 3 "~" V 6295 3890 50  0001 C CNN
+	1    6295 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D10
+U 1 1 5DAD32B6
+P 5695 3890
+F 0 "D10" V 5695 3822 50  0000 R CNN
+F 1 "1N4148" V 5650 3822 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 3890 50  0001 C CNN
+F 3 "~" V 5695 3890 50  0001 C CNN
+	1    5695 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5DAD32B0
+P 5095 3890
+F 0 "D9" V 5095 3822 50  0000 R CNN
+F 1 "1N4148" V 5050 3822 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 3890 50  0001 C CNN
+F 3 "~" V 5095 3890 50  0001 C CNN
+	1    5095 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 5DAD32AA
+P 4495 3890
+F 0 "D8" V 4495 3822 50  0000 R CNN
+F 1 "1N4148" V 4450 3822 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 3890 50  0001 C CNN
+F 3 "~" V 4495 3890 50  0001 C CNN
+	1    4495 3890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 5DACF9C3
+P 7495 3490
+F 0 "D7" V 7495 3422 50  0000 R CNN
+F 1 "1N4148" V 7450 3422 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 7495 3490 50  0001 C CNN
+F 3 "~" V 7495 3490 50  0001 C CNN
+	1    7495 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D6
+U 1 1 5DACF0C2
+P 6895 3490
+F 0 "D6" V 6895 3422 50  0000 R CNN
+F 1 "1N4148" V 6850 3422 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6895 3490 50  0001 C CNN
+F 3 "~" V 6895 3490 50  0001 C CNN
+	1    6895 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D5
+U 1 1 5DACE326
+P 6295 3490
+F 0 "D5" V 6295 3422 50  0000 R CNN
+F 1 "1N4148" V 6250 3422 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 6295 3490 50  0001 C CNN
+F 3 "~" V 6295 3490 50  0001 C CNN
+	1    6295 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D4
+U 1 1 5DACDB06
+P 5695 3490
+F 0 "D4" V 5695 3422 50  0000 R CNN
+F 1 "1N4148" V 5650 3422 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5695 3490 50  0001 C CNN
+F 3 "~" V 5695 3490 50  0001 C CNN
+	1    5695 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D3
+U 1 1 5DACCFB7
+P 5095 3490
+F 0 "D3" V 5095 3422 50  0000 R CNN
+F 1 "1N4148" V 5050 3422 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 5095 3490 50  0001 C CNN
+F 3 "~" V 5095 3490 50  0001 C CNN
+	1    5095 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5DACBEC8
+P 4495 3490
+F 0 "D2" V 4495 3422 50  0000 R CNN
+F 1 "1N4148" V 4450 3422 50  0001 R CNN
+F 2 "jiran-ble:Diode_SMD_SOD-123" V 4495 3490 50  0001 C CNN
+F 3 "~" V 4495 3490 50  0001 C CNN
+	1    4495 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW29
+U 1 1 5DAC93F2
+P 7695 4990
+F 0 "SW29" H 7695 5145 50  0000 C CNN
+F 1 "SW_Push" H 7695 5184 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 5190 50  0001 C CNN
+F 3 "~" H 7695 5190 50  0001 C CNN
+	1    7695 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW28
+U 1 1 5DAC93EC
+P 7095 4990
+F 0 "SW28" H 7095 5145 50  0000 C CNN
+F 1 "SW_Push" H 7095 5184 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 5190 50  0001 C CNN
+F 3 "~" H 7095 5190 50  0001 C CNN
+	1    7095 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW27
+U 1 1 5DAC93E6
+P 6495 4990
+F 0 "SW27" H 6495 5145 50  0000 C CNN
+F 1 "SW_Push" H 6495 5184 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 5190 50  0001 C CNN
+F 3 "~" H 6495 5190 50  0001 C CNN
+	1    6495 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW26
+U 1 1 5DAC93D4
+P 4695 4990
+F 0 "SW26" H 4695 5145 50  0000 C CNN
+F 1 "SW_Push" H 4695 5184 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 5190 50  0001 C CNN
+F 3 "~" H 4695 5190 50  0001 C CNN
+	1    4695 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW25
+U 1 1 5DAC4A7E
+P 7695 4590
+F 0 "SW25" H 7695 4745 50  0000 C CNN
+F 1 "SW_Push" H 7695 4784 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 4790 50  0001 C CNN
+F 3 "~" H 7695 4790 50  0001 C CNN
+	1    7695 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW24
+U 1 1 5DAC4A78
+P 7095 4590
+F 0 "SW24" H 7095 4745 50  0000 C CNN
+F 1 "SW_Push" H 7095 4784 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 4790 50  0001 C CNN
+F 3 "~" H 7095 4790 50  0001 C CNN
+	1    7095 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 5DAC4A72
+P 6495 4590
+F 0 "SW23" H 6495 4745 50  0000 C CNN
+F 1 "SW_Push" H 6495 4784 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 4790 50  0001 C CNN
+F 3 "~" H 6495 4790 50  0001 C CNN
+	1    6495 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW22
+U 1 1 5DAC4A6C
+P 5895 4590
+F 0 "SW22" H 5895 4745 50  0000 C CNN
+F 1 "SW_Push" H 5895 4784 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 4790 50  0001 C CNN
+F 3 "~" H 5895 4790 50  0001 C CNN
+	1    5895 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW21
+U 1 1 5DAC4A66
+P 5295 4590
+F 0 "SW21" H 5295 4745 50  0000 C CNN
+F 1 "SW_Push" H 5295 4784 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 4790 50  0001 C CNN
+F 3 "~" H 5295 4790 50  0001 C CNN
+	1    5295 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5DAC4A60
+P 4695 4590
+F 0 "SW20" H 4695 4745 50  0000 C CNN
+F 1 "SW_Push" H 4695 4784 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 4790 50  0001 C CNN
+F 3 "~" H 4695 4790 50  0001 C CNN
+	1    4695 4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5DAC0C99
+P 7695 4190
+F 0 "SW19" H 7695 4345 50  0000 C CNN
+F 1 "SW_Push" H 7695 4384 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 4390 50  0001 C CNN
+F 3 "~" H 7695 4390 50  0001 C CNN
+	1    7695 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5DAC0C93
+P 7095 4190
+F 0 "SW18" H 7095 4345 50  0000 C CNN
+F 1 "SW_Push" H 7095 4384 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 4390 50  0001 C CNN
+F 3 "~" H 7095 4390 50  0001 C CNN
+	1    7095 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5DAC0C8D
+P 6495 4190
+F 0 "SW17" H 6495 4345 50  0000 C CNN
+F 1 "SW_Push" H 6495 4384 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 4390 50  0001 C CNN
+F 3 "~" H 6495 4390 50  0001 C CNN
+	1    6495 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5DAC0C87
+P 5895 4190
+F 0 "SW16" H 5895 4345 50  0000 C CNN
+F 1 "SW_Push" H 5895 4384 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 4390 50  0001 C CNN
+F 3 "~" H 5895 4390 50  0001 C CNN
+	1    5895 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5DAC0C81
+P 5295 4190
+F 0 "SW15" H 5295 4345 50  0000 C CNN
+F 1 "SW_Push" H 5295 4384 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 4390 50  0001 C CNN
+F 3 "~" H 5295 4390 50  0001 C CNN
+	1    5295 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5DAC0C7B
+P 4695 4190
+F 0 "SW14" H 4695 4345 50  0000 C CNN
+F 1 "SW_Push" H 4695 4384 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 4390 50  0001 C CNN
+F 3 "~" H 4695 4390 50  0001 C CNN
+	1    4695 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5DABCF91
+P 7695 3790
+F 0 "SW13" H 7695 3945 50  0000 C CNN
+F 1 "SW_Push" H 7695 3984 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 3990 50  0001 C CNN
+F 3 "~" H 7695 3990 50  0001 C CNN
+	1    7695 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5DABCF8B
+P 7095 3790
+F 0 "SW12" H 7095 3945 50  0000 C CNN
+F 1 "SW_Push" H 7095 3984 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 3990 50  0001 C CNN
+F 3 "~" H 7095 3990 50  0001 C CNN
+	1    7095 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5DABCF85
+P 6495 3790
+F 0 "SW11" H 6495 3945 50  0000 C CNN
+F 1 "SW_Push" H 6495 3984 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 3990 50  0001 C CNN
+F 3 "~" H 6495 3990 50  0001 C CNN
+	1    6495 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5DABCF7F
+P 5895 3790
+F 0 "SW10" H 5895 3945 50  0000 C CNN
+F 1 "SW_Push" H 5895 3984 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 3990 50  0001 C CNN
+F 3 "~" H 5895 3990 50  0001 C CNN
+	1    5895 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5DABCF79
+P 5295 3790
+F 0 "SW9" H 5295 3945 50  0000 C CNN
+F 1 "SW_Push" H 5295 3984 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 3990 50  0001 C CNN
+F 3 "~" H 5295 3990 50  0001 C CNN
+	1    5295 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5DABCF73
+P 4695 3790
+F 0 "SW8" H 4695 3945 50  0000 C CNN
+F 1 "SW_Push" H 4695 3984 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 3990 50  0001 C CNN
+F 3 "~" H 4695 3990 50  0001 C CNN
+	1    4695 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5DAB8379
+P 7695 3390
+F 0 "SW7" H 7695 3545 50  0000 C CNN
+F 1 "SW_Push" H 7695 3584 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7695 3590 50  0001 C CNN
+F 3 "~" H 7695 3590 50  0001 C CNN
+	1    7695 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5DAB8373
+P 7095 3390
+F 0 "SW6" H 7095 3545 50  0000 C CNN
+F 1 "SW_Push" H 7095 3584 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 7095 3590 50  0001 C CNN
+F 3 "~" H 7095 3590 50  0001 C CNN
+	1    7095 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5DAB836D
+P 6495 3390
+F 0 "SW5" H 6495 3545 50  0000 C CNN
+F 1 "SW_Push" H 6495 3584 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 6495 3590 50  0001 C CNN
+F 3 "~" H 6495 3590 50  0001 C CNN
+	1    6495 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5DAB4EC8
+P 5895 3390
+F 0 "SW4" H 5895 3545 50  0000 C CNN
+F 1 "SW_Push" H 5895 3584 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5895 3590 50  0001 C CNN
+F 3 "~" H 5895 3590 50  0001 C CNN
+	1    5895 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5DAB46E1
+P 5295 3390
+F 0 "SW3" H 5295 3545 50  0000 C CNN
+F 1 "SW_Push" H 5295 3584 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 5295 3590 50  0001 C CNN
+F 3 "~" H 5295 3590 50  0001 C CNN
+	1    5295 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DAAE5C1
+P 4695 3390
+F 0 "SW2" H 4695 3545 50  0000 C CNN
+F 1 "SW_Push" H 4695 3584 50  0001 C CNN
+F 2 "jiran-ble:Switch_Mx_Hotswap_1u" H 4695 3590 50  0001 C CNN
+F 3 "~" H 4695 3590 50  0001 C CNN
+	1    4695 3390
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6400 1700 9650 1700
+Wire Wire Line
+	8775 2325 8800 2325
+Wire Notes Line
+	9650 7500 6400 7500
+Wire Wire Line
+	8825 8125 8850 8125
+Wire Notes Line
+	11150 8650 9700 8650
+Wire Notes Line
+	9700 8650 9700 6425
+Wire Notes Line
+	9700 6425 11150 6425
+Wire Notes Line
+	11150 6425 11150 8650
+Text Notes 9700 6700 0    79   ~ 16
+Flags set \nonce for both halves!
 $EndSCHEMATC
