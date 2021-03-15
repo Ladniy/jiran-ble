@@ -83,11 +83,11 @@ $EndComp
 Wire Wire Line
 	1350 1800 1450 1800
 Text GLabel 1000 2000 0    50   Input ~ 0
-DATA+_l
+D+
 Text GLabel 1000 2100 0    50   Input ~ 0
-DATA-_l
+D-
 Text GLabel 1350 1000 0    50   Input ~ 0
-RESET_l
+RESET
 Wire Wire Line
 	1350 1000 1450 1000
 Wire Wire Line
@@ -152,7 +152,7 @@ Connection ~ 825  1300
 Wire Wire Line
 	825  1300 825  1400
 Text GLabel 1350 1600 0    50   Input ~ 0
-AREF_l
+AREF
 $Comp
 L Device:C_Small C?
 U 1 1 604FD876
@@ -213,15 +213,15 @@ $EndComp
 Wire Wire Line
 	2750 3100 2650 3100
 Text GLabel 2750 1200 2    50   Input ~ 0
-MOSI_l
+MOSI
 Text GLabel 2750 1100 2    50   Input ~ 0
-SCK_l
+SCK
 Text GLabel 2925 1400 2    50   Input ~ 0
-BLE_CS_l
+BLE_CS
 Text GLabel 2925 2600 2    50   Input ~ 0
-SWDIO_l
+SWDIO
 Text GLabel 2750 3200 2    50   Input ~ 0
-BLE_IRQ_l
+BLE_IRQ
 Wire Wire Line
 	2750 3200 2650 3200
 Text Label 2750 3900 0    50   ~ 0
@@ -263,7 +263,7 @@ B6
 Text Label 2750 1500 0    50   ~ 0
 B5
 Text GLabel 2750 1300 2    50   Input ~ 0
-MISO_l
+MISO
 Wire Wire Line
 	1350 1600 1450 1600
 Wire Wire Line
@@ -343,89 +343,70 @@ Wire Wire Line
 Wire Wire Line
 	4450 2400 4450 2500
 Connection ~ 4450 2400
+Text GLabel 5150 1600 2    50   Input ~ 0
+D+
+Text GLabel 5150 1700 2    50   Input ~ 0
+D+
+Text GLabel 5150 1500 2    50   Input ~ 0
+D-
+Text GLabel 5150 1400 2    50   Input ~ 0
+D-
+Wire Wire Line
+	5150 1400 5050 1400
+Wire Wire Line
+	5150 1500 5050 1500
+Wire Wire Line
+	5150 1600 5050 1600
+Wire Wire Line
+	5150 1700 5050 1700
+Text GLabel 5150 900  2    50   Input ~ 0
+VBUS
 Wire Wire Line
 	5150 900  5050 900 
 $Comp
 L Device:R_Small R?
 U 1 1 6052FEC3
-P 5725 1100
-F 0 "R?" V 5525 1100 50  0000 C CNN
-F 1 "5.1k" V 5625 1100 50  0000 C CNN
-F 2 "" H 5725 1100 50  0001 C CNN
-F 3 "~" H 5725 1100 50  0001 C CNN
-	1    5725 1100
+P 5625 1100
+F 0 "R?" V 5425 1100 50  0000 C CNN
+F 1 "5.1k" V 5525 1100 50  0000 C CNN
+F 2 "" H 5625 1100 50  0001 C CNN
+F 3 "~" H 5625 1100 50  0001 C CNN
+	1    5625 1100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 60530669
-P 5725 1200
-F 0 "R?" V 5525 1200 50  0000 C CNN
-F 1 "5.1k" V 5625 1200 50  0000 C CNN
-F 2 "" H 5725 1200 50  0001 C CNN
-F 3 "~" H 5725 1200 50  0001 C CNN
-	1    5725 1200
+P 5625 1200
+F 0 "R?" V 5425 1200 50  0000 C CNN
+F 1 "5.1k" V 5525 1200 50  0000 C CNN
+F 2 "" H 5625 1200 50  0001 C CNN
+F 3 "~" H 5625 1200 50  0001 C CNN
+	1    5625 1200
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5050 1100 5525 1100
+Wire Wire Line
+	5050 1200 5525 1200
 $Comp
 L power:GND #PWR?
 U 1 1 605336B0
-P 5925 1150
-F 0 "#PWR?" H 5925 900 50  0001 C CNN
-F 1 "GND" H 6000 1000 50  0000 R CNN
-F 2 "" H 5925 1150 50  0001 C CNN
-F 3 "" H 5925 1150 50  0001 C CNN
-	1    5925 1150
+P 5825 1150
+F 0 "#PWR?" H 5825 900 50  0001 C CNN
+F 1 "GND" H 5900 1000 50  0000 R CNN
+F 2 "" H 5825 1150 50  0001 C CNN
+F 3 "" H 5825 1150 50  0001 C CNN
+	1    5825 1150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5925 1150 5925 1100
+	5825 1150 5825 1100
 Wire Wire Line
-	5925 1100 5825 1100
+	5825 1100 5725 1100
 Wire Wire Line
-	5925 1150 5925 1200
+	5825 1150 5825 1200
 Wire Wire Line
-	5925 1200 5825 1200
-Connection ~ 5925 1150
-$Comp
-L power:VBUS #PWR?
-U 1 1 6053DA87
-P 5150 900
-F 0 "#PWR?" H 5150 750 50  0001 C CNN
-F 1 "VBUS" H 5050 1075 50  0000 L CNN
-F 2 "" H 5150 900 50  0001 C CNN
-F 3 "" H 5150 900 50  0001 C CNN
-	1    5150 900 
-	0    1    1    0   
-$EndComp
-Text GLabel 5250 1650 2    50   Input ~ 0
-DATA+_l
-Wire Wire Line
-	5150 1600 5050 1600
-Wire Wire Line
-	5150 1700 5050 1700
-Wire Wire Line
-	5150 1600 5150 1650
-Wire Wire Line
-	5250 1650 5150 1650
-Connection ~ 5150 1650
-Wire Wire Line
-	5150 1650 5150 1700
-Text GLabel 5250 1450 2    50   Input ~ 0
-DATA-_l
-Wire Wire Line
-	5050 1400 5150 1400
-Wire Wire Line
-	5150 1400 5150 1450
-Wire Wire Line
-	5150 1500 5050 1500
-Wire Wire Line
-	5150 1450 5250 1450
-Connection ~ 5150 1450
-Wire Wire Line
-	5150 1450 5150 1500
-Wire Wire Line
-	5625 1100 5050 1100
-Wire Wire Line
-	5625 1200 5050 1200
+	5825 1200 5725 1200
+Connection ~ 5825 1150
 $EndSCHEMATC
