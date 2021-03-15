@@ -3,4 +3,5 @@
   (lib (name jiran-hotswap-rescue)(type Legacy)(uri D:/Git/jiran/jiran-hotswap/jiran-hotswap-rescue.lib)(options "")(descr ""))
   (lib (name nrfmicro)(type Legacy)(uri D:/Git/nrfmicro/hardware/nrfmicro.lib)(options "")(descr ""))
   (lib (name nrfmicro-rescue)(type Legacy)(uri D:/Git/nrfmicro/hardware/nrfmicro-rescue.lib)(options "")(descr ""))
+  (lib (name jiran-ble-rescue)(type Legacy)(uri ${KIPRJMOD}/jiran-ble-rescue.lib)(options "")(descr ""))
 )
