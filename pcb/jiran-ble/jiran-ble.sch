@@ -105,7 +105,7 @@ $EndComp
 Text Notes 550  600  0    60   ~ 0
 NRF52840
 Text Notes 4100 600  0    60   ~ 0
-USB
+USB-C
 Text Notes 6425 1800 0    60   ~ 0
 Indicator LED
 Text Notes 6425 600  0    60   ~ 0
@@ -266,80 +266,39 @@ Text Notes 12975 11070 0    61   ~ 0
 31.01.21
 Text Notes 15415 11075 0    70   ~ 14
 r0.2
-Text GLabel 5175 1600 2    60   Input ~ 0
-DATA-_l
-$Comp
-L Device:R R2
-U 1 1 5CAA680B
-P 5775 1450
-F 0 "R2" V 5600 1400 50  0000 L CNN
-F 1 "5.1K" V 5675 1375 50  0000 L CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 5705 1450 50  0001 C CNN
-F 3 "~" H 5775 1450 50  0001 C CNN
-	1    5775 1450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5CAA879F
-P 5775 1250
-F 0 "R1" V 5950 1200 50  0000 L CNN
-F 1 "5.1K" V 5875 1175 50  0000 L CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 5705 1250 50  0001 C CNN
-F 3 "~" H 5775 1250 50  0001 C CNN
-	1    5775 1250
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5175 1700 2    60   Input ~ 0
-DATA-_l
-Text GLabel 5175 1800 2    60   Input ~ 0
-DATA+_l
-Text GLabel 5175 1900 2    60   Input ~ 0
-DATA+_l
 $Comp
 L power:GND #PWR04
 U 1 1 5E5DBB46
-P 5925 1250
-F 0 "#PWR04" H 5925 1000 50  0001 C CNN
-F 1 "GND" H 5925 1100 50  0000 C CNN
-F 2 "" H 5925 1250 50  0001 C CNN
-F 3 "" H 5925 1250 50  0001 C CNN
-	1    5925 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5E5DDBCF
-P 5925 1450
-F 0 "#PWR06" H 5925 1200 50  0001 C CNN
-F 1 "GND" H 5925 1300 50  0000 C CNN
-F 2 "" H 5925 1450 50  0001 C CNN
-F 3 "" H 5925 1450 50  0001 C CNN
-	1    5925 1450
+P 6050 1300
+F 0 "#PWR04" H 6050 1050 50  0001 C CNN
+F 1 "GND" H 6050 1150 50  0000 C CNN
+F 2 "" H 6050 1300 50  0001 C CNN
+F 3 "" H 6050 1300 50  0001 C CNN
+	1    6050 1300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5E5EC00A
-P 4575 2600
-F 0 "#PWR013" H 4575 2350 50  0001 C CNN
-F 1 "GND" H 4575 2450 50  0000 C CNN
-F 2 "" H 4575 2600 50  0001 C CNN
-F 3 "" H 4575 2600 50  0001 C CNN
-	1    4575 2600
+P 4650 2550
+F 0 "#PWR013" H 4650 2300 50  0001 C CNN
+F 1 "GND" H 4650 2400 50  0000 C CNN
+F 2 "" H 4650 2550 50  0001 C CNN
+F 3 "" H 4650 2550 50  0001 C CNN
+	1    4650 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 5175 1100 2    60   Input ~ 0
+Text GLabel 5350 1050 2    60   Input ~ 0
 VBUS_l
 $Comp
 L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J2
 U 1 1 5C743564
-P 4575 1700
-F 0 "J2" H 4575 2525 50  0000 C CNN
-F 1 "USB-C Conn" H 4575 2450 50  0000 C CNN
-F 2 "jiran-ble:USB-C_MidMount" H 4682 2475 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4725 1700 50  0001 C CNN
-	1    4575 1700
+P 4650 1650
+F 0 "J2" H 4650 2475 50  0000 C CNN
+F 1 "USB-C Conn" H 4650 2400 50  0000 C CNN
+F 2 "jiran-ble:USB-C_MidMount" H 4757 2425 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4800 1650 50  0001 C CNN
+	1    4650 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -600,9 +559,6 @@ Wire Wire Line
 	1075 4550 1025 4550
 Connection ~ 1075 4550
 Wire Wire Line
-	4275 2600 4575 2600
-Connection ~ 4575 2600
-Wire Wire Line
 	1675 4950 1725 4950
 Wire Wire Line
 	11925 2500 11925 2400
@@ -613,22 +569,14 @@ Wire Wire Line
 Connection ~ 11925 2400
 Wire Wire Line
 	11825 2050 11925 2050
-NoConn ~ 5175 2200
-NoConn ~ 5175 2300
+NoConn ~ 5250 2150
+NoConn ~ 5250 2250
 Text Notes 3175 4700 0    60   ~ 0
 RProg\n10k\n5k\n2.5k\n2k\n1.25k
 Text Notes 3525 4700 0    60   ~ 0
 IBat\n100mA\n200mA\n400mA\n500mA\n800mA
 Text Notes 3075 4075 0    60   ~ 0
 RProg = 1000/IBat\nIBat in amps
-Wire Wire Line
-	5175 1300 5625 1300
-Wire Wire Line
-	5625 1300 5625 1250
-Wire Wire Line
-	5175 1400 5625 1400
-Wire Wire Line
-	5625 1400 5625 1450
 Text GLabel 8775 2325 0    60   Input ~ 0
 nRF_VDD_l
 Wire Wire Line
@@ -3225,9 +3173,73 @@ Wire Wire Line
 	3400 2100 3500 2100
 NoConn ~ 3400 2000
 NoConn ~ 3400 1700
-NoConn ~ 3400 1575
+NoConn ~ 3400 1600
 NoConn ~ 3400 1500
 NoConn ~ 3400 1400
 NoConn ~ 1500 1600
 NoConn ~ 1500 1700
+$Comp
+L Device:R_Small R?
+U 1 1 609F1795
+P 5850 1250
+F 0 "R?" V 6025 1250 50  0000 C CNN
+F 1 "5.1k" V 5925 1250 50  0000 C CNN
+F 2 "" H 5850 1250 50  0001 C CNN
+F 3 "~" H 5850 1250 50  0001 C CNN
+	1    5850 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609F2B00
+P 5850 1350
+F 0 "R?" V 6025 1350 50  0000 C CNN
+F 1 "5.1k" V 5925 1350 50  0000 C CNN
+F 2 "" H 5850 1350 50  0001 C CNN
+F 3 "~" H 5850 1350 50  0001 C CNN
+	1    5850 1350
+	0    1    1    0   
+$EndComp
+Text GLabel 5450 1600 2    61   Input ~ 0
+D-_l
+Wire Wire Line
+	5250 1550 5350 1550
+Wire Wire Line
+	5350 1650 5250 1650
+Wire Wire Line
+	5350 1550 5350 1600
+Wire Wire Line
+	5450 1600 5350 1600
+Connection ~ 5350 1600
+Wire Wire Line
+	5350 1600 5350 1650
+Text GLabel 5450 1800 2    61   Input ~ 0
+D+_l
+Wire Wire Line
+	5250 1750 5350 1750
+Wire Wire Line
+	5350 1850 5250 1850
+Wire Wire Line
+	5350 1750 5350 1800
+Wire Wire Line
+	5450 1800 5350 1800
+Connection ~ 5350 1800
+Wire Wire Line
+	5350 1800 5350 1850
+Wire Wire Line
+	5350 1050 5250 1050
+Wire Wire Line
+	5750 1350 5250 1350
+Wire Wire Line
+	5750 1250 5250 1250
+Wire Wire Line
+	5950 1250 6050 1250
+Wire Wire Line
+	6050 1350 5950 1350
+NoConn ~ 4350 2550
+Wire Wire Line
+	6050 1250 6050 1300
+Connection ~ 6050 1300
+Wire Wire Line
+	6050 1300 6050 1350
 $EndSCHEMATC
