@@ -15,100 +15,8 @@ Comment4 ""
 $EndDescr
 Text Notes 11250 600  0    60   ~ 0
 Power and filtering
-Text Notes 550  3600 0    60   ~ 0
+Text Notes 525  3975 0    60   ~ 0
 LiPo charging\n
-Text Label 1600 2550 2    60   ~ 0
-P0.08_l
-Text Label 1600 2350 2    60   ~ 0
-P0.06_l
-Text GLabel 3250 1750 2    60   Input ~ 0
-SWD_l
-Text GLabel 3250 2750 2    60   Input ~ 0
-VBUS_l
-Wire Wire Line
-	1200 1450 1600 1450
-$Comp
-L power:GND #PWR016
-U 1 1 5E81E00F
-P 3625 3050
-F 0 "#PWR016" H 3625 2800 50  0001 C CNN
-F 1 "GND" H 3630 2877 50  0000 C CNN
-F 2 "" H 3625 3050 50  0001 C CNN
-F 3 "" H 3625 3050 50  0001 C CNN
-	1    3625 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5E81E015
-P 1300 3050
-F 0 "#PWR015" H 1300 2800 50  0001 C CNN
-F 1 "GND" H 1305 2877 50  0000 C CNN
-F 2 "" H 1300 3050 50  0001 C CNN
-F 3 "" H 1300 3050 50  0001 C CNN
-	1    1300 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5E81E01B
-P 1200 1450
-F 0 "#PWR05" H 1200 1200 50  0001 C CNN
-F 1 "GND" H 1205 1277 50  0000 C CNN
-F 2 "" H 1200 1450 50  0001 C CNN
-F 3 "" H 1200 1450 50  0001 C CNN
-	1    1200 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L candy-rescue:E73-2G4M08S1C-52840-nrfmicro U2
-U 1 1 5E81E027
-P 2300 2150
-F 0 "U2" H 2275 3515 50  0000 C CNN
-F 1 "E73-2G4M08S1C" H 2275 3424 50  0000 C CNN
-F 2 "jiran-ble:E73-2G4M08S1C-52840" H 2300 2150 50  0001 C CNN
-F 3 "" H 2300 2150 50  0001 C CNN
-	1    2300 2150
-	1    0    0    -1  
-$EndComp
-Text GLabel 3250 2850 2    60   Input ~ 0
-RESET_l
-Text Label 1600 1350 2    60   ~ 0
-P0.28_l
-Text Label 1600 2950 2    60   ~ 0
-P0.12_l
-Text Label 1600 1750 2    60   ~ 0
-P0.29_l
-Text Label 1600 1650 2    60   ~ 0
-P0.02_l
-Text Label 1600 1550 2    60   ~ 0
-P1.13_l
-Text Label 1600 1050 2    60   ~ 0
-P1.11_l
-Text Label 2950 1350 0    60   ~ 0
-P0.09_l
-Wire Wire Line
-	3250 1550 2950 1550
-Wire Wire Line
-	3250 1750 2950 1750
-Wire Wire Line
-	3250 2750 2950 2750
-Wire Wire Line
-	3250 2850 2950 2850
-Text GLabel 3250 2350 2    60   Input ~ 0
-DATA+_l
-Text GLabel 3250 2550 2    60   Input ~ 0
-DATA-_l
-Wire Wire Line
-	3250 2350 2950 2350
-Wire Wire Line
-	3250 2550 2950 2550
-Wire Wire Line
-	1600 3050 1300 3050
-Text GLabel 1250 1150 0    60   Input ~ 0
-BLUE_LED_l
-Wire Wire Line
-	1600 1150 1250 1150
 $Comp
 L Device:R R3
 U 1 1 5E81E11B
@@ -144,8 +52,6 @@ F 3 "~" H 7225 2425 50  0001 C CNN
 $EndComp
 Text GLabel 7075 2425 0    60   Input ~ 0
 BLUE_LED_l
-Text GLabel 3250 1550 2    60   Input ~ 0
-SWC_l
 Text GLabel 8575 2525 0    60   Input ~ 0
 SWC_l
 Text GLabel 8575 2425 0    60   Input ~ 0
@@ -172,10 +78,6 @@ F 3 "" H 8800 2225 50  0001 C CNN
 	1    8800 2225
 	-1   0    0    1   
 $EndComp
-Text Label 1600 1850 2    60   ~ 0
-P0.31_l
-Text Label 1600 1950 2    60   ~ 0
-P0.30_l
 $Comp
 L candy-rescue:SW_PUSH-keyboard_parts SW1
 U 1 1 5E9908FE
@@ -200,10 +102,6 @@ F 3 "" H 7575 1175 50  0001 C CNN
 	1    7575 1175
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1300 2750 0    60   Input ~ 0
-BATTERY_PIN_l
-Wire Notes Line
-	500  3500 4050 3500
 Text Notes 550  600  0    60   ~ 0
 NRF52840
 Text Notes 4100 600  0    60   ~ 0
@@ -288,14 +186,6 @@ Wire Notes Line
 	4050 2900 11200 2900
 Text Notes 4100 3000 0    61   ~ 0
 Matrix
-NoConn ~ 2950 1150
-NoConn ~ 2950 1950
-NoConn ~ 2950 2050
-NoConn ~ 2950 2150
-NoConn ~ 2950 2250
-NoConn ~ 2950 1250
-NoConn ~ 2950 1450
-NoConn ~ 1600 1250
 Wire Notes Line
 	8050 500  8050 5400
 Wire Notes Line
@@ -500,28 +390,28 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 12900 2600 50  0001 
 $EndComp
 Text GLabel 13300 2400 2    60   Input ~ 0
 nRF_VDD_l
-Text Notes 2425 3975 2    60   ~ 0
+Text Notes 2425 4300 2    60   ~ 0
 LiPo Charging\n
 $Comp
 L Battery_Management:MCP73831-3-OT U3
 U 1 1 5EC2C51F
-P 2125 4525
-F 0 "U3" H 2125 4975 50  0000 C CNN
-F 1 "TP4054" H 2125 4875 50  0000 C CNN
-F 2 "jiran-ble:Package_SMD_SOT-23-5" H 2175 4275 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1975 4475 50  0001 C CNN
-	1    2125 4525
+P 2125 4850
+F 0 "U3" H 2125 5300 50  0000 C CNN
+F 1 "TP4054" H 2125 5200 50  0000 C CNN
+F 2 "jiran-ble:Package_SMD_SOT-23-5" H 2175 4600 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1975 4800 50  0001 C CNN
+	1    2125 4850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R9
 U 1 1 5ED0E40C
-P 2675 4625
-F 0 "R9" V 2468 4625 50  0000 C CNN
-F 1 "RPROG" V 2559 4625 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 2605 4625 50  0001 C CNN
-F 3 "" H 2675 4625 50  0001 C CNN
-	1    2675 4625
+P 2675 4950
+F 0 "R9" V 2468 4950 50  0000 C CNN
+F 1 "RPROG" V 2559 4950 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 2605 4950 50  0001 C CNN
+F 3 "" H 2675 4950 50  0001 C CNN
+	1    2675 4950
 	0    -1   1    0   
 $EndComp
 Text GLabel 15525 2400 0    60   Input ~ 0
@@ -619,24 +509,24 @@ VBAT_l
 $Comp
 L power:GND #PWR019
 U 1 1 5F73D403
-P 2125 4825
-F 0 "#PWR019" H 2125 4575 50  0001 C CNN
-F 1 "GND" H 2125 4675 50  0000 C CNN
-F 2 "" H 2125 4825 50  0001 C CNN
-F 3 "" H 2125 4825 50  0001 C CNN
-	1    2125 4825
+P 2125 5150
+F 0 "#PWR019" H 2125 4900 50  0001 C CNN
+F 1 "GND" H 2125 5000 50  0000 C CNN
+F 2 "" H 2125 5150 50  0001 C CNN
+F 3 "" H 2125 5150 50  0001 C CNN
+	1    2125 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2525 4625 2575 4625
-Text GLabel 1625 4425 0    60   Input ~ 0
+	2525 4950 2575 4950
+Text GLabel 1625 4750 0    60   Input ~ 0
 VBAT_l
 Wire Wire Line
-	1625 4425 1725 4425
-Text GLabel 1025 4225 0    60   Input ~ 0
+	1625 4750 1725 4750
+Text GLabel 1025 4550 0    60   Input ~ 0
 VBUS_l
 Wire Wire Line
-	2775 4625 2875 4625
+	2775 4950 2875 4950
 $Comp
 L power:GND #PWR09
 U 1 1 5F7578BA
@@ -668,52 +558,52 @@ Wire Wire Line
 $Comp
 L power:GND #PWR020
 U 1 1 5F6F7451
-P 2875 4825
-F 0 "#PWR020" H 2875 4575 50  0001 C CNN
-F 1 "GND" H 2875 4675 50  0000 C CNN
-F 2 "" H 2875 4825 50  0001 C CNN
-F 3 "" H 2875 4825 50  0001 C CNN
-	1    2875 4825
+P 2875 5150
+F 0 "#PWR020" H 2875 4900 50  0001 C CNN
+F 1 "GND" H 2875 5000 50  0000 C CNN
+F 2 "" H 2875 5150 50  0001 C CNN
+F 3 "" H 2875 5150 50  0001 C CNN
+	1    2875 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2875 4825 2875 4625
+	2875 5150 2875 4950
 $Comp
 L Device:LED LED2
 U 1 1 5F6FEF9E
-P 1225 4625
-F 0 "LED2" H 1218 4370 50  0000 C CNN
-F 1 "RED" H 1218 4461 50  0000 C CNN
-F 2 "jiran-ble:LED_SMD_0805" H 1225 4625 50  0001 C CNN
-F 3 "~" H 1225 4625 50  0001 C CNN
-	1    1225 4625
+P 1225 4950
+F 0 "LED2" H 1218 4695 50  0000 C CNN
+F 1 "RED" H 1218 4786 50  0000 C CNN
+F 2 "jiran-ble:LED_SMD_0805" H 1225 4950 50  0001 C CNN
+F 3 "~" H 1225 4950 50  0001 C CNN
+	1    1225 4950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R8
 U 1 1 5F6FEFA4
-P 1575 4625
-F 0 "R8" V 1725 4625 50  0000 C CNN
-F 1 "1K" V 1650 4625 50  0000 C CNN
-F 2 "jiran-ble:Resistor_SMD_0805" V 1505 4625 50  0001 C CNN
-F 3 "" H 1575 4625 50  0001 C CNN
-	1    1575 4625
+P 1575 4950
+F 0 "R8" V 1725 4950 50  0000 C CNN
+F 1 "1K" V 1650 4950 50  0000 C CNN
+F 2 "jiran-ble:Resistor_SMD_0805" V 1505 4950 50  0001 C CNN
+F 3 "" H 1575 4950 50  0001 C CNN
+	1    1575 4950
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	1375 4625 1475 4625
+	1375 4950 1475 4950
 Wire Wire Line
-	1075 4225 2125 4225
+	1075 4550 2125 4550
 Wire Wire Line
-	1075 4225 1075 4625
+	1075 4550 1075 4950
 Wire Wire Line
-	1075 4225 1025 4225
-Connection ~ 1075 4225
+	1075 4550 1025 4550
+Connection ~ 1075 4550
 Wire Wire Line
 	4275 2600 4575 2600
 Connection ~ 4575 2600
 Wire Wire Line
-	1675 4625 1725 4625
+	1675 4950 1725 4950
 Wire Wire Line
 	11925 2500 11925 2400
 Wire Wire Line
@@ -725,55 +615,12 @@ Wire Wire Line
 	11825 2050 11925 2050
 NoConn ~ 5175 2200
 NoConn ~ 5175 2300
-Text Notes 3200 4325 0    60   ~ 0
+Text Notes 3175 4700 0    60   ~ 0
 RProg\n10k\n5k\n2.5k\n2k\n1.25k
-Text Notes 3550 4325 0    60   ~ 0
+Text Notes 3525 4700 0    60   ~ 0
 IBat\n100mA\n200mA\n400mA\n500mA\n800mA
-Text Notes 3100 3700 0    60   ~ 0
+Text Notes 3075 4075 0    60   ~ 0
 RProg = 1000/IBat\nIBat in amps
-Text GLabel 1125 2850 0    61   Input ~ 0
-nRF_VDD_l
-Text GLabel 1000 2450 0    61   Input ~ 0
-PROG_l
-Wire Wire Line
-	1000 2450 1600 2450
-Text GLabel 1250 2650 0    61   Input ~ 0
-POWER_PIN_l
-Wire Wire Line
-	1125 2850 1600 2850
-Wire Wire Line
-	1300 2750 1600 2750
-Wire Wire Line
-	1250 2650 1600 2650
-$Comp
-L Device:Crystal_Small X1
-U 1 1 603F47FF
-P 1075 2150
-F 0 "X1" H 1025 1975 50  0000 L CNN
-F 1 "Crystal" H 950 2050 50  0000 L CNN
-F 2 "jiran-ble:Crystal_SMD_CM9V" H 1075 2150 50  0001 C CNN
-F 3 "~" H 1075 2150 50  0001 C CNN
-	1    1075 2150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1075 2050 1600 2050
-Wire Wire Line
-	1075 2250 1600 2250
-NoConn ~ 2950 1850
-NoConn ~ 2950 1650
-NoConn ~ 2950 2650
-NoConn ~ 2950 2450
-Text GLabel 3275 2950 2    61   Input ~ 0
-DCCH_l
-Wire Wire Line
-	3275 2950 2950 2950
-Text GLabel 3000 3150 2    61   Input ~ 0
-nRF_VDD_l
-Wire Wire Line
-	2950 3150 3000 3150
-Wire Wire Line
-	2950 3050 3625 3050
 Wire Wire Line
 	5175 1300 5625 1300
 Wire Wire Line
@@ -792,8 +639,6 @@ Wire Notes Line
 	6400 500  6400 2900
 Text Notes 9675 600  0    61   ~ 0
 Power Flags
-NoConn ~ 1600 2150
-NoConn ~ 1600 3150
 Text Notes 11250 6400 0    60   ~ 0
 Power and filtering
 Text Notes 550  9400 0    60   ~ 0
@@ -2368,28 +2213,6 @@ Wire Wire Line
 Connection ~ 4495 5190
 Wire Wire Line
 	4455 5190 4495 5190
-Text Label 4455 5190 2    50   ~ 0
-P0.29_l
-Text Label 4455 4790 2    50   ~ 0
-P0.02_l
-Text Label 4455 4390 2    50   ~ 0
-P1.13_l
-Text Label 4455 3990 2    50   ~ 0
-P0.28_l
-Text Label 4455 3590 2    50   ~ 0
-P1.11_l
-Text Label 7895 3340 1    50   ~ 0
-P0.12_l
-Text Label 7295 3340 1    50   ~ 0
-P0.09_l
-Text Label 6695 3340 1    50   ~ 0
-P0.08_l
-Text Label 6095 3340 1    50   ~ 0
-P0.06_l
-Text Label 5495 3340 1    50   ~ 0
-P0.30_l
-Text Label 4895 3340 1    50   ~ 0
-P0.31_l
 Wire Wire Line
 	7895 4590 7895 4190
 Connection ~ 7895 4590
@@ -3256,4 +3079,155 @@ F 3 "~" H 10075 7525 50  0001 C CNN
 	1    10075 7525
 	0    -1   -1   0   
 $EndComp
+$Comp
+L jiran-ble:HOLYIOT-18010-NRF52840_simple U?
+U 1 1 6068C8F8
+P 2450 1900
+F 0 "U?" H 2450 3190 61  0000 C CNN
+F 1 "HOLYIOT-18010-NRF52840_simple" H 2450 3082 61  0000 C CNN
+F 2 "" H 2550 3350 61  0001 C CNN
+F 3 "" H 2550 3350 61  0001 C CNN
+	1    2450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6068F821
+P 1500 1300
+F 0 "#PWR?" H 1500 1050 50  0001 C CNN
+F 1 "GND" H 1575 1150 50  0000 R CNN
+F 2 "" H 1500 1300 50  0001 C CNN
+F 3 "" H 1500 1300 50  0001 C CNN
+	1    1500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 606910C5
+P 3400 1300
+F 0 "#PWR?" H 3400 1050 50  0001 C CNN
+F 1 "GND" H 3475 1150 50  0000 R CNN
+F 2 "" H 3400 1300 50  0001 C CNN
+F 3 "" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60692613
+P 3400 2500
+F 0 "#PWR?" H 3400 2250 50  0001 C CNN
+F 1 "GND" H 3475 2350 50  0000 R CNN
+F 2 "" H 3400 2500 50  0001 C CNN
+F 3 "" H 3400 2500 50  0001 C CNN
+	1    3400 2500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2750 3100 3    61   Input ~ 0
+VBUS_l
+Wire Wire Line
+	2750 3100 2750 3000
+Text GLabel 2850 3100 3    61   Input ~ 0
+DATA-_l
+Text GLabel 2950 3100 3    61   Input ~ 0
+DATA+_l
+Wire Wire Line
+	2950 3100 2950 3000
+Wire Wire Line
+	2850 3000 2850 3100
+Text GLabel 1950 3100 3    61   Input ~ 0
+nRF_VDD_l
+Wire Wire Line
+	1950 3100 1950 3000
+Text GLabel 1400 2500 0    61   Input ~ 0
+PROG_l
+Wire Wire Line
+	1400 2500 1500 2500
+Text GLabel 2150 3100 3    61   Input ~ 0
+POWER_PIN_l
+Wire Wire Line
+	2150 3100 2150 3000
+Text GLabel 1400 2400 0    61   Input ~ 0
+BATTERY_PIN_l
+Text GLabel 1400 1500 0    61   Input ~ 0
+BLUE_LED_l
+Text GLabel 3500 1900 2    61   Input ~ 0
+SWC_l
+Text GLabel 3500 1800 2    61   Input ~ 0
+SWD_L
+Text GLabel 2650 3100 3    61   Input ~ 0
+RESET_l
+Wire Wire Line
+	1400 1500 1500 1500
+Wire Wire Line
+	1400 2400 1500 2400
+Wire Wire Line
+	2650 3100 2650 3000
+Wire Wire Line
+	3500 1800 3400 1800
+Wire Wire Line
+	3500 1900 3400 1900
+Wire Notes Line
+	4050 3850 500  3850
+NoConn ~ 1500 1400
+NoConn ~ 2050 3000
+Text Label 2450 3075 3    61   ~ 0
+P0.21_l
+Wire Wire Line
+	2450 3075 2450 3000
+Text Label 2550 3075 3    61   ~ 0
+P0.19_l
+Wire Wire Line
+	2550 3075 2550 3000
+Wire Wire Line
+	3500 2300 3400 2300
+Text GLabel 3500 2300 2    61   Input ~ 0
+SWO_l
+NoConn ~ 3400 2400
+Text Label 2350 3075 3    61   ~ 0
+P0.23_l
+Wire Wire Line
+	2350 3075 2350 3000
+Wire Wire Line
+	2250 3075 2250 3000
+NoConn ~ 2250 3075
+Text Label 1400 2300 2    61   ~ 0
+P0.31_l
+Text Label 1400 2200 2    61   ~ 0
+P0.30_l
+Text Label 1400 2100 2    61   ~ 0
+P0.29_l
+Text Label 1400 2000 2    61   ~ 0
+P0.28_l
+Text Label 1400 1900 2    61   ~ 0
+P0.02_l
+Text Label 1400 1800 2    61   ~ 0
+P0.03_l
+Wire Wire Line
+	1400 2300 1500 2300
+Wire Wire Line
+	1400 2200 1500 2200
+Wire Wire Line
+	1400 2100 1500 2100
+Wire Wire Line
+	1400 2000 1500 2000
+Wire Wire Line
+	1400 1900 1500 1900
+Wire Wire Line
+	1400 1800 1500 1800
+Text Label 3500 2200 0    61   ~ 0
+P1.03_l
+Text Label 3500 2100 0    61   ~ 0
+P1.01_l
+Wire Wire Line
+	3500 2200 3400 2200
+Wire Wire Line
+	3400 2100 3500 2100
+NoConn ~ 3400 2000
+NoConn ~ 3400 1700
+NoConn ~ 3400 1575
+NoConn ~ 3400 1500
+NoConn ~ 3400 1400
+NoConn ~ 1500 1600
+NoConn ~ 1500 1700
 $EndSCHEMATC
