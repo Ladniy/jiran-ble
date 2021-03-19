@@ -1,4 +1,4 @@
-19924818347663832
+19934514857618276
 Alps_Only
 ALPS-1.5U
 
@@ -85799,6 +85799,13 @@ WS2812B_data-bridgeable
 12
 4
 jiran-ble
+Capacitor_SMD_0402
+
+
+0
+2
+2
+jiran-ble
 Capacitor_SMD_0805
 
 
@@ -85855,6 +85862,20 @@ Hole_Mount_M4
 0
 0
 jiran-ble
+Holyiot-18010-nRF52840
+
+
+0
+37
+37
+jiran-ble
+LED_SMD_0402
+
+
+0
+2
+2
+jiran-ble
 LED_SMD_0805
 
 
@@ -85890,6 +85911,13 @@ Panel_2x5
 0
 0
 jiran-ble
+Resistor_SMD_0402
+
+
+0
+2
+2
+jiran-ble
 Resistor_SMD_0805
 
 
@@ -85917,6 +85945,13 @@ Switch_SMD_Tact_3-6-3,5
 0
 4
 3
+jiran-ble
+USB-C-31-M-12
+
+
+0
+20
+17
 jiran-ble
 USB-C_MidMount
 
@@ -86841,6 +86876,13 @@ tmk_logo
 0
 0
 0
+kicad-symbols
+PMW3360
+PMW3360
+Undefined or Miscellaneous
+0
+16
+16
 nrfmicro
 E73-2G4M08S1C-52840
 
