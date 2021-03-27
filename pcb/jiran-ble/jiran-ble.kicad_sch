@@ -3509,13 +3509,13 @@
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid bbaed83f-3778-432d-bc65-2af60df77e0b)
   )
-  (text "Left side contain:\nSW1 - SW30\nD1 - D29\nR1 - R9\nHM1 - HM5\nU1 - U3\nJ1 - J3\nLED1 - LED2\nC1 - C2\nG1\n"
-    (at 247.015 100.33 0)
+  (text "Left side contain:\nSW1 - SW30\nD1 - D29\nR1 - R9\nHM1 - HM5\nU1 - U3\nJ1 - J3\nLED1 - LED2\nC1 - C2\nSW2A\nG1\n"
+    (at 247.015 102.87 0)
     (effects (font (size 1.5494 1.5494)) (justify left bottom))
     (uuid ccdd8588-d20e-4894-b77f-34696bcca846)
   )
-  (text "Right side contain:\nSW31 - SW59\nD30 - D58\nR10 - R18\nHM6 - HM10\nU4 - U6\nJ4 - J6\nLED3 - LED4\nC3 - C4\nG2\n"
-    (at 247.015 247.015 0)
+  (text "Right side contain:\nSW31 - SW59\nD30 - D58\nR10 - R18\nHM6 - HM10\nU4 - U6\nJ4 - J6\nLED3 - LED4\nC3 - C4\nSW2B\nG2\n"
+    (at 247.015 250.19 0)
     (effects (font (size 1.5494 1.5494)) (justify left bottom))
     (uuid 70c70255-8aa1-4c3b-a40a-782c73395d54)
   )
