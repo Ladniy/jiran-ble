@@ -1,4 +1,4 @@
-19489701165723998
+19491317469833158
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84291,8 +84291,8 @@ Switch_SMD_Tact_K2-118
 
 
 0
-0
-0
+1
+1
 jiran-ble
 USB-C-31-M-12
 
@@ -84349,6 +84349,13 @@ slide switch smd ece
 0
 3
 3
+keyboard-parts
+K21187SQA4SW06
+K2-1187SQ-A4SW-06-2
+Switch
+0
+4
+4
 keyboard-parts
 MX_SK6812MINI-E
 Add-on for regular MX-footprints with SK6812 MINI-E
