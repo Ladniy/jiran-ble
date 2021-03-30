@@ -1,4 +1,4 @@
-19491317469833158
+19494553155777447
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84217,6 +84217,13 @@ LED_SMD_0402
 2
 2
 jiran-ble
+LED_SMD_0603
+
+
+0
+2
+2
+jiran-ble
 LED_SMD_0805
 
 
@@ -84259,6 +84266,13 @@ Resistor_SMD_0402
 2
 2
 jiran-ble
+Resistor_SMD_0603
+
+
+0
+0
+0
+jiran-ble
 Resistor_SMD_0805
 
 
@@ -84291,8 +84305,8 @@ Switch_SMD_Tact_K2-118
 
 
 0
-1
-1
+4
+4
 jiran-ble
 USB-C-31-M-12
 
