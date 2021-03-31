@@ -1,4 +1,4 @@
-19494553155777447
+19476776093095773
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84140,14 +84140,7 @@ varistor SIOV
 2
 2
 jiran-ble
-Capacitor_SMD_0402
-
-
-0
-2
-2
-jiran-ble
-Capacitor_SMD_0805
+C_0402
 
 
 0
@@ -84168,28 +84161,7 @@ Connector_THT_1x4_2.54
 4
 4
 jiran-ble
-Crystal_SMD_CM9V
-
-
-0
-2
-2
-jiran-ble
-Diode_SMD_SOD-123
-
-
-0
-2
-2
-jiran-ble
-E73-2G4M08S1C-52840
-
-
-0
-43
-43
-jiran-ble
-Fuse_SMD_0805
+D_SOD-123
 
 
 0
@@ -84210,47 +84182,12 @@ Holyiot-18010-nRF52840
 37
 37
 jiran-ble
-LED_SMD_0402
+LED_0603
 
 
 0
 2
 2
-jiran-ble
-LED_SMD_0603
-
-
-0
-2
-2
-jiran-ble
-LED_SMD_0805
-
-
-0
-2
-2
-jiran-ble
-Package_SMD_SOT-23
-
-
-0
-3
-3
-jiran-ble
-Package_SMD_SOT-23-5
-
-
-0
-5
-5
-jiran-ble
-Package_SMD_SOT-23-6
-
-
-0
-6
-6
 jiran-ble
 Panel_2x5
 
@@ -84259,26 +84196,33 @@ Panel_2x5
 0
 0
 jiran-ble
-Resistor_SMD_0402
+R_0402
 
 
 0
 2
 2
 jiran-ble
-Resistor_SMD_0603
+R_0603
 
 
 0
-0
-0
+2
+2
 jiran-ble
-Resistor_SMD_0805
+SOT-23
 
 
 0
-2
-2
+3
+3
+jiran-ble
+SOT-23-5
+
+
+0
+5
+5
 jiran-ble
 Switch_Mx_Hotswap_1u
 
@@ -84294,33 +84238,12 @@ Switch_SMD_MSK-12C02
 7
 3
 jiran-ble
-Switch_SMD_Tact_3-6-3,5
-
-
-0
-4
-3
-jiran-ble
-Switch_SMD_Tact_K2-118
-
-
-0
-4
-4
-jiran-ble
 USB-C-31-M-12
 
 
 0
 20
 17
-jiran-ble
-USB-C_MidMount
-
-
-0
-30
-11
 jiran-ble
 logotype
 
