@@ -16,10 +16,11 @@ More information here - [wiki](https://github.com/Ladniy/jiran-ble/wiki/Componen
 
 ## To Do
 
+* Return reset button
 * Create footprint for tact. switch
-* Edit toggle switch footprint
+* Edit some old footprintls
 * Design PCB
 * Design basic case
 * Prepare production files
 * Production
-* Testing
+* Testing	
