@@ -16,12 +16,12 @@ More information here - [wiki](https://github.com/Ladniy/jiran-ble/wiki/Componen
 
 ## To Do
 
-* Return reset button
-* Create footprint for bat. connector
-* Create footprint for tact. switch
-* Edit some old footprintls
-* Design PCB
-* Design basic case
-* Prepare production files
-* Production
-* Testing	
+- [x] Return reset button
+- [ ] Create footprint for bat. connector
+- [ ] Create footprint for tact. switch
+- [ ] Edit some old footprints
+- [ ] Design PCB
+- [ ] Design basic case
+- [ ] Prepare production files
+- [ ] Production
+- [ ] Testing	
