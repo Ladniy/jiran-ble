@@ -1,4 +1,4 @@
-# jiran-ble
+# Jiran BLE
 
 Wireless version of my keyboard, based on [Holyiot-18010 (nRF52840)](http://www.holyiot.com/tp/2019042516322180424.pdf) module.
 
