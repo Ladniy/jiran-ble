@@ -7351,7 +7351,7 @@
     (uuid db325e92-5360-45ed-9c6f-d56c57cf171b)
     (property "Reference" "SW30" (id 0) (at 325.755 38.1 0))
     (property "Value" "SW_DPDT" (id 1) (at 325.755 40.64 0))
-    (property "Footprint" "" (id 2) (at 323.85 37.465 0)
+    (property "Footprint" "jiran-ble:MSK-12C02" (id 2) (at 323.85 37.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 323.85 37.465 0)
@@ -7367,7 +7367,7 @@
     (uuid a6d535f7-c651-49c0-a33d-9ae4aaa71f84)
     (property "Reference" "SW60" (id 0) (at 326.39 172.72 0))
     (property "Value" "SW_DPDT" (id 1) (at 326.39 175.26 0))
-    (property "Footprint" "" (id 2) (at 324.485 172.085 0)
+    (property "Footprint" "jiran-ble:MSK-12C02" (id 2) (at 324.485 172.085 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 324.485 172.085 0)
@@ -8247,7 +8247,7 @@
       (reference "SW29") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
     (path "/db325e92-5360-45ed-9c6f-d56c57cf171b"
-      (reference "SW30") (unit 1) (value "SW_DPDT") (footprint "")
+      (reference "SW30") (unit 1) (value "SW_DPDT") (footprint "jiran-ble:MSK-12C02")
     )
     (path "/00000000-0000-0000-0000-00006130bef7"
       (reference "SW31") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
@@ -8337,7 +8337,7 @@
       (reference "SW59") (unit 1) (value "SW_Push") (footprint "jiran-ble:TS-1086E")
     )
     (path "/a6d535f7-c651-49c0-a33d-9ae4aaa71f84"
-      (reference "SW60") (unit 1) (value "SW_DPDT") (footprint "")
+      (reference "SW60") (unit 1) (value "SW_DPDT") (footprint "jiran-ble:MSK-12C02")
     )
     (path "/00000000-0000-0000-0000-00006068c8f8"
       (reference "U1") (unit 1) (value "HOLYIOT-18010-NRF52840_simple") (footprint "jiran-ble:Holyiot-18010-nRF52840")
