@@ -587,71 +587,6 @@
         (circle (center 0 0) (radius 1.27) (stroke (width 1.27)) (fill (type none)))
       )
     )
-    (symbol "Switch:SW_DPDT_x2" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (id 0) (at 0 4.318 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SW_DPDT_x2" (id 1) (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "switch dual-pole double-throw DPDT spdt ON-ON" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Switch, dual pole double throw, separate symbols" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SW*DPDT*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_DPDT_x2_0_0"
-        (circle (center -2.032 0) (radius 0.508) (stroke (width 0)) (fill (type none)))
-        (circle (center 2.032 -2.54) (radius 0.508) (stroke (width 0)) (fill (type none)))
-      )
-      (symbol "SW_DPDT_x2_0_1"
-        (circle (center 2.032 2.54) (radius 0.508) (stroke (width 0)) (fill (type none)))
-        (polyline
-          (pts
-            (xy -1.524 0.254)
-            (xy 1.651 2.286)
-          )
-          (stroke (width 0)) (fill (type none))
-        )
-      )
-      (symbol "SW_DPDT_x2_1_1"
-        (pin passive line (at 5.08 2.54 180) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "B" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 2.54)
-          (name "C" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "SW_DPDT_x2_2_1"
-        (pin passive line (at 5.08 2.54 180) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "B" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 2.54)
-          (name "C" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (id 0) (at 1.27 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -695,6 +630,48 @@
         (pin passive line (at 5.08 0 180) (length 2.54)
           (name "2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "jiran-ble-new:SW_DPDT" (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (id 0) (at 0 7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SW_DPDT" (id 1) (at 0 5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0.635 7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0.635 7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SW_DPDT_0_0"
+        (circle (center -3.302 0) (radius 0.508) (stroke (width 0)) (fill (type none)))
+        (circle (center 0.762 -2.54) (radius 0.508) (stroke (width 0)) (fill (type none)))
+      )
+      (symbol "SW_DPDT_0_1"
+        (circle (center 0.762 2.54) (radius 0.508) (stroke (width 0)) (fill (type none)))
+        (polyline
+          (pts
+            (xy -2.794 0.254)
+            (xy 0.381 2.286)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "SW_DPDT_1_1"
+        (pin passive line (at 3.81 2.54 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -6.35 0 0) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 -2.54 180) (length 2.54)
+          (name "C" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -3473,12 +3450,12 @@
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid bbaed83f-3778-432d-bc65-2af60df77e0b)
   )
-  (text "Left side contain:\nSW1 - SW29\nD1 - D29\nR1 - R9\nHM1 - HM5\nU1 - U3\nJ1 - J3\nLED1 - LED2\nC1 - C2\nSW1A\nG1\n"
+  (text "Left side contain:\nSW1 - SW30\nD1 - D29\nR1 - R9\nHM1 - HM5\nU1 - U3\nJ1 - J3\nLED1 - LED2\nC1 - C2\nSW1A\nG1\n"
     (at 247.015 102.87 0)
     (effects (font (size 1.5494 1.5494)) (justify left bottom))
     (uuid ccdd8588-d20e-4894-b77f-34696bcca846)
   )
-  (text "Right side contain:\nSW30 - SW59\nD30 - D58\nR10 - R18\nHM6 - HM10\nU4 - U6\nJ4 - J6\nLED3 - LED4\nC3 - C4\nSW1B\nG2\n"
+  (text "Right side contain:\nSW31 - SW60\nD30 - D58\nR10 - R18\nHM6 - HM10\nU4 - U6\nJ4 - J6\nLED3 - LED4\nC3 - C4\nSW1B\nG2\n"
     (at 247.015 250.19 0)
     (effects (font (size 1.5494 1.5494)) (justify left bottom))
     (uuid 70c70255-8aa1-4c3b-a40a-782c73395d54)
@@ -4144,7 +4121,7 @@
   (symbol (lib_id "power:GND") (at 38.1 33.02 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006068f821)
-    (property "Reference" "#PWR03" (id 0) (at 31.75 33.02 0)
+    (property "Reference" "#PWR04" (id 0) (at 31.75 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 34.29 34.925 0)
@@ -4162,7 +4139,7 @@
   (symbol (lib_id "power:GND") (at 38.1 179.705 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bf2d)
-    (property "Reference" "#PWR018" (id 0) (at 31.75 179.705 0)
+    (property "Reference" "#PWR020" (id 0) (at 31.75 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 34.29 181.61 0)
@@ -4180,7 +4157,7 @@
   (symbol (lib_id "power:GND") (at 39.37 110.49 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060dab6ee)
-    (property "Reference" "#PWR014" (id 0) (at 33.02 110.49 0)
+    (property "Reference" "#PWR015" (id 0) (at 33.02 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 35.56 112.395 0)
@@ -4198,7 +4175,7 @@
   (symbol (lib_id "power:GND") (at 39.37 257.175 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bfa1)
-    (property "Reference" "#PWR029" (id 0) (at 33.02 257.175 0)
+    (property "Reference" "#PWR031" (id 0) (at 33.02 257.175 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 35.56 259.08 0)
@@ -4216,7 +4193,7 @@
   (symbol (lib_id "power:GND") (at 54.61 128.905 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f73d403)
-    (property "Reference" "#PWR015" (id 0) (at 54.61 135.255 0)
+    (property "Reference" "#PWR016" (id 0) (at 54.61 135.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 54.61 132.715 0))
@@ -4232,7 +4209,7 @@
   (symbol (lib_id "power:GND") (at 54.61 275.59 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bd0c)
-    (property "Reference" "#PWR030" (id 0) (at 54.61 281.94 0)
+    (property "Reference" "#PWR032" (id 0) (at 54.61 281.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 54.61 279.4 0))
@@ -4248,7 +4225,7 @@
   (symbol (lib_id "power:GND") (at 73.66 128.905 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f6f7451)
-    (property "Reference" "#PWR016" (id 0) (at 73.66 135.255 0)
+    (property "Reference" "#PWR017" (id 0) (at 73.66 135.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 73.66 132.715 0))
@@ -4264,7 +4241,7 @@
   (symbol (lib_id "power:GND") (at 73.66 275.59 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bd25)
-    (property "Reference" "#PWR031" (id 0) (at 73.66 281.94 0)
+    (property "Reference" "#PWR033" (id 0) (at 73.66 281.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 73.66 279.4 0))
@@ -4280,7 +4257,7 @@
   (symbol (lib_id "power:GND") (at 86.36 33.02 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000606910c5)
-    (property "Reference" "#PWR04" (id 0) (at 92.71 33.02 0)
+    (property "Reference" "#PWR05" (id 0) (at 92.71 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 90.17 31.115 0)
@@ -4298,7 +4275,7 @@
   (symbol (lib_id "power:GND") (at 86.36 63.5 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060692613)
-    (property "Reference" "#PWR08" (id 0) (at 92.71 63.5 0)
+    (property "Reference" "#PWR09" (id 0) (at 92.71 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 90.17 61.595 0)
@@ -4316,7 +4293,7 @@
   (symbol (lib_id "power:GND") (at 86.36 179.705 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bf33)
-    (property "Reference" "#PWR019" (id 0) (at 92.71 179.705 0)
+    (property "Reference" "#PWR021" (id 0) (at 92.71 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 90.17 177.8 0)
@@ -4334,7 +4311,7 @@
   (symbol (lib_id "power:GND") (at 86.36 210.185 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bf39)
-    (property "Reference" "#PWR027" (id 0) (at 92.71 210.185 0)
+    (property "Reference" "#PWR029" (id 0) (at 92.71 210.185 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 90.17 208.28 0)
@@ -4352,7 +4329,7 @@
   (symbol (lib_id "power:GND") (at 118.11 64.77 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005e5ec00a)
-    (property "Reference" "#PWR09" (id 0) (at 118.11 71.12 0)
+    (property "Reference" "#PWR010" (id 0) (at 118.11 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 118.11 68.58 0))
@@ -4368,7 +4345,7 @@
   (symbol (lib_id "power:GND") (at 118.11 211.455 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bcc8)
-    (property "Reference" "#PWR028" (id 0) (at 118.11 217.805 0)
+    (property "Reference" "#PWR030" (id 0) (at 118.11 217.805 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 118.11 215.265 0))
@@ -4384,7 +4361,7 @@
   (symbol (lib_id "power:GND") (at 153.67 33.02 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005e5dbb46)
-    (property "Reference" "#PWR05" (id 0) (at 160.02 33.02 0)
+    (property "Reference" "#PWR06" (id 0) (at 160.02 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 157.48 33.02 0))
@@ -4400,7 +4377,7 @@
   (symbol (lib_id "power:GND") (at 153.67 179.705 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bcc2)
-    (property "Reference" "#PWR020" (id 0) (at 160.02 179.705 0)
+    (property "Reference" "#PWR022" (id 0) (at 160.02 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 157.48 179.705 0))
@@ -4416,7 +4393,7 @@
   (symbol (lib_id "power:GND") (at 201.93 28.575 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005e991365)
-    (property "Reference" "#PWR032" (id 0) (at 208.28 28.575 0)
+    (property "Reference" "#PWR03" (id 0) (at 208.28 28.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 205.74 28.575 0))
@@ -4432,7 +4409,7 @@
   (symbol (lib_id "power:GND") (at 201.93 175.26 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid da6596d0-ded1-4ad3-9419-b604f16768b1)
-    (property "Reference" "#PWR033" (id 0) (at 208.28 175.26 0)
+    (property "Reference" "#PWR019" (id 0) (at 208.28 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 205.74 175.26 0))
@@ -4448,7 +4425,7 @@
   (symbol (lib_id "power:GND") (at 206.375 60.325 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005e81e121)
-    (property "Reference" "#PWR07" (id 0) (at 212.725 60.325 0)
+    (property "Reference" "#PWR08" (id 0) (at 212.725 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 210.185 60.325 0))
@@ -4464,7 +4441,7 @@
   (symbol (lib_id "power:GND") (at 206.375 207.01 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bc4a)
-    (property "Reference" "#PWR024" (id 0) (at 212.725 207.01 0)
+    (property "Reference" "#PWR026" (id 0) (at 212.725 207.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 210.185 207.01 0))
@@ -4496,7 +4473,7 @@
   (symbol (lib_id "power:GND") (at 250.825 170.18 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bcb2)
-    (property "Reference" "#PWR017" (id 0) (at 244.475 170.18 0)
+    (property "Reference" "#PWR018" (id 0) (at 244.475 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 247.015 170.18 0))
@@ -4512,7 +4489,7 @@
   (symbol (lib_id "power:GND") (at 253.365 55.245 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005e908c24)
-    (property "Reference" "#PWR06" (id 0) (at 253.365 48.895 0)
+    (property "Reference" "#PWR07" (id 0) (at 253.365 48.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 253.365 51.435 0))
@@ -4528,7 +4505,7 @@
   (symbol (lib_id "power:GND") (at 253.365 201.93 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bc5f)
-    (property "Reference" "#PWR021" (id 0) (at 253.365 195.58 0)
+    (property "Reference" "#PWR023" (id 0) (at 253.365 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 253.365 198.12 0))
@@ -4544,7 +4521,7 @@
   (symbol (lib_id "power:GND") (at 305.435 71.755 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f7578ba)
-    (property "Reference" "#PWR010" (id 0) (at 305.435 78.105 0)
+    (property "Reference" "#PWR011" (id 0) (at 305.435 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 305.435 75.565 0))
@@ -4560,7 +4537,7 @@
   (symbol (lib_id "power:GND") (at 306.07 206.375 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bd16)
-    (property "Reference" "#PWR022" (id 0) (at 306.07 212.725 0)
+    (property "Reference" "#PWR024" (id 0) (at 306.07 212.725 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 306.07 210.185 0))
@@ -4576,7 +4553,7 @@
   (symbol (lib_id "power:GND") (at 315.595 71.755 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000605fe956)
-    (property "Reference" "#PWR011" (id 0) (at 315.595 78.105 0)
+    (property "Reference" "#PWR012" (id 0) (at 315.595 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 315.595 75.565 0))
@@ -4592,7 +4569,7 @@
   (symbol (lib_id "power:GND") (at 316.23 206.375 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bf21)
-    (property "Reference" "#PWR023" (id 0) (at 316.23 212.725 0)
+    (property "Reference" "#PWR025" (id 0) (at 316.23 212.725 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 316.23 210.185 0))
@@ -4608,7 +4585,7 @@
   (symbol (lib_id "power:GND") (at 330.2 74.295 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f7552d5)
-    (property "Reference" "#PWR013" (id 0) (at 330.2 80.645 0)
+    (property "Reference" "#PWR014" (id 0) (at 330.2 80.645 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 330.2 78.105 0))
@@ -4624,7 +4601,7 @@
   (symbol (lib_id "power:GND") (at 330.835 208.915 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bf1a)
-    (property "Reference" "#PWR026" (id 0) (at 330.835 215.265 0)
+    (property "Reference" "#PWR028" (id 0) (at 330.835 215.265 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 330.835 212.725 0))
@@ -4640,7 +4617,7 @@
   (symbol (lib_id "power:GND") (at 391.16 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f75e8d6)
-    (property "Reference" "#PWR012" (id 0) (at 391.16 78.74 0)
+    (property "Reference" "#PWR013" (id 0) (at 391.16 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 391.16 76.2 0))
@@ -4656,7 +4633,7 @@
   (symbol (lib_id "power:GND") (at 391.795 207.01 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bd1c)
-    (property "Reference" "#PWR025" (id 0) (at 391.795 213.36 0)
+    (property "Reference" "#PWR027" (id 0) (at 391.795 213.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 391.795 210.82 0))
@@ -5047,7 +5024,7 @@
   (symbol (lib_id "Device:D_Small") (at 115.443 236.601 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be4f)
-    (property "Reference" "D30" (id 0) (at 117.1702 236.601 90)
+    (property "Reference" "D31" (id 0) (at 117.1702 236.601 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 117.1702 237.744 90)
@@ -5066,7 +5043,7 @@
   (symbol (lib_id "Device:D_Small") (at 115.443 246.761 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be2b)
-    (property "Reference" "D36" (id 0) (at 117.1702 246.761 90)
+    (property "Reference" "D37" (id 0) (at 117.1702 246.761 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 117.1702 247.904 90)
@@ -5085,7 +5062,7 @@
   (symbol (lib_id "Device:D_Small") (at 115.443 256.921 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be07)
-    (property "Reference" "D42" (id 0) (at 117.1702 256.921 90)
+    (property "Reference" "D43" (id 0) (at 117.1702 256.921 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 117.1702 258.064 90)
@@ -5104,7 +5081,7 @@
   (symbol (lib_id "Device:D_Small") (at 115.443 267.081 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bde3)
-    (property "Reference" "D48" (id 0) (at 117.1702 267.081 90)
+    (property "Reference" "D49" (id 0) (at 117.1702 267.081 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 117.1702 268.224 90)
@@ -5123,7 +5100,7 @@
   (symbol (lib_id "Device:D_Small") (at 115.443 277.241 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdbf)
-    (property "Reference" "D54" (id 0) (at 117.1702 277.241 90)
+    (property "Reference" "D55" (id 0) (at 117.1702 277.241 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 117.1702 278.384 90)
@@ -5218,7 +5195,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.683 236.601 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be49)
-    (property "Reference" "D31" (id 0) (at 132.4102 236.601 90)
+    (property "Reference" "D32" (id 0) (at 132.4102 236.601 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 132.4102 237.744 90)
@@ -5237,7 +5214,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.683 246.761 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be25)
-    (property "Reference" "D37" (id 0) (at 132.4102 246.761 90)
+    (property "Reference" "D38" (id 0) (at 132.4102 246.761 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 132.4102 247.904 90)
@@ -5256,7 +5233,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.683 256.921 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be01)
-    (property "Reference" "D43" (id 0) (at 132.4102 256.921 90)
+    (property "Reference" "D44" (id 0) (at 132.4102 256.921 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 132.4102 258.064 90)
@@ -5275,7 +5252,7 @@
   (symbol (lib_id "Device:D_Small") (at 130.683 267.081 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bddd)
-    (property "Reference" "D49" (id 0) (at 132.4102 267.081 90)
+    (property "Reference" "D50" (id 0) (at 132.4102 267.081 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 132.4102 268.224 90)
@@ -5370,7 +5347,7 @@
   (symbol (lib_id "Device:D_Small") (at 145.923 236.601 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be43)
-    (property "Reference" "D32" (id 0) (at 147.6502 236.601 90)
+    (property "Reference" "D33" (id 0) (at 147.6502 236.601 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 147.6502 237.744 90)
@@ -5389,7 +5366,7 @@
   (symbol (lib_id "Device:D_Small") (at 145.923 246.761 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be1f)
-    (property "Reference" "D38" (id 0) (at 147.6502 246.761 90)
+    (property "Reference" "D39" (id 0) (at 147.6502 246.761 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 147.6502 247.904 90)
@@ -5408,7 +5385,7 @@
   (symbol (lib_id "Device:D_Small") (at 145.923 256.921 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdfb)
-    (property "Reference" "D44" (id 0) (at 147.6502 256.921 90)
+    (property "Reference" "D45" (id 0) (at 147.6502 256.921 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 147.6502 258.064 90)
@@ -5427,7 +5404,7 @@
   (symbol (lib_id "Device:D_Small") (at 145.923 267.081 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdd7)
-    (property "Reference" "D50" (id 0) (at 147.6502 267.081 90)
+    (property "Reference" "D51" (id 0) (at 147.6502 267.081 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 147.6502 268.224 90)
@@ -5541,7 +5518,7 @@
   (symbol (lib_id "Device:D_Small") (at 161.163 236.601 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be3d)
-    (property "Reference" "D33" (id 0) (at 162.8902 236.601 90)
+    (property "Reference" "D34" (id 0) (at 162.8902 236.601 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 162.8902 237.744 90)
@@ -5560,7 +5537,7 @@
   (symbol (lib_id "Device:D_Small") (at 161.163 246.761 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be19)
-    (property "Reference" "D39" (id 0) (at 162.8902 246.761 90)
+    (property "Reference" "D40" (id 0) (at 162.8902 246.761 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 162.8902 247.904 90)
@@ -5579,7 +5556,7 @@
   (symbol (lib_id "Device:D_Small") (at 161.163 256.921 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdf5)
-    (property "Reference" "D45" (id 0) (at 162.8902 256.921 90)
+    (property "Reference" "D46" (id 0) (at 162.8902 256.921 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 162.8902 258.064 90)
@@ -5598,7 +5575,7 @@
   (symbol (lib_id "Device:D_Small") (at 161.163 267.081 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdd1)
-    (property "Reference" "D51" (id 0) (at 162.8902 267.081 90)
+    (property "Reference" "D52" (id 0) (at 162.8902 267.081 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 162.8902 268.224 90)
@@ -5617,7 +5594,7 @@
   (symbol (lib_id "Device:D_Small") (at 161.163 277.241 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdb9)
-    (property "Reference" "D55" (id 0) (at 162.8902 277.241 90)
+    (property "Reference" "D56" (id 0) (at 162.8902 277.241 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 162.8902 278.384 90)
@@ -5731,7 +5708,7 @@
   (symbol (lib_id "Device:D_Small") (at 176.403 236.601 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be37)
-    (property "Reference" "D34" (id 0) (at 178.1302 236.601 90)
+    (property "Reference" "D35" (id 0) (at 178.1302 236.601 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 178.1302 237.744 90)
@@ -5750,7 +5727,7 @@
   (symbol (lib_id "Device:D_Small") (at 176.403 246.761 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be13)
-    (property "Reference" "D40" (id 0) (at 178.1302 246.761 90)
+    (property "Reference" "D41" (id 0) (at 178.1302 246.761 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 178.1302 247.904 90)
@@ -5769,7 +5746,7 @@
   (symbol (lib_id "Device:D_Small") (at 176.403 256.921 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdef)
-    (property "Reference" "D46" (id 0) (at 178.1302 256.921 90)
+    (property "Reference" "D47" (id 0) (at 178.1302 256.921 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 178.1302 258.064 90)
@@ -5788,7 +5765,7 @@
   (symbol (lib_id "Device:D_Small") (at 176.403 267.081 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdcb)
-    (property "Reference" "D52" (id 0) (at 178.1302 267.081 90)
+    (property "Reference" "D53" (id 0) (at 178.1302 267.081 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 178.1302 268.224 90)
@@ -5807,7 +5784,7 @@
   (symbol (lib_id "Device:D_Small") (at 176.403 277.241 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdb3)
-    (property "Reference" "D56" (id 0) (at 178.1302 277.241 90)
+    (property "Reference" "D57" (id 0) (at 178.1302 277.241 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 178.1302 278.384 90)
@@ -5921,7 +5898,7 @@
   (symbol (lib_id "Device:D_Small") (at 191.643 236.601 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be31)
-    (property "Reference" "D35" (id 0) (at 193.3702 236.601 90)
+    (property "Reference" "D36" (id 0) (at 193.3702 236.601 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 193.3702 237.744 90)
@@ -5940,7 +5917,7 @@
   (symbol (lib_id "Device:D_Small") (at 191.643 246.761 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be0d)
-    (property "Reference" "D41" (id 0) (at 193.3702 246.761 90)
+    (property "Reference" "D42" (id 0) (at 193.3702 246.761 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 193.3702 247.904 90)
@@ -5959,7 +5936,7 @@
   (symbol (lib_id "Device:D_Small") (at 191.643 256.921 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bde9)
-    (property "Reference" "D47" (id 0) (at 193.3702 256.921 90)
+    (property "Reference" "D48" (id 0) (at 193.3702 256.921 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 193.3702 258.064 90)
@@ -5978,7 +5955,7 @@
   (symbol (lib_id "Device:D_Small") (at 191.643 267.081 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdc5)
-    (property "Reference" "D53" (id 0) (at 193.3702 267.081 90)
+    (property "Reference" "D54" (id 0) (at 193.3702 267.081 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 193.3702 268.224 90)
@@ -5997,7 +5974,7 @@
   (symbol (lib_id "Device:D_Small") (at 191.643 277.241 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bdad)
-    (property "Reference" "D57" (id 0) (at 193.3702 277.241 90)
+    (property "Reference" "D58" (id 0) (at 193.3702 277.241 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N5819" (id 1) (at 193.3702 278.384 90)
@@ -6031,7 +6008,7 @@
   (symbol (lib_id "Device:D_Schottky_Small") (at 311.15 198.755 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bcdb)
-    (property "Reference" "D58" (id 0) (at 311.15 193.2686 0))
+    (property "Reference" "D30" (id 0) (at 311.15 193.2686 0))
     (property "Value" "1N5819" (id 1) (at 311.15 195.58 0))
     (property "Footprint" "jiran-ble:D_SOD-123" (id 2) (at 311.15 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -6475,7 +6452,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 120.523 234.061 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bef7)
-    (property "Reference" "SW30" (id 0) (at 120.523 230.124 0))
+    (property "Reference" "SW31" (id 0) (at 120.523 230.124 0))
     (property "Value" "SW_Push" (id 1) (at 120.523 229.1334 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6492,7 +6469,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 120.523 244.221 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bed3)
-    (property "Reference" "SW36" (id 0) (at 120.523 240.284 0))
+    (property "Reference" "SW37" (id 0) (at 120.523 240.284 0))
     (property "Value" "SW_Push" (id 1) (at 120.523 239.2934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6509,7 +6486,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 120.523 254.381 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130beaf)
-    (property "Reference" "SW42" (id 0) (at 120.523 250.444 0))
+    (property "Reference" "SW43" (id 0) (at 120.523 250.444 0))
     (property "Value" "SW_Push" (id 1) (at 120.523 249.4534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6526,7 +6503,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 120.523 264.541 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be8b)
-    (property "Reference" "SW48" (id 0) (at 120.523 260.604 0))
+    (property "Reference" "SW49" (id 0) (at 120.523 260.604 0))
     (property "Value" "SW_Push" (id 1) (at 120.523 259.6134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6543,7 +6520,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 120.523 274.701 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be67)
-    (property "Reference" "SW54" (id 0) (at 120.523 270.764 0))
+    (property "Reference" "SW55" (id 0) (at 120.523 270.764 0))
     (property "Value" "SW_Push" (id 1) (at 120.523 269.7734 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6628,7 +6605,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 135.763 234.061 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bef1)
-    (property "Reference" "SW31" (id 0) (at 135.763 230.124 0))
+    (property "Reference" "SW32" (id 0) (at 135.763 230.124 0))
     (property "Value" "SW_Push" (id 1) (at 135.763 229.1334 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6645,7 +6622,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 135.763 244.221 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130becd)
-    (property "Reference" "SW37" (id 0) (at 135.763 240.284 0))
+    (property "Reference" "SW38" (id 0) (at 135.763 240.284 0))
     (property "Value" "SW_Push" (id 1) (at 135.763 239.2934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6662,7 +6639,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 135.763 254.381 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bea9)
-    (property "Reference" "SW43" (id 0) (at 135.763 250.444 0))
+    (property "Reference" "SW44" (id 0) (at 135.763 250.444 0))
     (property "Value" "SW_Push" (id 1) (at 135.763 249.4534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6679,7 +6656,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 135.763 264.541 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be85)
-    (property "Reference" "SW49" (id 0) (at 135.763 260.604 0))
+    (property "Reference" "SW50" (id 0) (at 135.763 260.604 0))
     (property "Value" "SW_Push" (id 1) (at 135.763 259.6134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6764,7 +6741,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 151.003 234.061 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130beeb)
-    (property "Reference" "SW32" (id 0) (at 151.003 230.124 0))
+    (property "Reference" "SW33" (id 0) (at 151.003 230.124 0))
     (property "Value" "SW_Push" (id 1) (at 151.003 229.1334 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6781,7 +6758,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 151.003 244.221 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bec7)
-    (property "Reference" "SW38" (id 0) (at 151.003 240.284 0))
+    (property "Reference" "SW39" (id 0) (at 151.003 240.284 0))
     (property "Value" "SW_Push" (id 1) (at 151.003 239.2934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6798,7 +6775,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 151.003 254.381 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bea3)
-    (property "Reference" "SW44" (id 0) (at 151.003 250.444 0))
+    (property "Reference" "SW45" (id 0) (at 151.003 250.444 0))
     (property "Value" "SW_Push" (id 1) (at 151.003 249.4534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6815,7 +6792,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 151.003 264.541 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be7f)
-    (property "Reference" "SW50" (id 0) (at 151.003 260.604 0))
+    (property "Reference" "SW51" (id 0) (at 151.003 260.604 0))
     (property "Value" "SW_Push" (id 1) (at 151.003 259.6134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6917,7 +6894,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 166.243 234.061 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bee5)
-    (property "Reference" "SW33" (id 0) (at 166.243 230.124 0))
+    (property "Reference" "SW34" (id 0) (at 166.243 230.124 0))
     (property "Value" "SW_Push" (id 1) (at 166.243 229.1334 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6934,7 +6911,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 166.243 244.221 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bec1)
-    (property "Reference" "SW39" (id 0) (at 166.243 240.284 0))
+    (property "Reference" "SW40" (id 0) (at 166.243 240.284 0))
     (property "Value" "SW_Push" (id 1) (at 166.243 239.2934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6951,7 +6928,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 166.243 254.381 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be9d)
-    (property "Reference" "SW45" (id 0) (at 166.243 250.444 0))
+    (property "Reference" "SW46" (id 0) (at 166.243 250.444 0))
     (property "Value" "SW_Push" (id 1) (at 166.243 249.4534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6968,7 +6945,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 166.243 264.541 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be79)
-    (property "Reference" "SW51" (id 0) (at 166.243 260.604 0))
+    (property "Reference" "SW52" (id 0) (at 166.243 260.604 0))
     (property "Value" "SW_Push" (id 1) (at 166.243 259.6134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6985,7 +6962,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 166.243 274.701 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be61)
-    (property "Reference" "SW55" (id 0) (at 166.243 270.764 0))
+    (property "Reference" "SW56" (id 0) (at 166.243 270.764 0))
     (property "Value" "SW_Push" (id 1) (at 166.243 269.7734 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7087,7 +7064,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 181.483 234.061 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bedf)
-    (property "Reference" "SW34" (id 0) (at 181.483 230.124 0))
+    (property "Reference" "SW35" (id 0) (at 181.483 230.124 0))
     (property "Value" "SW_Push" (id 1) (at 181.483 229.1334 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7104,7 +7081,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 181.483 244.221 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bebb)
-    (property "Reference" "SW40" (id 0) (at 181.483 240.284 0))
+    (property "Reference" "SW41" (id 0) (at 181.483 240.284 0))
     (property "Value" "SW_Push" (id 1) (at 181.483 239.2934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7121,7 +7098,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 181.483 254.381 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be97)
-    (property "Reference" "SW46" (id 0) (at 181.483 250.444 0))
+    (property "Reference" "SW47" (id 0) (at 181.483 250.444 0))
     (property "Value" "SW_Push" (id 1) (at 181.483 249.4534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7138,7 +7115,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 181.483 264.541 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be73)
-    (property "Reference" "SW52" (id 0) (at 181.483 260.604 0))
+    (property "Reference" "SW53" (id 0) (at 181.483 260.604 0))
     (property "Value" "SW_Push" (id 1) (at 181.483 259.6134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7155,7 +7132,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 181.483 274.701 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be5b)
-    (property "Reference" "SW56" (id 0) (at 181.483 270.764 0))
+    (property "Reference" "SW57" (id 0) (at 181.483 270.764 0))
     (property "Value" "SW_Push" (id 1) (at 181.483 269.7734 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7172,7 +7149,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 194.31 28.575 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid dc86d0da-0f20-467e-a7e3-62aa396e175e)
-    (property "Reference" "SW58" (id 0) (at 194.31 22.225 0))
+    (property "Reference" "SW1" (id 0) (at 194.31 22.225 0))
     (property "Value" "SW_Push" (id 1) (at 194.31 24.765 0))
     (property "Footprint" "jiran-ble:TS-1086E" (id 2) (at 194.31 23.495 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -7287,7 +7264,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 196.723 234.061 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bed9)
-    (property "Reference" "SW35" (id 0) (at 196.723 230.124 0))
+    (property "Reference" "SW36" (id 0) (at 196.723 230.124 0))
     (property "Value" "SW_Push" (id 1) (at 196.723 229.1334 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7304,7 +7281,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 196.723 244.221 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130beb5)
-    (property "Reference" "SW41" (id 0) (at 196.723 240.284 0))
+    (property "Reference" "SW42" (id 0) (at 196.723 240.284 0))
     (property "Value" "SW_Push" (id 1) (at 196.723 239.2934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7321,7 +7298,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 196.723 254.381 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be91)
-    (property "Reference" "SW47" (id 0) (at 196.723 250.444 0))
+    (property "Reference" "SW48" (id 0) (at 196.723 250.444 0))
     (property "Value" "SW_Push" (id 1) (at 196.723 249.4534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7338,7 +7315,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 196.723 264.541 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be6d)
-    (property "Reference" "SW53" (id 0) (at 196.723 260.604 0))
+    (property "Reference" "SW54" (id 0) (at 196.723 260.604 0))
     (property "Value" "SW_Push" (id 1) (at 196.723 259.6134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7355,7 +7332,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 196.723 274.701 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130be55)
-    (property "Reference" "SW57" (id 0) (at 196.723 270.764 0))
+    (property "Reference" "SW58" (id 0) (at 196.723 270.764 0))
     (property "Value" "SW_Push" (id 1) (at 196.723 269.7734 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7369,36 +7346,36 @@
     (pin "2" (uuid b7f5ee75-eae3-4873-851d-adaa5ccf9dc0))
   )
 
-  (symbol (lib_id "Switch:SW_DPDT_x2") (at 325.755 45.085 0) (mirror y) (unit 1)
+  (symbol (lib_id "jiran-ble-new:SW_DPDT") (at 324.485 45.085 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid b96e24a5-8cbd-40bf-b134-58cd8137e945)
-    (property "Reference" "SW1" (id 0) (at 325.755 38.1 0))
-    (property "Value" "SW_DPDT_x2" (id 1) (at 325.755 40.64 0))
-    (property "Footprint" "jiran-ble:Switch_SMD_MSK-12C02" (id 2) (at 325.755 45.085 0)
+    (uuid db325e92-5360-45ed-9c6f-d56c57cf171b)
+    (property "Reference" "SW30" (id 0) (at 325.755 38.1 0))
+    (property "Value" "SW_DPDT" (id 1) (at 325.755 40.64 0))
+    (property "Footprint" "" (id 2) (at 323.85 37.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 325.755 45.085 0)
+    (property "Datasheet" "" (id 3) (at 323.85 37.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e9b1ee92-3fe7-4b09-b0f7-1f93ea787680))
-    (pin "2" (uuid f428c5d2-8e4e-4737-88ec-a93d33b2a33c))
-    (pin "3" (uuid 3cf6e735-ce52-4574-add6-afa87d349265))
+    (pin "1" (uuid ee78e2c8-3b23-44c2-897c-20a75a44ba2f))
+    (pin "2" (uuid 70b2f46b-9a73-4891-ae35-c9994fec37bb))
+    (pin "3" (uuid 2ba631a1-130c-4d19-ba19-3478c423ab47))
   )
 
-  (symbol (lib_id "Switch:SW_DPDT_x2") (at 326.39 179.705 0) (mirror y) (unit 2)
+  (symbol (lib_id "jiran-ble-new:SW_DPDT") (at 325.12 179.705 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid 5a0fb0ca-eeaa-4a01-9f3d-f8cec2c36b8f)
-    (property "Reference" "SW1" (id 0) (at 326.39 172.72 0))
-    (property "Value" "SW_DPDT_x2" (id 1) (at 326.39 175.26 0))
-    (property "Footprint" "jiran-ble:Switch_SMD_MSK-12C02" (id 2) (at 326.39 179.705 0)
+    (uuid a6d535f7-c651-49c0-a33d-9ae4aaa71f84)
+    (property "Reference" "SW60" (id 0) (at 326.39 172.72 0))
+    (property "Value" "SW_DPDT" (id 1) (at 326.39 175.26 0))
+    (property "Footprint" "" (id 2) (at 324.485 172.085 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 326.39 179.705 0)
+    (property "Datasheet" "" (id 3) (at 324.485 172.085 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "4" (uuid 63004605-8c4b-4941-beec-1800ea4b4df9))
-    (pin "5" (uuid f81f0315-38ef-4332-bfd9-5e3ea0adb11f))
-    (pin "6" (uuid 7343dd79-619b-433c-93d7-eeb7f3b08830))
+    (pin "1" (uuid 77b2ba16-99bf-4fa3-820d-d3b6f6424c00))
+    (pin "2" (uuid 832acc6b-4415-4a73-beee-5b2ffbfcacd1))
+    (pin "3" (uuid 55b27fcb-10d1-4393-9734-f9a3cfbdc133))
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 258.445 57.785 0) (unit 1)
@@ -7783,97 +7760,97 @@
     (path "/00000000-0000-0000-0000-0000602e5398"
       (reference "#PWR02") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006068f821"
+    (path "/00000000-0000-0000-0000-00005e991365"
       (reference "#PWR03") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000606910c5"
+    (path "/00000000-0000-0000-0000-00006068f821"
       (reference "#PWR04") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005e5dbb46"
+    (path "/00000000-0000-0000-0000-0000606910c5"
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005e908c24"
+    (path "/00000000-0000-0000-0000-00005e5dbb46"
       (reference "#PWR06") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005e81e121"
+    (path "/00000000-0000-0000-0000-00005e908c24"
       (reference "#PWR07") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060692613"
+    (path "/00000000-0000-0000-0000-00005e81e121"
       (reference "#PWR08") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005e5ec00a"
+    (path "/00000000-0000-0000-0000-000060692613"
       (reference "#PWR09") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f7578ba"
+    (path "/00000000-0000-0000-0000-00005e5ec00a"
       (reference "#PWR010") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000605fe956"
+    (path "/00000000-0000-0000-0000-00005f7578ba"
       (reference "#PWR011") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f75e8d6"
+    (path "/00000000-0000-0000-0000-0000605fe956"
       (reference "#PWR012") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f7552d5"
+    (path "/00000000-0000-0000-0000-00005f75e8d6"
       (reference "#PWR013") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060dab6ee"
+    (path "/00000000-0000-0000-0000-00005f7552d5"
       (reference "#PWR014") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f73d403"
+    (path "/00000000-0000-0000-0000-000060dab6ee"
       (reference "#PWR015") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f6f7451"
+    (path "/00000000-0000-0000-0000-00005f73d403"
       (reference "#PWR016") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bcb2"
+    (path "/00000000-0000-0000-0000-00005f6f7451"
       (reference "#PWR017") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bf2d"
+    (path "/00000000-0000-0000-0000-00006130bcb2"
       (reference "#PWR018") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bf33"
+    (path "/da6596d0-ded1-4ad3-9419-b604f16768b1"
       (reference "#PWR019") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bcc2"
+    (path "/00000000-0000-0000-0000-00006130bf2d"
       (reference "#PWR020") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bc5f"
+    (path "/00000000-0000-0000-0000-00006130bf33"
       (reference "#PWR021") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bd16"
+    (path "/00000000-0000-0000-0000-00006130bcc2"
       (reference "#PWR022") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bf21"
+    (path "/00000000-0000-0000-0000-00006130bc5f"
       (reference "#PWR023") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bc4a"
+    (path "/00000000-0000-0000-0000-00006130bd16"
       (reference "#PWR024") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bd1c"
+    (path "/00000000-0000-0000-0000-00006130bf21"
       (reference "#PWR025") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bf1a"
+    (path "/00000000-0000-0000-0000-00006130bc4a"
       (reference "#PWR026") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bf39"
+    (path "/00000000-0000-0000-0000-00006130bd1c"
       (reference "#PWR027") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bcc8"
+    (path "/00000000-0000-0000-0000-00006130bf1a"
       (reference "#PWR028") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bfa1"
+    (path "/00000000-0000-0000-0000-00006130bf39"
       (reference "#PWR029") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bd0c"
+    (path "/00000000-0000-0000-0000-00006130bcc8"
       (reference "#PWR030") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bd25"
+    (path "/00000000-0000-0000-0000-00006130bfa1"
       (reference "#PWR031") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005e991365"
+    (path "/00000000-0000-0000-0000-00006130bd0c"
       (reference "#PWR032") (unit 1) (value "GND") (footprint "")
     )
-    (path "/da6596d0-ded1-4ad3-9419-b604f16768b1"
+    (path "/00000000-0000-0000-0000-00006130bd25"
       (reference "#PWR033") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006052c804"
@@ -7975,91 +7952,91 @@
     (path "/00000000-0000-0000-0000-00005dad7ed5"
       (reference "D29") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be4f"
+    (path "/00000000-0000-0000-0000-00006130bcdb"
       (reference "D30") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be49"
+    (path "/00000000-0000-0000-0000-00006130be4f"
       (reference "D31") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be43"
+    (path "/00000000-0000-0000-0000-00006130be49"
       (reference "D32") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be3d"
+    (path "/00000000-0000-0000-0000-00006130be43"
       (reference "D33") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be37"
+    (path "/00000000-0000-0000-0000-00006130be3d"
       (reference "D34") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be31"
+    (path "/00000000-0000-0000-0000-00006130be37"
       (reference "D35") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be2b"
+    (path "/00000000-0000-0000-0000-00006130be31"
       (reference "D36") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be25"
+    (path "/00000000-0000-0000-0000-00006130be2b"
       (reference "D37") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be1f"
+    (path "/00000000-0000-0000-0000-00006130be25"
       (reference "D38") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be19"
+    (path "/00000000-0000-0000-0000-00006130be1f"
       (reference "D39") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be13"
+    (path "/00000000-0000-0000-0000-00006130be19"
       (reference "D40") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be0d"
+    (path "/00000000-0000-0000-0000-00006130be13"
       (reference "D41") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be07"
+    (path "/00000000-0000-0000-0000-00006130be0d"
       (reference "D42") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130be01"
+    (path "/00000000-0000-0000-0000-00006130be07"
       (reference "D43") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdfb"
+    (path "/00000000-0000-0000-0000-00006130be01"
       (reference "D44") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdf5"
+    (path "/00000000-0000-0000-0000-00006130bdfb"
       (reference "D45") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdef"
+    (path "/00000000-0000-0000-0000-00006130bdf5"
       (reference "D46") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bde9"
+    (path "/00000000-0000-0000-0000-00006130bdef"
       (reference "D47") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bde3"
+    (path "/00000000-0000-0000-0000-00006130bde9"
       (reference "D48") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bddd"
+    (path "/00000000-0000-0000-0000-00006130bde3"
       (reference "D49") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdd7"
+    (path "/00000000-0000-0000-0000-00006130bddd"
       (reference "D50") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdd1"
+    (path "/00000000-0000-0000-0000-00006130bdd7"
       (reference "D51") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdcb"
+    (path "/00000000-0000-0000-0000-00006130bdd1"
       (reference "D52") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdc5"
+    (path "/00000000-0000-0000-0000-00006130bdcb"
       (reference "D53") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdbf"
+    (path "/00000000-0000-0000-0000-00006130bdc5"
       (reference "D54") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdb9"
+    (path "/00000000-0000-0000-0000-00006130bdbf"
       (reference "D55") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdb3"
+    (path "/00000000-0000-0000-0000-00006130bdb9"
       (reference "D56") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bdad"
+    (path "/00000000-0000-0000-0000-00006130bdb3"
       (reference "D57") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006130bcdb"
+    (path "/00000000-0000-0000-0000-00006130bdad"
       (reference "D58") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-00005fa214ac"
@@ -8182,11 +8159,8 @@
     (path "/00000000-0000-0000-0000-00006130bcf5"
       (reference "R16") (unit 1) (value "10k") (footprint "jiran-ble:R_0402")
     )
-    (path "/b96e24a5-8cbd-40bf-b134-58cd8137e945"
-      (reference "SW1") (unit 1) (value "SW_DPDT_x2") (footprint "jiran-ble:Switch_SMD_MSK-12C02")
-    )
-    (path "/5a0fb0ca-eeaa-4a01-9f3d-f8cec2c36b8f"
-      (reference "SW1") (unit 2) (value "SW_DPDT_x2") (footprint "jiran-ble:Switch_SMD_MSK-12C02")
+    (path "/dc86d0da-0f20-467e-a7e3-62aa396e175e"
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "jiran-ble:TS-1086E")
     )
     (path "/00000000-0000-0000-0000-00005daae5c1"
       (reference "SW2") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
@@ -8272,95 +8246,98 @@
     (path "/00000000-0000-0000-0000-00005dac93f2"
       (reference "SW29") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bef7"
-      (reference "SW30") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
+    (path "/db325e92-5360-45ed-9c6f-d56c57cf171b"
+      (reference "SW30") (unit 1) (value "SW_DPDT") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006130bef1"
+    (path "/00000000-0000-0000-0000-00006130bef7"
       (reference "SW31") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130beeb"
+    (path "/00000000-0000-0000-0000-00006130bef1"
       (reference "SW32") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bee5"
+    (path "/00000000-0000-0000-0000-00006130beeb"
       (reference "SW33") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bedf"
+    (path "/00000000-0000-0000-0000-00006130bee5"
       (reference "SW34") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bed9"
+    (path "/00000000-0000-0000-0000-00006130bedf"
       (reference "SW35") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bed3"
+    (path "/00000000-0000-0000-0000-00006130bed9"
       (reference "SW36") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130becd"
+    (path "/00000000-0000-0000-0000-00006130bed3"
       (reference "SW37") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bec7"
+    (path "/00000000-0000-0000-0000-00006130becd"
       (reference "SW38") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bec1"
+    (path "/00000000-0000-0000-0000-00006130bec7"
       (reference "SW39") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bebb"
+    (path "/00000000-0000-0000-0000-00006130bec1"
       (reference "SW40") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130beb5"
+    (path "/00000000-0000-0000-0000-00006130bebb"
       (reference "SW41") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130beaf"
+    (path "/00000000-0000-0000-0000-00006130beb5"
       (reference "SW42") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bea9"
+    (path "/00000000-0000-0000-0000-00006130beaf"
       (reference "SW43") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130bea3"
+    (path "/00000000-0000-0000-0000-00006130bea9"
       (reference "SW44") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be9d"
+    (path "/00000000-0000-0000-0000-00006130bea3"
       (reference "SW45") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be97"
+    (path "/00000000-0000-0000-0000-00006130be9d"
       (reference "SW46") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be91"
+    (path "/00000000-0000-0000-0000-00006130be97"
       (reference "SW47") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be8b"
+    (path "/00000000-0000-0000-0000-00006130be91"
       (reference "SW48") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be85"
+    (path "/00000000-0000-0000-0000-00006130be8b"
       (reference "SW49") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be7f"
+    (path "/00000000-0000-0000-0000-00006130be85"
       (reference "SW50") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be79"
+    (path "/00000000-0000-0000-0000-00006130be7f"
       (reference "SW51") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be73"
+    (path "/00000000-0000-0000-0000-00006130be79"
       (reference "SW52") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be6d"
+    (path "/00000000-0000-0000-0000-00006130be73"
       (reference "SW53") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be67"
+    (path "/00000000-0000-0000-0000-00006130be6d"
       (reference "SW54") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be61"
+    (path "/00000000-0000-0000-0000-00006130be67"
       (reference "SW55") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be5b"
+    (path "/00000000-0000-0000-0000-00006130be61"
       (reference "SW56") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/00000000-0000-0000-0000-00006130be55"
+    (path "/00000000-0000-0000-0000-00006130be5b"
       (reference "SW57") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
-    (path "/dc86d0da-0f20-467e-a7e3-62aa396e175e"
-      (reference "SW58") (unit 1) (value "SW_Push") (footprint "jiran-ble:TS-1086E")
+    (path "/00000000-0000-0000-0000-00006130be55"
+      (reference "SW58") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
     (path "/d4ebf227-7643-4474-8ab3-9d19d7f50330"
       (reference "SW59") (unit 1) (value "SW_Push") (footprint "jiran-ble:TS-1086E")
+    )
+    (path "/a6d535f7-c651-49c0-a33d-9ae4aaa71f84"
+      (reference "SW60") (unit 1) (value "SW_DPDT") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006068c8f8"
       (reference "U1") (unit 1) (value "HOLYIOT-18010-NRF52840_simple") (footprint "jiran-ble:Holyiot-18010-nRF52840")
