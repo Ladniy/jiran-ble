@@ -1,4 +1,4 @@
-19476776093095773
+19481636190774379
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84182,12 +84182,26 @@ Holyiot-18010-nRF52840
 37
 37
 jiran-ble
+JST_ZH_1x2_P1.5
+
+
+0
+2
+2
+jiran-ble
 LED_0603
 
 
 0
 2
 2
+jiran-ble
+MSK-12C02
+
+
+0
+7
+3
 jiran-ble
 Panel_2x5
 
@@ -84231,12 +84245,12 @@ Switch_Mx_Hotswap_1u
 2
 2
 jiran-ble
-Switch_SMD_MSK-12C02
+TS-1086E
 
 
 0
-7
-3
+4
+4
 jiran-ble
 USB-C-31-M-12
 
@@ -84244,6 +84258,13 @@ USB-C-31-M-12
 0
 20
 17
+jiran-ble
+USB-C-31-M-27
+
+
+0
+30
+24
 jiran-ble
 logotype
 

@@ -6358,7 +6358,7 @@
     (property "Value" "BATT" (id 1) (at 260.477 28.5496 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "jiran-ble:Connector_THT_1x2_2.54" (id 2) (at 258.445 26.035 0)
+    (property "Footprint" "jiran-ble:JST_ZH_1x2_P1.5" (id 2) (at 258.445 26.035 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 258.445 26.035 0)
@@ -6377,7 +6377,7 @@
     (property "Value" "BATT" (id 1) (at 260.477 175.2346 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "jiran-ble:Connector_THT_1x2_2.54" (id 2) (at 258.445 172.72 0)
+    (property "Footprint" "jiran-ble:JST_ZH_1x2_P1.5" (id 2) (at 258.445 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 258.445 172.72 0)
@@ -7174,7 +7174,7 @@
     (uuid dc86d0da-0f20-467e-a7e3-62aa396e175e)
     (property "Reference" "SW58" (id 0) (at 194.31 22.225 0))
     (property "Value" "SW_Push" (id 1) (at 194.31 24.765 0))
-    (property "Footprint" "" (id 2) (at 194.31 23.495 0)
+    (property "Footprint" "jiran-ble:TS-1086E" (id 2) (at 194.31 23.495 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 194.31 23.495 0)
@@ -7189,7 +7189,7 @@
     (uuid d4ebf227-7643-4474-8ab3-9d19d7f50330)
     (property "Reference" "SW59" (id 0) (at 194.31 168.91 0))
     (property "Value" "SW_Push" (id 1) (at 194.31 171.45 0))
-    (property "Footprint" "" (id 2) (at 194.31 170.18 0)
+    (property "Footprint" "jiran-ble:TS-1086E" (id 2) (at 194.31 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 194.31 170.18 0)
@@ -8099,7 +8099,7 @@
       (reference "HM10") (unit 1) (value "CaseHole") (footprint "jiran-ble:Hole_Mount_M4")
     )
     (path "/00000000-0000-0000-0000-0000602e539e"
-      (reference "J1") (unit 1) (value "BATT") (footprint "jiran-ble:Connector_THT_1x2_2.54")
+      (reference "J1") (unit 1) (value "BATT") (footprint "jiran-ble:JST_ZH_1x2_P1.5")
     )
     (path "/00000000-0000-0000-0000-00005c743564"
       (reference "J2") (unit 1) (value "USB-C Connector") (footprint "jiran-ble:USB-C-31-M-12")
@@ -8108,7 +8108,7 @@
       (reference "J3") (unit 1) (value "SWD") (footprint "jiran-ble:Connector_THT_1x4_2.54")
     )
     (path "/00000000-0000-0000-0000-00006130bcb8"
-      (reference "J4") (unit 1) (value "BATT") (footprint "jiran-ble:Connector_THT_1x2_2.54")
+      (reference "J4") (unit 1) (value "BATT") (footprint "jiran-ble:JST_ZH_1x2_P1.5")
     )
     (path "/00000000-0000-0000-0000-00006130bccf"
       (reference "J5") (unit 1) (value "USB-C Connector") (footprint "jiran-ble:USB-C-31-M-12")
@@ -8357,10 +8357,10 @@
       (reference "SW57") (unit 1) (value "SW_Push") (footprint "jiran-ble:Switch_Mx_Hotswap_1u")
     )
     (path "/dc86d0da-0f20-467e-a7e3-62aa396e175e"
-      (reference "SW58") (unit 1) (value "SW_Push") (footprint "")
+      (reference "SW58") (unit 1) (value "SW_Push") (footprint "jiran-ble:TS-1086E")
     )
     (path "/d4ebf227-7643-4474-8ab3-9d19d7f50330"
-      (reference "SW59") (unit 1) (value "SW_Push") (footprint "")
+      (reference "SW59") (unit 1) (value "SW_Push") (footprint "jiran-ble:TS-1086E")
     )
     (path "/00000000-0000-0000-0000-00006068c8f8"
       (reference "U1") (unit 1) (value "HOLYIOT-18010-NRF52840_simple") (footprint "jiran-ble:Holyiot-18010-nRF52840")
