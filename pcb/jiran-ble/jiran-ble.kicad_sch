@@ -7594,7 +7594,7 @@
     (uuid 00000000-0000-0000-0000-00005c743564)
     (property "Reference" "J2" (id 0) (at 118.11 20.955 0))
     (property "Value" "USB-C Connector" (id 1) (at 118.11 22.86 0))
-    (property "Footprint" "jiran-ble:USB-C-31-M-12" (id 2) (at 120.8278 22.225 0)
+    (property "Footprint" "jiran-ble:USB-C-31-M-27" (id 2) (at 120.8278 22.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 121.92 41.91 0)
@@ -7624,7 +7624,7 @@
     (uuid 00000000-0000-0000-0000-00006130bccf)
     (property "Reference" "J5" (id 0) (at 118.11 167.64 0))
     (property "Value" "USB-C Connector" (id 1) (at 118.11 169.545 0))
-    (property "Footprint" "jiran-ble:USB-C-31-M-12" (id 2) (at 120.8278 168.91 0)
+    (property "Footprint" "jiran-ble:USB-C-31-M-27" (id 2) (at 120.8278 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 121.92 188.595 0)
@@ -8102,7 +8102,7 @@
       (reference "J1") (unit 1) (value "BATT") (footprint "jiran-ble:JST_ZH_1x2_P1.5")
     )
     (path "/00000000-0000-0000-0000-00005c743564"
-      (reference "J2") (unit 1) (value "USB-C Connector") (footprint "jiran-ble:USB-C-31-M-12")
+      (reference "J2") (unit 1) (value "USB-C Connector") (footprint "jiran-ble:USB-C-31-M-27")
     )
     (path "/00000000-0000-0000-0000-00005e8fc792"
       (reference "J3") (unit 1) (value "SWD") (footprint "jiran-ble:Connector_THT_1x4_2.54")
@@ -8111,7 +8111,7 @@
       (reference "J4") (unit 1) (value "BATT") (footprint "jiran-ble:JST_ZH_1x2_P1.5")
     )
     (path "/00000000-0000-0000-0000-00006130bccf"
-      (reference "J5") (unit 1) (value "USB-C Connector") (footprint "jiran-ble:USB-C-31-M-12")
+      (reference "J5") (unit 1) (value "USB-C Connector") (footprint "jiran-ble:USB-C-31-M-27")
     )
     (path "/00000000-0000-0000-0000-00006130bc59"
       (reference "J6") (unit 1) (value "SWD") (footprint "jiran-ble:Connector_THT_1x4_2.54")
