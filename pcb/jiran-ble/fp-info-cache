@@ -1,4 +1,4 @@
-19481636190774379
+19483253838242524
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84200,8 +84200,8 @@ MSK-12C02
 
 
 0
-7
-3
+10
+6
 jiran-ble
 Panel_2x5
 
@@ -84263,8 +84263,15 @@ USB-C-31-M-27
 
 
 0
+14
+9
+jiran-ble
+USB-C-31-M-27-BACKUP
+
+
+0
 30
-24
+25
 jiran-ble
 logotype
 
