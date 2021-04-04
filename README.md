@@ -6,7 +6,7 @@ The main goal of this project is a fast and cheap production of a wireless ergon
 
 ## Project Status
 
-**Working on symbols lib**
+**Working on PCB design**
 
 Unfortunately, at the moment JLC does not have all the necessary components in basic inventory, so you need to pay an additional 3$ for each component from the extended inventory.
 
@@ -20,7 +20,7 @@ More information here - [wiki](https://github.com/Ladniy/jiran-ble/wiki/Componen
 - [x] Create footprint for bat. connector
 - [x] Create footprint for tact. switch
 - [x] Edit some old footprints
-- [ ] Move symbols from old lib to new
+- [x] Move symbols from old lib to new
 - [ ] Design PCB
 - [ ] Design basic case
 - [ ] Prepare production files
