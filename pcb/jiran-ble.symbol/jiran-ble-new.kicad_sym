@@ -984,7 +984,7 @@
       )
     )
   )
-  (symbol "jiran-ble-new:SW_DPDT" (in_bom yes) (on_board yes)
+  (symbol "jiran-ble-new:SW_DPDT" (pin_names hide) (in_bom yes) (on_board yes)
     (property "Reference" "SW" (id 0) (at 0 7.62 0)
       (effects (font (size 1.27 1.27)))
     )
