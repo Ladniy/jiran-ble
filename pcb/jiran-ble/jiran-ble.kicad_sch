@@ -5956,7 +5956,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005b158495)
     (property "Reference" "D1" (id 0) (at 310.515 58.6486 0))
-    (property "Value" "1N5819" (id 1) (at 310.515 60.96 0))
+    (property "Value" "B5819W" (id 1) (at 310.515 60.96 0))
     (property "Footprint" "jiran-ble:D_SOD-123" (id 2) (at 310.515 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5971,7 +5971,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006130bcdb)
     (property "Reference" "D30" (id 0) (at 311.15 193.2686 0))
-    (property "Value" "1N5819" (id 1) (at 311.15 195.58 0))
+    (property "Value" "B5819W" (id 1) (at 311.15 195.58 0))
     (property "Footprint" "jiran-ble:D_SOD-123" (id 2) (at 311.15 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7820,7 +7820,7 @@
       (reference "C4") (unit 1) (value "10uF") (footprint "jiran-ble:C_0402")
     )
     (path "/00000000-0000-0000-0000-00005b158495"
-      (reference "D1") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
+      (reference "D1") (unit 1) (value "B5819W") (footprint "jiran-ble:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-00005dacbec8"
       (reference "D2") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
@@ -7907,7 +7907,7 @@
       (reference "D29") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-00006130bcdb"
-      (reference "D30") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
+      (reference "D30") (unit 1) (value "B5819W") (footprint "jiran-ble:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-00006130be4f"
       (reference "D31") (unit 1) (value "1N5819") (footprint "jiran-ble:D_SOD-123")
