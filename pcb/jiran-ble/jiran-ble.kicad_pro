@@ -364,7 +364,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "jiran-ble.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -407,7 +407,7 @@
   },
   "sheets": [
     [
-      "c31c1c5f-d802-42e9-bb32-868568b12485",
+      "f343784d-35a7-4544-9bc3-bde5f8645bb3",
       ""
     ]
   ],
