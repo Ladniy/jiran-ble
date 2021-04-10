@@ -22,6 +22,7 @@ More information here - [wiki](https://github.com/Ladniy/jiran-ble/wiki/Componen
 - [x] Edit some old footprints
 - [x] Move symbols from old lib to new
 - [ ] Design PCB
+- [ ] Check footprints rotation
 - [ ] Design basic case
 - [ ] Prepare production files
 - [ ] Production
